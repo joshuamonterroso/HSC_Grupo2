@@ -31,131 +31,131 @@ namespace consultas_inteligentes
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCadenaGenerada = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.gpbAgruparUOrdenar = new System.Windows.Forms.GroupBox();
+            this.btnCancelarAgruparOrdenar = new System.Windows.Forms.Button();
+            this.btnAgregarAgruparordenar = new System.Windows.Forms.Button();
+            this.gpbOrdenamiento = new System.Windows.Forms.GroupBox();
+            this.rdbAsc = new System.Windows.Forms.RadioButton();
+            this.rdbDesc = new System.Windows.Forms.RadioButton();
+            this.cboCampoAgruparOrdenar = new System.Windows.Forms.ComboBox();
+            this.cboAgruparOrdenar = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gpbConsultaCompleja = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.btnCancelarComparacion = new System.Windows.Forms.Button();
+            this.btnAgregarComparacion = new System.Windows.Forms.Button();
+            this.txtValorComparacion = new System.Windows.Forms.TextBox();
+            this.cboCampoComparacion = new System.Windows.Forms.ComboBox();
+            this.cboTipoComparador = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnCancelarConsultaCompleja = new System.Windows.Forms.Button();
+            this.btnAgregarConsultaCompleja = new System.Windows.Forms.Button();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.cboCampoLogica = new System.Windows.Forms.ComboBox();
+            this.cboOperadorLogico = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.gpbConsultaSimple = new System.Windows.Forms.GroupBox();
+            this.txtAlias = new System.Windows.Forms.TextBox();
+            this.cboCampos = new System.Windows.Forms.ComboBox();
+            this.cmoTabla = new System.Windows.Forms.ComboBox();
+            this.btnCancelarCamposSeleccionados = new System.Windows.Forms.Button();
+            this.btnAgregarCamposSeleccionados = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkSelectTodos = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCONSULTAS = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.btnBuscarCONSULTAS = new System.Windows.Forms.Button();
+            this.txtCadenaGeneradaCONSULTAS = new System.Windows.Forms.TextBox();
+            this.cboQuery = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtCadenaGeneradaEDITAR = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
+            this.btnAgregarAgruparOrdenarEDITAR = new System.Windows.Forms.Button();
+            this.btnCancelarAgruparOrdenarEDITAR = new System.Windows.Forms.Button();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.rdbdescEDITAR = new System.Windows.Forms.RadioButton();
+            this.rdbAscEDITAR = new System.Windows.Forms.RadioButton();
+            this.cboAgruparEDITAR = new System.Windows.Forms.ComboBox();
+            this.cboCampoAgruparEDITAR = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.button19 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.txtcancelarComparacionEDITAR = new System.Windows.Forms.Button();
+            this.txtValorComparacionEDITAR = new System.Windows.Forms.TextBox();
+            this.txtAgregarComparacionEDITAR = new System.Windows.Forms.Button();
+            this.cboTipoComparadorEDITAR = new System.Windows.Forms.ComboBox();
+            this.cboCampoEDITAR = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.btnCancelarCONSULTACOMPLEJAEDITAR = new System.Windows.Forms.Button();
+            this.btnagregarCONSULTACOMPLEJAEDITAR = new System.Windows.Forms.Button();
+            this.txtvalorConsultaComplejaEDITAR = new System.Windows.Forms.TextBox();
+            this.cboCampoConsultaComplejaEDITAR = new System.Windows.Forms.ComboBox();
+            this.cboOperadorLogicoEDITAR = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtnomConsultaEDITAR = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNombreRepresentativoEDITAR = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.button15 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.cboTablaConsultaSimple = new System.Windows.Forms.ComboBox();
+            this.cboCamposEDITAR = new System.Windows.Forms.ComboBox();
+            this.btnAgregarCONSULTASIMPLE = new System.Windows.Forms.Button();
+            this.btnCancelarCONSULTASIMPLE = new System.Windows.Forms.Button();
+            this.txtTablaConsultaSimple = new System.Windows.Forms.TextBox();
+            this.chkSelectTodosConsultaSimple = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnBuscarEDITAR = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.btnConsultaBUSCARyELIMINAR = new System.Windows.Forms.Button();
+            this.btnEliminarBUSCARyELIMINAR = new System.Windows.Forms.Button();
+            this.btnActualizarBUSCARyELIMINAR = new System.Windows.Forms.Button();
+            this.btnBuscarBUSCARyELIMINAR = new System.Windows.Forms.Button();
+            this.dgvBUSCARyELIMINAR = new System.Windows.Forms.DataGridView();
+            this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.dgvCamposSeleccionados = new System.Windows.Forms.DataGridView();
+            this.dgvNombreConsultaCONSULTASIMPLE = new System.Windows.Forms.DataGridView();
+            this.txtNombreConsulta = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gpbAgruparUOrdenar.SuspendLayout();
+            this.gpbOrdenamiento.SuspendLayout();
+            this.gpbConsultaCompleja.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gpbConsultaSimple.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCONSULTAS)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox12.SuspendLayout();
@@ -165,7 +165,9 @@ namespace consultas_inteligentes
             this.groupBox10.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBUSCARyELIMINAR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCamposSeleccionados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNombreConsultaCONSULTASIMPLE)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -184,13 +186,13 @@ namespace consultas_inteligentes
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
-            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.txtCadenaGenerada);
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.groupBox5);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.gpbAgruparUOrdenar);
+            this.tabPage1.Controls.Add(this.gpbConsultaCompleja);
+            this.tabPage1.Controls.Add(this.gpbConsultaSimple);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -198,13 +200,13 @@ namespace consultas_inteligentes
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Creación";
             // 
-            // textBox5
+            // txtCadenaGenerada
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox5.Location = new System.Drawing.Point(530, 369);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(257, 20);
-            this.textBox5.TabIndex = 24;
+            this.txtCadenaGenerada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtCadenaGenerada.Location = new System.Drawing.Point(530, 369);
+            this.txtCadenaGenerada.Name = "txtCadenaGenerada";
+            this.txtCadenaGenerada.Size = new System.Drawing.Size(257, 20);
+            this.txtCadenaGenerada.TabIndex = 24;
             // 
             // label14
             // 
@@ -239,96 +241,96 @@ namespace consultas_inteligentes
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // groupBox5
+            // gpbAgruparUOrdenar
             // 
-            this.groupBox5.Controls.Add(this.button9);
-            this.groupBox5.Controls.Add(this.button8);
-            this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Controls.Add(this.comboBox8);
-            this.groupBox5.Controls.Add(this.comboBox7);
-            this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Location = new System.Drawing.Point(22, 332);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(480, 102);
-            this.groupBox5.TabIndex = 2;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Agrupar/Ordenar";
+            this.gpbAgruparUOrdenar.Controls.Add(this.btnCancelarAgruparOrdenar);
+            this.gpbAgruparUOrdenar.Controls.Add(this.btnAgregarAgruparordenar);
+            this.gpbAgruparUOrdenar.Controls.Add(this.gpbOrdenamiento);
+            this.gpbAgruparUOrdenar.Controls.Add(this.cboCampoAgruparOrdenar);
+            this.gpbAgruparUOrdenar.Controls.Add(this.cboAgruparOrdenar);
+            this.gpbAgruparUOrdenar.Controls.Add(this.label13);
+            this.gpbAgruparUOrdenar.Controls.Add(this.label12);
+            this.gpbAgruparUOrdenar.Location = new System.Drawing.Point(22, 332);
+            this.gpbAgruparUOrdenar.Name = "gpbAgruparUOrdenar";
+            this.gpbAgruparUOrdenar.Size = new System.Drawing.Size(480, 102);
+            this.gpbAgruparUOrdenar.TabIndex = 2;
+            this.gpbAgruparUOrdenar.TabStop = false;
+            this.gpbAgruparUOrdenar.Text = "Agrupar/Ordenar";
             // 
-            // button9
+            // btnCancelarAgruparOrdenar
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(386, 52);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(82, 23);
-            this.button9.TabIndex = 22;
-            this.button9.Text = "Cancelar";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnCancelarAgruparOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarAgruparOrdenar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarAgruparOrdenar.Location = new System.Drawing.Point(386, 52);
+            this.btnCancelarAgruparOrdenar.Name = "btnCancelarAgruparOrdenar";
+            this.btnCancelarAgruparOrdenar.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarAgruparOrdenar.TabIndex = 22;
+            this.btnCancelarAgruparOrdenar.Text = "Cancelar";
+            this.btnCancelarAgruparOrdenar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarAgruparOrdenar.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnAgregarAgruparordenar
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(386, 23);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(82, 23);
-            this.button8.TabIndex = 20;
-            this.button8.Text = "Agregar";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnAgregarAgruparordenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarAgruparordenar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarAgruparordenar.Location = new System.Drawing.Point(386, 23);
+            this.btnAgregarAgruparordenar.Name = "btnAgregarAgruparordenar";
+            this.btnAgregarAgruparordenar.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarAgruparordenar.TabIndex = 20;
+            this.btnAgregarAgruparordenar.Text = "Agregar";
+            this.btnAgregarAgruparordenar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarAgruparordenar.UseVisualStyleBackColor = false;
             // 
-            // groupBox6
+            // gpbOrdenamiento
             // 
-            this.groupBox6.Controls.Add(this.radioButton2);
-            this.groupBox6.Controls.Add(this.radioButton1);
-            this.groupBox6.Location = new System.Drawing.Point(251, 19);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(113, 53);
-            this.groupBox6.TabIndex = 19;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Ordenamiento";
+            this.gpbOrdenamiento.Controls.Add(this.rdbAsc);
+            this.gpbOrdenamiento.Controls.Add(this.rdbDesc);
+            this.gpbOrdenamiento.Location = new System.Drawing.Point(251, 19);
+            this.gpbOrdenamiento.Name = "gpbOrdenamiento";
+            this.gpbOrdenamiento.Size = new System.Drawing.Size(113, 53);
+            this.gpbOrdenamiento.TabIndex = 19;
+            this.gpbOrdenamiento.TabStop = false;
+            this.gpbOrdenamiento.Text = "Ordenamiento";
             // 
-            // radioButton2
+            // rdbAsc
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(62, 21);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(43, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Asc";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbAsc.AutoSize = true;
+            this.rdbAsc.Location = new System.Drawing.Point(62, 21);
+            this.rdbAsc.Name = "rdbAsc";
+            this.rdbAsc.Size = new System.Drawing.Size(43, 17);
+            this.rdbAsc.TabIndex = 1;
+            this.rdbAsc.TabStop = true;
+            this.rdbAsc.Text = "Asc";
+            this.rdbAsc.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbDesc
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(50, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Desc";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbDesc.AutoSize = true;
+            this.rdbDesc.Location = new System.Drawing.Point(6, 21);
+            this.rdbDesc.Name = "rdbDesc";
+            this.rdbDesc.Size = new System.Drawing.Size(50, 17);
+            this.rdbDesc.TabIndex = 0;
+            this.rdbDesc.TabStop = true;
+            this.rdbDesc.Text = "Desc";
+            this.rdbDesc.UseVisualStyleBackColor = true;
             // 
-            // comboBox8
+            // cboCampoAgruparOrdenar
             // 
-            this.comboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(107, 51);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(100, 21);
-            this.comboBox8.TabIndex = 18;
+            this.cboCampoAgruparOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampoAgruparOrdenar.FormattingEnabled = true;
+            this.cboCampoAgruparOrdenar.Location = new System.Drawing.Point(107, 51);
+            this.cboCampoAgruparOrdenar.Name = "cboCampoAgruparOrdenar";
+            this.cboCampoAgruparOrdenar.Size = new System.Drawing.Size(100, 21);
+            this.cboCampoAgruparOrdenar.TabIndex = 18;
             // 
-            // comboBox7
+            // cboAgruparOrdenar
             // 
-            this.comboBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(107, 23);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(100, 21);
-            this.comboBox7.TabIndex = 17;
+            this.cboAgruparOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboAgruparOrdenar.FormattingEnabled = true;
+            this.cboAgruparOrdenar.Location = new System.Drawing.Point(107, 23);
+            this.cboAgruparOrdenar.Name = "cboAgruparOrdenar";
+            this.cboAgruparOrdenar.Size = new System.Drawing.Size(100, 21);
+            this.cboAgruparOrdenar.TabIndex = 17;
             // 
             // label13
             // 
@@ -348,24 +350,24 @@ namespace consultas_inteligentes
             this.label12.TabIndex = 5;
             this.label12.Text = "Agrupar/Ordenar";
             // 
-            // groupBox2
+            // gpbConsultaCompleja
             // 
-            this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Location = new System.Drawing.Point(22, 198);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(681, 128);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Consulta Compleja";
+            this.gpbConsultaCompleja.Controls.Add(this.groupBox4);
+            this.gpbConsultaCompleja.Controls.Add(this.groupBox3);
+            this.gpbConsultaCompleja.Location = new System.Drawing.Point(22, 198);
+            this.gpbConsultaCompleja.Name = "gpbConsultaCompleja";
+            this.gpbConsultaCompleja.Size = new System.Drawing.Size(681, 128);
+            this.gpbConsultaCompleja.TabIndex = 1;
+            this.gpbConsultaCompleja.TabStop = false;
+            this.gpbConsultaCompleja.Text = "Consulta Compleja";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button7);
-            this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.textBox4);
-            this.groupBox4.Controls.Add(this.comboBox6);
-            this.groupBox4.Controls.Add(this.comboBox5);
+            this.groupBox4.Controls.Add(this.btnCancelarComparacion);
+            this.groupBox4.Controls.Add(this.btnAgregarComparacion);
+            this.groupBox4.Controls.Add(this.txtValorComparacion);
+            this.groupBox4.Controls.Add(this.cboCampoComparacion);
+            this.groupBox4.Controls.Add(this.cboTipoComparador);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label9);
@@ -376,55 +378,55 @@ namespace consultas_inteligentes
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Comparación";
             // 
-            // button7
+            // btnCancelarComparacion
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(229, 62);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(82, 23);
-            this.button7.TabIndex = 21;
-            this.button7.Text = "Cancelar";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnCancelarComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarComparacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarComparacion.Location = new System.Drawing.Point(229, 62);
+            this.btnCancelarComparacion.Name = "btnCancelarComparacion";
+            this.btnCancelarComparacion.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarComparacion.TabIndex = 21;
+            this.btnCancelarComparacion.Text = "Cancelar";
+            this.btnCancelarComparacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarComparacion.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnAgregarComparacion
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(229, 22);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 23);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Agregar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnAgregarComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarComparacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarComparacion.Location = new System.Drawing.Point(229, 22);
+            this.btnAgregarComparacion.Name = "btnAgregarComparacion";
+            this.btnAgregarComparacion.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarComparacion.TabIndex = 20;
+            this.btnAgregarComparacion.Text = "Agregar";
+            this.btnAgregarComparacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarComparacion.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // txtValorComparacion
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox4.Location = new System.Drawing.Point(123, 69);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 19;
+            this.txtValorComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtValorComparacion.Location = new System.Drawing.Point(123, 69);
+            this.txtValorComparacion.Name = "txtValorComparacion";
+            this.txtValorComparacion.Size = new System.Drawing.Size(100, 20);
+            this.txtValorComparacion.TabIndex = 19;
             // 
-            // comboBox6
+            // cboCampoComparacion
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(123, 43);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(100, 21);
-            this.comboBox6.TabIndex = 18;
+            this.cboCampoComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampoComparacion.FormattingEnabled = true;
+            this.cboCampoComparacion.Location = new System.Drawing.Point(123, 43);
+            this.cboCampoComparacion.Name = "cboCampoComparacion";
+            this.cboCampoComparacion.Size = new System.Drawing.Size(100, 21);
+            this.cboCampoComparacion.TabIndex = 18;
             // 
-            // comboBox5
+            // cboTipoComparador
             // 
-            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(123, 19);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(100, 21);
-            this.comboBox5.TabIndex = 17;
+            this.cboTipoComparador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboTipoComparador.FormattingEnabled = true;
+            this.cboTipoComparador.Location = new System.Drawing.Point(123, 19);
+            this.cboTipoComparador.Name = "cboTipoComparador";
+            this.cboTipoComparador.Size = new System.Drawing.Size(100, 21);
+            this.cboTipoComparador.TabIndex = 17;
             // 
             // label11
             // 
@@ -455,11 +457,11 @@ namespace consultas_inteligentes
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.comboBox4);
-            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.btnCancelarConsultaCompleja);
+            this.groupBox3.Controls.Add(this.btnAgregarConsultaCompleja);
+            this.groupBox3.Controls.Add(this.txtValor);
+            this.groupBox3.Controls.Add(this.cboCampoLogica);
+            this.groupBox3.Controls.Add(this.cboOperadorLogico);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
@@ -470,55 +472,55 @@ namespace consultas_inteligentes
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Logica";
             // 
-            // button5
+            // btnCancelarConsultaCompleja
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(218, 62);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 23);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "Cancelar";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCancelarConsultaCompleja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarConsultaCompleja.Location = new System.Drawing.Point(218, 62);
+            this.btnCancelarConsultaCompleja.Name = "btnCancelarConsultaCompleja";
+            this.btnCancelarConsultaCompleja.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarConsultaCompleja.TabIndex = 20;
+            this.btnCancelarConsultaCompleja.Text = "Cancelar";
+            this.btnCancelarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarConsultaCompleja.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnAgregarConsultaCompleja
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(218, 25);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 23);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "Agregar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAgregarConsultaCompleja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarConsultaCompleja.Location = new System.Drawing.Point(218, 25);
+            this.btnAgregarConsultaCompleja.Name = "btnAgregarConsultaCompleja";
+            this.btnAgregarConsultaCompleja.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarConsultaCompleja.TabIndex = 19;
+            this.btnAgregarConsultaCompleja.Text = "Agregar";
+            this.btnAgregarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarConsultaCompleja.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // txtValor
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox3.Location = new System.Drawing.Point(101, 73);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 18;
+            this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtValor.Location = new System.Drawing.Point(101, 73);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 18;
             // 
-            // comboBox4
+            // cboCampoLogica
             // 
-            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(101, 46);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(100, 21);
-            this.comboBox4.TabIndex = 17;
+            this.cboCampoLogica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampoLogica.FormattingEnabled = true;
+            this.cboCampoLogica.Location = new System.Drawing.Point(101, 46);
+            this.cboCampoLogica.Name = "cboCampoLogica";
+            this.cboCampoLogica.Size = new System.Drawing.Size(100, 21);
+            this.cboCampoLogica.TabIndex = 17;
             // 
-            // comboBox3
+            // cboOperadorLogico
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(101, 19);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 21);
-            this.comboBox3.TabIndex = 16;
+            this.cboOperadorLogico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboOperadorLogico.FormattingEnabled = true;
+            this.cboOperadorLogico.Location = new System.Drawing.Point(101, 19);
+            this.cboOperadorLogico.Name = "cboOperadorLogico";
+            this.cboOperadorLogico.Size = new System.Drawing.Size(100, 21);
+            this.cboOperadorLogico.TabIndex = 16;
             // 
             // label8
             // 
@@ -547,101 +549,91 @@ namespace consultas_inteligentes
             this.label6.TabIndex = 2;
             this.label6.Text = "Operador logico";
             // 
-            // groupBox1
+            // gpbConsultaSimple
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(22, 17);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(681, 175);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Consulta Simple";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gpbConsultaSimple.Controls.Add(this.txtNombreConsulta);
+            this.gpbConsultaSimple.Controls.Add(this.dgvCamposSeleccionados);
+            this.gpbConsultaSimple.Controls.Add(this.txtAlias);
+            this.gpbConsultaSimple.Controls.Add(this.cboCampos);
+            this.gpbConsultaSimple.Controls.Add(this.cmoTabla);
+            this.gpbConsultaSimple.Controls.Add(this.btnCancelarCamposSeleccionados);
+            this.gpbConsultaSimple.Controls.Add(this.btnAgregarCamposSeleccionados);
+            this.gpbConsultaSimple.Controls.Add(this.btnAgregar);
+            this.gpbConsultaSimple.Controls.Add(this.label5);
+            this.gpbConsultaSimple.Controls.Add(this.chkSelectTodos);
+            this.gpbConsultaSimple.Controls.Add(this.label4);
+            this.gpbConsultaSimple.Controls.Add(this.label3);
+            this.gpbConsultaSimple.Controls.Add(this.label2);
+            this.gpbConsultaSimple.Controls.Add(this.label1);
+            this.gpbConsultaSimple.Location = new System.Drawing.Point(22, 17);
+            this.gpbConsultaSimple.Name = "gpbConsultaSimple";
+            this.gpbConsultaSimple.Size = new System.Drawing.Size(681, 182);
+            this.gpbConsultaSimple.TabIndex = 0;
+            this.gpbConsultaSimple.TabStop = false;
+            this.gpbConsultaSimple.Text = "Consulta Simple";
+            this.gpbConsultaSimple.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox2
+            // txtAlias
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox2.Location = new System.Drawing.Point(132, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 17;
+            this.txtAlias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtAlias.Location = new System.Drawing.Point(132, 101);
+            this.txtAlias.Name = "txtAlias";
+            this.txtAlias.Size = new System.Drawing.Size(100, 20);
+            this.txtAlias.TabIndex = 17;
             // 
-            // comboBox2
+            // cboCampos
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(132, 74);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 16;
+            this.cboCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampos.FormattingEnabled = true;
+            this.cboCampos.Location = new System.Drawing.Point(132, 74);
+            this.cboCampos.Name = "cboCampos";
+            this.cboCampos.Size = new System.Drawing.Size(100, 21);
+            this.cboCampos.TabIndex = 16;
             // 
-            // comboBox1
+            // cmoTabla
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(132, 47);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cmoTabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cmoTabla.FormattingEnabled = true;
+            this.cmoTabla.Location = new System.Drawing.Point(132, 47);
+            this.cmoTabla.Name = "cmoTabla";
+            this.cmoTabla.Size = new System.Drawing.Size(100, 21);
+            this.cmoTabla.TabIndex = 15;
             // 
-            // button3
+            // btnCancelarCamposSeleccionados
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(538, 142);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Cancelar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCancelarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarCamposSeleccionados.Location = new System.Drawing.Point(538, 142);
+            this.btnCancelarCamposSeleccionados.Name = "btnCancelarCamposSeleccionados";
+            this.btnCancelarCamposSeleccionados.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelarCamposSeleccionados.TabIndex = 14;
+            this.btnCancelarCamposSeleccionados.Text = "Cancelar";
+            this.btnCancelarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCamposSeleccionados.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAgregarCamposSeleccionados
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(432, 142);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Agregar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAgregarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCamposSeleccionados.Location = new System.Drawing.Point(432, 142);
+            this.btnAgregarCamposSeleccionados.Name = "btnAgregarCamposSeleccionados";
+            this.btnAgregarCamposSeleccionados.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarCamposSeleccionados.TabIndex = 13;
+            this.btnAgregarCamposSeleccionados.Text = "Agregar";
+            this.btnAgregarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarCamposSeleccionados.UseVisualStyleBackColor = false;
             // 
-            // listView1
+            // btnAgregar
             // 
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(409, 50);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(222, 86);
-            this.listView1.TabIndex = 12;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(107, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Agregar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(107, 142);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -652,23 +644,15 @@ namespace consultas_inteligentes
             this.label5.TabIndex = 8;
             this.label5.Text = "Campos seleccionados";
             // 
-            // textBox1
+            // chkSelectTodos
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox1.Location = new System.Drawing.Point(132, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(238, 52);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(111, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Seleccionar todos";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkSelectTodos.AutoSize = true;
+            this.chkSelectTodos.Location = new System.Drawing.Point(238, 52);
+            this.chkSelectTodos.Name = "chkSelectTodos";
+            this.chkSelectTodos.Size = new System.Drawing.Size(111, 17);
+            this.chkSelectTodos.TabIndex = 4;
+            this.chkSelectTodos.Text = "Seleccionar todos";
+            this.chkSelectTodos.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -710,7 +694,7 @@ namespace consultas_inteligentes
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.dgvCONSULTAS);
             this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -719,20 +703,20 @@ namespace consultas_inteligentes
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas";
             // 
-            // dataGridView1
+            // dgvCONSULTAS
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(128)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 128);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(664, 243);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvCONSULTAS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(128)))));
+            this.dgvCONSULTAS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCONSULTAS.Location = new System.Drawing.Point(31, 128);
+            this.dgvCONSULTAS.Name = "dgvCONSULTAS";
+            this.dgvCONSULTAS.Size = new System.Drawing.Size(664, 243);
+            this.dgvCONSULTAS.TabIndex = 1;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button12);
-            this.groupBox7.Controls.Add(this.textBox6);
-            this.groupBox7.Controls.Add(this.comboBox9);
+            this.groupBox7.Controls.Add(this.btnBuscarCONSULTAS);
+            this.groupBox7.Controls.Add(this.txtCadenaGeneradaCONSULTAS);
+            this.groupBox7.Controls.Add(this.cboQuery);
             this.groupBox7.Controls.Add(this.label16);
             this.groupBox7.Controls.Add(this.label15);
             this.groupBox7.Location = new System.Drawing.Point(31, 25);
@@ -742,34 +726,34 @@ namespace consultas_inteligentes
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Listado";
             // 
-            // button12
+            // btnBuscarCONSULTAS
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.Location = new System.Drawing.Point(524, 19);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(82, 59);
-            this.button12.TabIndex = 22;
-            this.button12.Text = "Buscar";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnBuscarCONSULTAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnBuscarCONSULTAS.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuscarCONSULTAS.Location = new System.Drawing.Point(524, 19);
+            this.btnBuscarCONSULTAS.Name = "btnBuscarCONSULTAS";
+            this.btnBuscarCONSULTAS.Size = new System.Drawing.Size(82, 59);
+            this.btnBuscarCONSULTAS.TabIndex = 22;
+            this.btnBuscarCONSULTAS.Text = "Buscar";
+            this.btnBuscarCONSULTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscarCONSULTAS.UseVisualStyleBackColor = false;
             // 
-            // textBox6
+            // txtCadenaGeneradaCONSULTAS
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox6.Location = new System.Drawing.Point(368, 28);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 3;
+            this.txtCadenaGeneradaCONSULTAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtCadenaGeneradaCONSULTAS.Location = new System.Drawing.Point(368, 28);
+            this.txtCadenaGeneradaCONSULTAS.Name = "txtCadenaGeneradaCONSULTAS";
+            this.txtCadenaGeneradaCONSULTAS.Size = new System.Drawing.Size(100, 20);
+            this.txtCadenaGeneradaCONSULTAS.TabIndex = 3;
             // 
-            // comboBox9
+            // cboQuery
             // 
-            this.comboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(99, 28);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 21);
-            this.comboBox9.TabIndex = 2;
+            this.cboQuery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboQuery.FormattingEnabled = true;
+            this.cboQuery.Location = new System.Drawing.Point(99, 28);
+            this.cboQuery.Name = "cboQuery";
+            this.cboQuery.Size = new System.Drawing.Size(121, 21);
+            this.cboQuery.TabIndex = 2;
             // 
             // label16
             // 
@@ -795,14 +779,14 @@ namespace consultas_inteligentes
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
             this.tabPage3.Controls.Add(this.button23);
             this.tabPage3.Controls.Add(this.button22);
-            this.tabPage3.Controls.Add(this.textBox12);
+            this.tabPage3.Controls.Add(this.txtCadenaGeneradaEDITAR);
             this.tabPage3.Controls.Add(this.label31);
             this.tabPage3.Controls.Add(this.groupBox12);
             this.tabPage3.Controls.Add(this.groupBox9);
-            this.tabPage3.Controls.Add(this.textBox7);
+            this.tabPage3.Controls.Add(this.txtnomConsultaEDITAR);
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.button13);
+            this.tabPage3.Controls.Add(this.btnBuscarEDITAR);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -835,13 +819,13 @@ namespace consultas_inteligentes
             this.button22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button22.UseVisualStyleBackColor = false;
             // 
-            // textBox12
+            // txtCadenaGeneradaEDITAR
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox12.Location = new System.Drawing.Point(544, 425);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(257, 20);
-            this.textBox12.TabIndex = 25;
+            this.txtCadenaGeneradaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtCadenaGeneradaEDITAR.Location = new System.Drawing.Point(544, 425);
+            this.txtCadenaGeneradaEDITAR.Name = "txtCadenaGeneradaEDITAR";
+            this.txtCadenaGeneradaEDITAR.Size = new System.Drawing.Size(257, 20);
+            this.txtCadenaGeneradaEDITAR.TabIndex = 25;
             // 
             // label31
             // 
@@ -854,11 +838,11 @@ namespace consultas_inteligentes
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.button20);
-            this.groupBox12.Controls.Add(this.button21);
+            this.groupBox12.Controls.Add(this.btnAgregarAgruparOrdenarEDITAR);
+            this.groupBox12.Controls.Add(this.btnCancelarAgruparOrdenarEDITAR);
             this.groupBox12.Controls.Add(this.groupBox13);
-            this.groupBox12.Controls.Add(this.comboBox16);
-            this.groupBox12.Controls.Add(this.comboBox17);
+            this.groupBox12.Controls.Add(this.cboAgruparEDITAR);
+            this.groupBox12.Controls.Add(this.cboCampoAgruparEDITAR);
             this.groupBox12.Controls.Add(this.label29);
             this.groupBox12.Controls.Add(this.label30);
             this.groupBox12.Location = new System.Drawing.Point(18, 378);
@@ -868,34 +852,34 @@ namespace consultas_inteligentes
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Agrupar/Ordenar";
             // 
-            // button20
+            // btnAgregarAgruparOrdenarEDITAR
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(392, 23);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(82, 23);
-            this.button20.TabIndex = 22;
-            this.button20.Text = "Agregar";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnAgregarAgruparOrdenarEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarAgruparOrdenarEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarAgruparOrdenarEDITAR.Location = new System.Drawing.Point(392, 23);
+            this.btnAgregarAgruparOrdenarEDITAR.Name = "btnAgregarAgruparOrdenarEDITAR";
+            this.btnAgregarAgruparOrdenarEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarAgruparOrdenarEDITAR.TabIndex = 22;
+            this.btnAgregarAgruparOrdenarEDITAR.Text = "Agregar";
+            this.btnAgregarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarAgruparOrdenarEDITAR.UseVisualStyleBackColor = false;
             // 
-            // button21
+            // btnCancelarAgruparOrdenarEDITAR
             // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(392, 61);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(82, 23);
-            this.button21.TabIndex = 20;
-            this.button21.Text = "Cancelar";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.UseVisualStyleBackColor = false;
+            this.btnCancelarAgruparOrdenarEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarAgruparOrdenarEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarAgruparOrdenarEDITAR.Location = new System.Drawing.Point(392, 61);
+            this.btnCancelarAgruparOrdenarEDITAR.Name = "btnCancelarAgruparOrdenarEDITAR";
+            this.btnCancelarAgruparOrdenarEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarAgruparOrdenarEDITAR.TabIndex = 20;
+            this.btnCancelarAgruparOrdenarEDITAR.Text = "Cancelar";
+            this.btnCancelarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarAgruparOrdenarEDITAR.UseVisualStyleBackColor = false;
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.radioButton3);
-            this.groupBox13.Controls.Add(this.radioButton4);
+            this.groupBox13.Controls.Add(this.rdbdescEDITAR);
+            this.groupBox13.Controls.Add(this.rdbAscEDITAR);
             this.groupBox13.Location = new System.Drawing.Point(251, 19);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(113, 53);
@@ -903,45 +887,45 @@ namespace consultas_inteligentes
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Ordenamiento";
             // 
-            // radioButton3
+            // rdbdescEDITAR
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 19);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(50, 17);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Desc";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbdescEDITAR.AutoSize = true;
+            this.rdbdescEDITAR.Location = new System.Drawing.Point(6, 19);
+            this.rdbdescEDITAR.Name = "rdbdescEDITAR";
+            this.rdbdescEDITAR.Size = new System.Drawing.Size(50, 17);
+            this.rdbdescEDITAR.TabIndex = 1;
+            this.rdbdescEDITAR.TabStop = true;
+            this.rdbdescEDITAR.Text = "Desc";
+            this.rdbdescEDITAR.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rdbAscEDITAR
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(55, 19);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(43, 17);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Asc";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdbAscEDITAR.AutoSize = true;
+            this.rdbAscEDITAR.Location = new System.Drawing.Point(55, 19);
+            this.rdbAscEDITAR.Name = "rdbAscEDITAR";
+            this.rdbAscEDITAR.Size = new System.Drawing.Size(43, 17);
+            this.rdbAscEDITAR.TabIndex = 0;
+            this.rdbAscEDITAR.TabStop = true;
+            this.rdbAscEDITAR.Text = "Asc";
+            this.rdbAscEDITAR.UseVisualStyleBackColor = true;
             // 
-            // comboBox16
+            // cboAgruparEDITAR
             // 
-            this.comboBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(107, 23);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(100, 21);
-            this.comboBox16.TabIndex = 18;
+            this.cboAgruparEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboAgruparEDITAR.FormattingEnabled = true;
+            this.cboAgruparEDITAR.Location = new System.Drawing.Point(107, 23);
+            this.cboAgruparEDITAR.Name = "cboAgruparEDITAR";
+            this.cboAgruparEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboAgruparEDITAR.TabIndex = 18;
             // 
-            // comboBox17
+            // cboCampoAgruparEDITAR
             // 
-            this.comboBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(107, 50);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(100, 21);
-            this.comboBox17.TabIndex = 17;
+            this.cboCampoAgruparEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampoAgruparEDITAR.FormattingEnabled = true;
+            this.cboCampoAgruparEDITAR.Location = new System.Drawing.Point(107, 50);
+            this.cboCampoAgruparEDITAR.Name = "cboCampoAgruparEDITAR";
+            this.cboCampoAgruparEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboCampoAgruparEDITAR.TabIndex = 17;
             // 
             // label29
             // 
@@ -974,11 +958,11 @@ namespace consultas_inteligentes
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.button19);
-            this.groupBox11.Controls.Add(this.textBox11);
-            this.groupBox11.Controls.Add(this.button18);
-            this.groupBox11.Controls.Add(this.comboBox14);
-            this.groupBox11.Controls.Add(this.comboBox15);
+            this.groupBox11.Controls.Add(this.txtcancelarComparacionEDITAR);
+            this.groupBox11.Controls.Add(this.txtValorComparacionEDITAR);
+            this.groupBox11.Controls.Add(this.txtAgregarComparacionEDITAR);
+            this.groupBox11.Controls.Add(this.cboTipoComparadorEDITAR);
+            this.groupBox11.Controls.Add(this.cboCampoEDITAR);
             this.groupBox11.Controls.Add(this.label28);
             this.groupBox11.Controls.Add(this.label26);
             this.groupBox11.Controls.Add(this.label27);
@@ -989,55 +973,55 @@ namespace consultas_inteligentes
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Comparación";
             // 
-            // button19
+            // txtcancelarComparacionEDITAR
             // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(229, 49);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(82, 23);
-            this.button19.TabIndex = 19;
-            this.button19.Text = "Cancelar";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button19.UseVisualStyleBackColor = false;
+            this.txtcancelarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.txtcancelarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtcancelarComparacionEDITAR.Location = new System.Drawing.Point(229, 49);
+            this.txtcancelarComparacionEDITAR.Name = "txtcancelarComparacionEDITAR";
+            this.txtcancelarComparacionEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.txtcancelarComparacionEDITAR.TabIndex = 19;
+            this.txtcancelarComparacionEDITAR.Text = "Cancelar";
+            this.txtcancelarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtcancelarComparacionEDITAR.UseVisualStyleBackColor = false;
             // 
-            // textBox11
+            // txtValorComparacionEDITAR
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox11.Location = new System.Drawing.Point(104, 66);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 18;
+            this.txtValorComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtValorComparacionEDITAR.Location = new System.Drawing.Point(104, 66);
+            this.txtValorComparacionEDITAR.Name = "txtValorComparacionEDITAR";
+            this.txtValorComparacionEDITAR.Size = new System.Drawing.Size(100, 20);
+            this.txtValorComparacionEDITAR.TabIndex = 18;
             // 
-            // button18
+            // txtAgregarComparacionEDITAR
             // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(229, 17);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(82, 23);
-            this.button18.TabIndex = 20;
-            this.button18.Text = "Agregar";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button18.UseVisualStyleBackColor = false;
+            this.txtAgregarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.txtAgregarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtAgregarComparacionEDITAR.Location = new System.Drawing.Point(229, 17);
+            this.txtAgregarComparacionEDITAR.Name = "txtAgregarComparacionEDITAR";
+            this.txtAgregarComparacionEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.txtAgregarComparacionEDITAR.TabIndex = 20;
+            this.txtAgregarComparacionEDITAR.Text = "Agregar";
+            this.txtAgregarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtAgregarComparacionEDITAR.UseVisualStyleBackColor = false;
             // 
-            // comboBox14
+            // cboTipoComparadorEDITAR
             // 
-            this.comboBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(123, 14);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(100, 21);
-            this.comboBox14.TabIndex = 17;
+            this.cboTipoComparadorEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboTipoComparadorEDITAR.FormattingEnabled = true;
+            this.cboTipoComparadorEDITAR.Location = new System.Drawing.Point(123, 14);
+            this.cboTipoComparadorEDITAR.Name = "cboTipoComparadorEDITAR";
+            this.cboTipoComparadorEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboTipoComparadorEDITAR.TabIndex = 17;
             // 
-            // comboBox15
+            // cboCampoEDITAR
             // 
-            this.comboBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(123, 41);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(100, 21);
-            this.comboBox15.TabIndex = 16;
+            this.cboCampoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampoEDITAR.FormattingEnabled = true;
+            this.cboCampoEDITAR.Location = new System.Drawing.Point(123, 41);
+            this.cboCampoEDITAR.Name = "cboCampoEDITAR";
+            this.cboCampoEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboCampoEDITAR.TabIndex = 16;
             // 
             // label28
             // 
@@ -1068,11 +1052,11 @@ namespace consultas_inteligentes
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.button17);
-            this.groupBox10.Controls.Add(this.button16);
-            this.groupBox10.Controls.Add(this.textBox10);
-            this.groupBox10.Controls.Add(this.comboBox13);
-            this.groupBox10.Controls.Add(this.comboBox12);
+            this.groupBox10.Controls.Add(this.btnCancelarCONSULTACOMPLEJAEDITAR);
+            this.groupBox10.Controls.Add(this.btnagregarCONSULTACOMPLEJAEDITAR);
+            this.groupBox10.Controls.Add(this.txtvalorConsultaComplejaEDITAR);
+            this.groupBox10.Controls.Add(this.cboCampoConsultaComplejaEDITAR);
+            this.groupBox10.Controls.Add(this.cboOperadorLogicoEDITAR);
             this.groupBox10.Controls.Add(this.label25);
             this.groupBox10.Controls.Add(this.label24);
             this.groupBox10.Controls.Add(this.label23);
@@ -1083,55 +1067,55 @@ namespace consultas_inteligentes
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Logica";
             // 
-            // button17
+            // btnCancelarCONSULTACOMPLEJAEDITAR
             // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(241, 64);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(82, 23);
-            this.button17.TabIndex = 20;
-            this.button17.Text = "Cancelar";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(241, 64);
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Name = "btnCancelarCONSULTACOMPLEJAEDITAR";
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.TabIndex = 20;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Text = "Cancelar";
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // btnagregarCONSULTACOMPLEJAEDITAR
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(241, 22);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(82, 23);
-            this.button16.TabIndex = 21;
-            this.button16.Text = "Agregar";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnagregarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(241, 22);
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Name = "btnagregarCONSULTACOMPLEJAEDITAR";
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnagregarCONSULTACOMPLEJAEDITAR.TabIndex = 21;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Text = "Agregar";
+            this.btnagregarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.UseVisualStyleBackColor = false;
             // 
-            // textBox10
+            // txtvalorConsultaComplejaEDITAR
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox10.Location = new System.Drawing.Point(126, 73);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 19;
+            this.txtvalorConsultaComplejaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtvalorConsultaComplejaEDITAR.Location = new System.Drawing.Point(126, 73);
+            this.txtvalorConsultaComplejaEDITAR.Name = "txtvalorConsultaComplejaEDITAR";
+            this.txtvalorConsultaComplejaEDITAR.Size = new System.Drawing.Size(100, 20);
+            this.txtvalorConsultaComplejaEDITAR.TabIndex = 19;
             // 
-            // comboBox13
+            // cboCampoConsultaComplejaEDITAR
             // 
-            this.comboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(101, 49);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(100, 21);
-            this.comboBox13.TabIndex = 17;
+            this.cboCampoConsultaComplejaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCampoConsultaComplejaEDITAR.FormattingEnabled = true;
+            this.cboCampoConsultaComplejaEDITAR.Location = new System.Drawing.Point(101, 49);
+            this.cboCampoConsultaComplejaEDITAR.Name = "cboCampoConsultaComplejaEDITAR";
+            this.cboCampoConsultaComplejaEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboCampoConsultaComplejaEDITAR.TabIndex = 17;
             // 
-            // comboBox12
+            // cboOperadorLogicoEDITAR
             // 
-            this.comboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(101, 22);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(100, 21);
-            this.comboBox12.TabIndex = 18;
+            this.cboOperadorLogicoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboOperadorLogicoEDITAR.FormattingEnabled = true;
+            this.cboOperadorLogicoEDITAR.Location = new System.Drawing.Point(101, 22);
+            this.cboOperadorLogicoEDITAR.Name = "cboOperadorLogicoEDITAR";
+            this.cboOperadorLogicoEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboOperadorLogicoEDITAR.TabIndex = 18;
             // 
             // label25
             // 
@@ -1160,25 +1144,25 @@ namespace consultas_inteligentes
             this.label23.TabIndex = 7;
             this.label23.Text = "Operador logico";
             // 
-            // textBox7
+            // txtnomConsultaEDITAR
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox7.Location = new System.Drawing.Point(305, 12);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(186, 20);
-            this.textBox7.TabIndex = 17;
+            this.txtnomConsultaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtnomConsultaEDITAR.Location = new System.Drawing.Point(305, 12);
+            this.txtnomConsultaEDITAR.Name = "txtnomConsultaEDITAR";
+            this.txtnomConsultaEDITAR.Size = new System.Drawing.Size(186, 20);
+            this.txtnomConsultaEDITAR.TabIndex = 17;
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox9);
+            this.groupBox8.Controls.Add(this.dgvNombreConsultaCONSULTASIMPLE);
+            this.groupBox8.Controls.Add(this.txtNombreRepresentativoEDITAR);
             this.groupBox8.Controls.Add(this.label18);
-            this.groupBox8.Controls.Add(this.comboBox10);
-            this.groupBox8.Controls.Add(this.comboBox11);
-            this.groupBox8.Controls.Add(this.button14);
-            this.groupBox8.Controls.Add(this.listView2);
-            this.groupBox8.Controls.Add(this.button15);
-            this.groupBox8.Controls.Add(this.textBox8);
-            this.groupBox8.Controls.Add(this.checkBox2);
+            this.groupBox8.Controls.Add(this.cboTablaConsultaSimple);
+            this.groupBox8.Controls.Add(this.cboCamposEDITAR);
+            this.groupBox8.Controls.Add(this.btnAgregarCONSULTASIMPLE);
+            this.groupBox8.Controls.Add(this.btnCancelarCONSULTASIMPLE);
+            this.groupBox8.Controls.Add(this.txtTablaConsultaSimple);
+            this.groupBox8.Controls.Add(this.chkSelectTodosConsultaSimple);
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
             this.groupBox8.Controls.Add(this.label21);
@@ -1190,13 +1174,13 @@ namespace consultas_inteligentes
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Consulta Simple";
             // 
-            // textBox9
+            // txtNombreRepresentativoEDITAR
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox9.Location = new System.Drawing.Point(144, 101);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 18;
+            this.txtNombreRepresentativoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtNombreRepresentativoEDITAR.Location = new System.Drawing.Point(144, 101);
+            this.txtNombreRepresentativoEDITAR.Name = "txtNombreRepresentativoEDITAR";
+            this.txtNombreRepresentativoEDITAR.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreRepresentativoEDITAR.TabIndex = 18;
             // 
             // label18
             // 
@@ -1207,75 +1191,65 @@ namespace consultas_inteligentes
             this.label18.TabIndex = 17;
             this.label18.Text = "Tabla";
             // 
-            // comboBox10
+            // cboTablaConsultaSimple
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(132, 47);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(100, 21);
-            this.comboBox10.TabIndex = 16;
+            this.cboTablaConsultaSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboTablaConsultaSimple.FormattingEnabled = true;
+            this.cboTablaConsultaSimple.Location = new System.Drawing.Point(132, 47);
+            this.cboTablaConsultaSimple.Name = "cboTablaConsultaSimple";
+            this.cboTablaConsultaSimple.Size = new System.Drawing.Size(100, 21);
+            this.cboTablaConsultaSimple.TabIndex = 16;
             // 
-            // comboBox11
+            // cboCamposEDITAR
             // 
-            this.comboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(132, 74);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(100, 21);
-            this.comboBox11.TabIndex = 15;
+            this.cboCamposEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboCamposEDITAR.FormattingEnabled = true;
+            this.cboCamposEDITAR.Location = new System.Drawing.Point(132, 74);
+            this.cboCamposEDITAR.Name = "cboCamposEDITAR";
+            this.cboCamposEDITAR.Size = new System.Drawing.Size(100, 21);
+            this.cboCamposEDITAR.TabIndex = 15;
             // 
-            // button14
+            // btnAgregarCONSULTASIMPLE
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(132, 142);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 13;
-            this.button14.Text = "Agregar";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnAgregarCONSULTASIMPLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCONSULTASIMPLE.Location = new System.Drawing.Point(132, 142);
+            this.btnAgregarCONSULTASIMPLE.Name = "btnAgregarCONSULTASIMPLE";
+            this.btnAgregarCONSULTASIMPLE.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarCONSULTASIMPLE.TabIndex = 13;
+            this.btnAgregarCONSULTASIMPLE.Text = "Agregar";
+            this.btnAgregarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarCONSULTASIMPLE.UseVisualStyleBackColor = false;
             // 
-            // listView2
+            // btnCancelarCONSULTASIMPLE
             // 
-            this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(370, 47);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(222, 86);
-            this.listView2.TabIndex = 12;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.btnCancelarCONSULTASIMPLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarCONSULTASIMPLE.Location = new System.Drawing.Point(385, 139);
+            this.btnCancelarCONSULTASIMPLE.Name = "btnCancelarCONSULTASIMPLE";
+            this.btnCancelarCONSULTASIMPLE.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarCONSULTASIMPLE.TabIndex = 9;
+            this.btnCancelarCONSULTASIMPLE.Text = "Cancelar";
+            this.btnCancelarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCONSULTASIMPLE.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // txtTablaConsultaSimple
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(385, 139);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(82, 23);
-            this.button15.TabIndex = 9;
-            this.button15.Text = "Cancelar";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button15.UseVisualStyleBackColor = false;
+            this.txtTablaConsultaSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtTablaConsultaSimple.Location = new System.Drawing.Point(132, 21);
+            this.txtTablaConsultaSimple.Name = "txtTablaConsultaSimple";
+            this.txtTablaConsultaSimple.Size = new System.Drawing.Size(100, 20);
+            this.txtTablaConsultaSimple.TabIndex = 5;
             // 
-            // textBox8
+            // chkSelectTodosConsultaSimple
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox8.Location = new System.Drawing.Point(132, 21);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 5;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(238, 52);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(111, 17);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Seleccionar todos";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkSelectTodosConsultaSimple.AutoSize = true;
+            this.chkSelectTodosConsultaSimple.Location = new System.Drawing.Point(238, 52);
+            this.chkSelectTodosConsultaSimple.Name = "chkSelectTodosConsultaSimple";
+            this.chkSelectTodosConsultaSimple.Size = new System.Drawing.Size(111, 17);
+            this.chkSelectTodosConsultaSimple.TabIndex = 4;
+            this.chkSelectTodosConsultaSimple.Text = "Seleccionar todos";
+            this.chkSelectTodosConsultaSimple.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
@@ -1322,27 +1296,27 @@ namespace consultas_inteligentes
             this.label17.TabIndex = 8;
             this.label17.Text = "Nombre de consulta";
             // 
-            // button13
+            // btnBuscarEDITAR
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.Location = new System.Drawing.Point(498, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 54);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Buscar";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnBuscarEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnBuscarEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuscarEDITAR.Location = new System.Drawing.Point(498, 3);
+            this.btnBuscarEDITAR.Name = "btnBuscarEDITAR";
+            this.btnBuscarEDITAR.Size = new System.Drawing.Size(75, 54);
+            this.btnBuscarEDITAR.TabIndex = 14;
+            this.btnBuscarEDITAR.Text = "Buscar";
+            this.btnBuscarEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscarEDITAR.UseVisualStyleBackColor = false;
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
-            this.tabPage4.Controls.Add(this.button27);
-            this.tabPage4.Controls.Add(this.button26);
-            this.tabPage4.Controls.Add(this.button25);
-            this.tabPage4.Controls.Add(this.button24);
-            this.tabPage4.Controls.Add(this.dataGridView2);
-            this.tabPage4.Controls.Add(this.textBox13);
+            this.tabPage4.Controls.Add(this.btnConsultaBUSCARyELIMINAR);
+            this.tabPage4.Controls.Add(this.btnEliminarBUSCARyELIMINAR);
+            this.tabPage4.Controls.Add(this.btnActualizarBUSCARyELIMINAR);
+            this.tabPage4.Controls.Add(this.btnBuscarBUSCARyELIMINAR);
+            this.tabPage4.Controls.Add(this.dgvBUSCARyELIMINAR);
+            this.tabPage4.Controls.Add(this.txtNombreConsultaBUSCARyELIMINAR);
             this.tabPage4.Controls.Add(this.label32);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -1352,70 +1326,70 @@ namespace consultas_inteligentes
             this.tabPage4.Text = "Buscar/Eliminar";
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // button27
+            // btnConsultaBUSCARyELIMINAR
             // 
-            this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button27.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button27.Location = new System.Drawing.Point(662, 6);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(82, 59);
-            this.button27.TabIndex = 31;
-            this.button27.Text = "Consultar";
-            this.button27.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button27.UseVisualStyleBackColor = false;
+            this.btnConsultaBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnConsultaBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnConsultaBUSCARyELIMINAR.Location = new System.Drawing.Point(662, 6);
+            this.btnConsultaBUSCARyELIMINAR.Name = "btnConsultaBUSCARyELIMINAR";
+            this.btnConsultaBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 59);
+            this.btnConsultaBUSCARyELIMINAR.TabIndex = 31;
+            this.btnConsultaBUSCARyELIMINAR.Text = "Consultar";
+            this.btnConsultaBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnConsultaBUSCARyELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // btnEliminarBUSCARyELIMINAR
             // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button26.Location = new System.Drawing.Point(574, 6);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(82, 59);
-            this.button26.TabIndex = 30;
-            this.button26.Text = "Eliminar";
-            this.button26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button26.UseVisualStyleBackColor = false;
+            this.btnEliminarBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnEliminarBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEliminarBUSCARyELIMINAR.Location = new System.Drawing.Point(574, 6);
+            this.btnEliminarBUSCARyELIMINAR.Name = "btnEliminarBUSCARyELIMINAR";
+            this.btnEliminarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 59);
+            this.btnEliminarBUSCARyELIMINAR.TabIndex = 30;
+            this.btnEliminarBUSCARyELIMINAR.Text = "Eliminar";
+            this.btnEliminarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEliminarBUSCARyELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // button25
+            // btnActualizarBUSCARyELIMINAR
             // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button25.Location = new System.Drawing.Point(486, 6);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(82, 59);
-            this.button25.TabIndex = 29;
-            this.button25.Text = "Actualizar";
-            this.button25.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button25.UseVisualStyleBackColor = false;
+            this.btnActualizarBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnActualizarBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnActualizarBUSCARyELIMINAR.Location = new System.Drawing.Point(486, 6);
+            this.btnActualizarBUSCARyELIMINAR.Name = "btnActualizarBUSCARyELIMINAR";
+            this.btnActualizarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 59);
+            this.btnActualizarBUSCARyELIMINAR.TabIndex = 29;
+            this.btnActualizarBUSCARyELIMINAR.Text = "Actualizar";
+            this.btnActualizarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnActualizarBUSCARyELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // btnBuscarBUSCARyELIMINAR
             // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button24.Location = new System.Drawing.Point(398, 6);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(82, 59);
-            this.button24.TabIndex = 28;
-            this.button24.Text = "Buscar";
-            this.button24.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button24.UseVisualStyleBackColor = false;
+            this.btnBuscarBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnBuscarBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuscarBUSCARyELIMINAR.Location = new System.Drawing.Point(398, 6);
+            this.btnBuscarBUSCARyELIMINAR.Name = "btnBuscarBUSCARyELIMINAR";
+            this.btnBuscarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 59);
+            this.btnBuscarBUSCARyELIMINAR.TabIndex = 28;
+            this.btnBuscarBUSCARyELIMINAR.Text = "Buscar";
+            this.btnBuscarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscarBUSCARyELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dgvBUSCARyELIMINAR
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(128)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(26, 71);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(718, 277);
-            this.dataGridView2.TabIndex = 2;
+            this.dgvBUSCARyELIMINAR.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(128)))));
+            this.dgvBUSCARyELIMINAR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBUSCARyELIMINAR.Location = new System.Drawing.Point(26, 71);
+            this.dgvBUSCARyELIMINAR.Name = "dgvBUSCARyELIMINAR";
+            this.dgvBUSCARyELIMINAR.Size = new System.Drawing.Size(718, 277);
+            this.dgvBUSCARyELIMINAR.TabIndex = 2;
             // 
-            // textBox13
+            // txtNombreConsultaBUSCARyELIMINAR
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.textBox13.Location = new System.Drawing.Point(148, 31);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(244, 20);
-            this.textBox13.TabIndex = 1;
+            this.txtNombreConsultaBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtNombreConsultaBUSCARyELIMINAR.Location = new System.Drawing.Point(148, 31);
+            this.txtNombreConsultaBUSCARyELIMINAR.Name = "txtNombreConsultaBUSCARyELIMINAR";
+            this.txtNombreConsultaBUSCARyELIMINAR.Size = new System.Drawing.Size(244, 20);
+            this.txtNombreConsultaBUSCARyELIMINAR.TabIndex = 1;
             // 
             // label32
             // 
@@ -1425,6 +1399,30 @@ namespace consultas_inteligentes
             this.label32.Size = new System.Drawing.Size(87, 13);
             this.label32.TabIndex = 0;
             this.label32.Text = "Nombre consulta";
+            // 
+            // dgvCamposSeleccionados
+            // 
+            this.dgvCamposSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCamposSeleccionados.Location = new System.Drawing.Point(399, 47);
+            this.dgvCamposSeleccionados.Name = "dgvCamposSeleccionados";
+            this.dgvCamposSeleccionados.Size = new System.Drawing.Size(262, 88);
+            this.dgvCamposSeleccionados.TabIndex = 18;
+            // 
+            // dgvNombreConsultaCONSULTASIMPLE
+            // 
+            this.dgvNombreConsultaCONSULTASIMPLE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNombreConsultaCONSULTASIMPLE.Location = new System.Drawing.Point(385, 41);
+            this.dgvNombreConsultaCONSULTASIMPLE.Name = "dgvNombreConsultaCONSULTASIMPLE";
+            this.dgvNombreConsultaCONSULTASIMPLE.Size = new System.Drawing.Size(265, 76);
+            this.dgvNombreConsultaCONSULTASIMPLE.TabIndex = 19;
+            // 
+            // txtNombreConsulta
+            // 
+            this.txtNombreConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtNombreConsulta.Location = new System.Drawing.Point(132, 21);
+            this.txtNombreConsulta.Name = "txtNombreConsulta";
+            this.txtNombreConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreConsulta.TabIndex = 19;
             // 
             // Form1
             // 
@@ -1438,19 +1436,19 @@ namespace consultas_inteligentes
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.gpbAgruparUOrdenar.ResumeLayout(false);
+            this.gpbAgruparUOrdenar.PerformLayout();
+            this.gpbOrdenamiento.ResumeLayout(false);
+            this.gpbOrdenamiento.PerformLayout();
+            this.gpbConsultaCompleja.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpbConsultaSimple.ResumeLayout(false);
+            this.gpbConsultaSimple.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCONSULTAS)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1468,7 +1466,9 @@ namespace consultas_inteligentes
             this.groupBox8.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBUSCARyELIMINAR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCamposSeleccionados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNombreConsultaCONSULTASIMPLE)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1480,118 +1480,118 @@ namespace consultas_inteligentes
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox gpbConsultaSimple;
+        private System.Windows.Forms.TextBox txtAlias;
+        private System.Windows.Forms.ComboBox cboCampos;
+        private System.Windows.Forms.ComboBox cmoTabla;
+        private System.Windows.Forms.Button btnCancelarCamposSeleccionados;
+        private System.Windows.Forms.Button btnAgregarCamposSeleccionados;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkSelectTodos;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.GroupBox gpbAgruparUOrdenar;
+        private System.Windows.Forms.ComboBox cboCampoAgruparOrdenar;
+        private System.Windows.Forms.ComboBox cboAgruparOrdenar;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gpbConsultaCompleja;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Button btnCancelarComparacion;
+        private System.Windows.Forms.Button btnAgregarComparacion;
+        private System.Windows.Forms.TextBox txtValorComparacion;
+        private System.Windows.Forms.ComboBox cboCampoComparacion;
+        private System.Windows.Forms.ComboBox cboTipoComparador;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button btnCancelarConsultaCompleja;
+        private System.Windows.Forms.Button btnAgregarConsultaCompleja;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.ComboBox cboCampoLogica;
+        private System.Windows.Forms.ComboBox cboOperadorLogico;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button btnCancelarAgruparOrdenar;
+        private System.Windows.Forms.Button btnAgregarAgruparordenar;
+        private System.Windows.Forms.GroupBox gpbOrdenamiento;
+        private System.Windows.Forms.RadioButton rdbAsc;
+        private System.Windows.Forms.RadioButton rdbDesc;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCadenaGenerada;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCONSULTAS;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.Button btnBuscarCONSULTAS;
+        private System.Windows.Forms.TextBox txtCadenaGeneradaCONSULTAS;
+        private System.Windows.Forms.ComboBox cboQuery;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtnomConsultaEDITAR;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNombreRepresentativoEDITAR;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ComboBox cboTablaConsultaSimple;
+        private System.Windows.Forms.ComboBox cboCamposEDITAR;
+        private System.Windows.Forms.Button btnAgregarCONSULTASIMPLE;
+        private System.Windows.Forms.Button btnCancelarCONSULTASIMPLE;
+        private System.Windows.Forms.TextBox txtTablaConsultaSimple;
+        private System.Windows.Forms.CheckBox chkSelectTodosConsultaSimple;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnBuscarEDITAR;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtCadenaGeneradaEDITAR;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button btnAgregarAgruparOrdenarEDITAR;
+        private System.Windows.Forms.Button btnCancelarAgruparOrdenarEDITAR;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.RadioButton rdbdescEDITAR;
+        private System.Windows.Forms.RadioButton rdbAscEDITAR;
+        private System.Windows.Forms.ComboBox cboAgruparEDITAR;
+        private System.Windows.Forms.ComboBox cboCampoAgruparEDITAR;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.Button txtcancelarComparacionEDITAR;
+        private System.Windows.Forms.TextBox txtValorComparacionEDITAR;
+        private System.Windows.Forms.Button txtAgregarComparacionEDITAR;
+        private System.Windows.Forms.ComboBox cboTipoComparadorEDITAR;
+        private System.Windows.Forms.ComboBox cboCampoEDITAR;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.Button btnCancelarCONSULTACOMPLEJAEDITAR;
+        private System.Windows.Forms.Button btnagregarCONSULTACOMPLEJAEDITAR;
+        private System.Windows.Forms.TextBox txtvalorConsultaComplejaEDITAR;
+        private System.Windows.Forms.ComboBox cboCampoConsultaComplejaEDITAR;
+        private System.Windows.Forms.ComboBox cboOperadorLogicoEDITAR;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button btnConsultaBUSCARyELIMINAR;
+        private System.Windows.Forms.Button btnEliminarBUSCARyELIMINAR;
+        private System.Windows.Forms.Button btnActualizarBUSCARyELIMINAR;
+        private System.Windows.Forms.Button btnBuscarBUSCARyELIMINAR;
+        private System.Windows.Forms.DataGridView dgvBUSCARyELIMINAR;
+        private System.Windows.Forms.TextBox txtNombreConsultaBUSCARyELIMINAR;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtNombreConsulta;
+        private System.Windows.Forms.DataGridView dgvCamposSeleccionados;
+        private System.Windows.Forms.DataGridView dgvNombreConsultaCONSULTASIMPLE;
     }
 }
 
