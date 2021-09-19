@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace consultas_inteligentes.Properties
+namespace compras_y_cuentas_por_pagar.Properties
 {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
