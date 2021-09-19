@@ -64,6 +64,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.gpbConsultaSimple = new System.Windows.Forms.GroupBox();
+            this.combo1 = new CapaVista.Combo();
+            this.txtNombreConsulta = new System.Windows.Forms.TextBox();
+            this.dgvCamposSeleccionados = new System.Windows.Forms.DataGridView();
             this.txtAlias = new System.Windows.Forms.TextBox();
             this.cboCampos = new System.Windows.Forms.ComboBox();
             this.cmoTabla = new System.Windows.Forms.ComboBox();
@@ -120,6 +123,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.txtnomConsultaEDITAR = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.dgvNombreConsultaCONSULTASIMPLE = new System.Windows.Forms.DataGridView();
             this.txtNombreRepresentativoEDITAR = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.cboTablaConsultaSimple = new System.Windows.Forms.ComboBox();
@@ -142,9 +146,9 @@
             this.dgvBUSCARyELIMINAR = new System.Windows.Forms.DataGridView();
             this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.dgvCamposSeleccionados = new System.Windows.Forms.DataGridView();
-            this.dgvNombreConsultaCONSULTASIMPLE = new System.Windows.Forms.DataGridView();
-            this.txtNombreConsulta = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpbAgruparUOrdenar.SuspendLayout();
@@ -153,6 +157,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gpbConsultaSimple.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCamposSeleccionados)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCONSULTAS)).BeginInit();
             this.groupBox7.SuspendLayout();
@@ -163,10 +168,9 @@
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNombreConsultaCONSULTASIMPLE)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBUSCARyELIMINAR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCamposSeleccionados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNombreConsultaCONSULTASIMPLE)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -550,6 +554,7 @@
             // 
             // gpbConsultaSimple
             // 
+            this.gpbConsultaSimple.Controls.Add(this.combo1);
             this.gpbConsultaSimple.Controls.Add(this.txtNombreConsulta);
             this.gpbConsultaSimple.Controls.Add(this.dgvCamposSeleccionados);
             this.gpbConsultaSimple.Controls.Add(this.txtAlias);
@@ -571,6 +576,37 @@
             this.gpbConsultaSimple.TabStop = false;
             this.gpbConsultaSimple.Text = "Consulta Simple";
             this.gpbConsultaSimple.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // combo1
+            // 
+            this.combo1.Location = new System.Drawing.Point(124, 19);
+            this.combo1.Name = "combo1";
+            this.combo1.Size = new System.Drawing.Size(155, 30);
+            this.combo1.TabIndex = 20;
+            // 
+            // txtNombreConsulta
+            // 
+            this.txtNombreConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.txtNombreConsulta.Location = new System.Drawing.Point(132, 21);
+            this.txtNombreConsulta.Name = "txtNombreConsulta";
+            this.txtNombreConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreConsulta.TabIndex = 19;
+            // 
+            // dgvCamposSeleccionados
+            // 
+            this.dgvCamposSeleccionados.AllowUserToAddRows = false;
+            this.dgvCamposSeleccionados.AllowUserToDeleteRows = false;
+            this.dgvCamposSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCamposSeleccionados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.dgvCamposSeleccionados.Location = new System.Drawing.Point(399, 47);
+            this.dgvCamposSeleccionados.Name = "dgvCamposSeleccionados";
+            this.dgvCamposSeleccionados.ReadOnly = true;
+            this.dgvCamposSeleccionados.Size = new System.Drawing.Size(262, 88);
+            this.dgvCamposSeleccionados.TabIndex = 18;
+            this.dgvCamposSeleccionados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCamposSeleccionados_CellContentClick);
             // 
             // txtAlias
             // 
@@ -621,6 +657,7 @@
             this.btnAgregarCamposSeleccionados.Text = "Agregar";
             this.btnAgregarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarCamposSeleccionados.UseVisualStyleBackColor = false;
+            this.btnAgregarCamposSeleccionados.Click += new System.EventHandler(this.btnAgregarCamposSeleccionados_Click);
             // 
             // btnAgregar
             // 
@@ -1173,6 +1210,14 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Consulta Simple";
             // 
+            // dgvNombreConsultaCONSULTASIMPLE
+            // 
+            this.dgvNombreConsultaCONSULTASIMPLE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNombreConsultaCONSULTASIMPLE.Location = new System.Drawing.Point(385, 41);
+            this.dgvNombreConsultaCONSULTASIMPLE.Name = "dgvNombreConsultaCONSULTASIMPLE";
+            this.dgvNombreConsultaCONSULTASIMPLE.Size = new System.Drawing.Size(265, 76);
+            this.dgvNombreConsultaCONSULTASIMPLE.TabIndex = 19;
+            // 
             // txtNombreRepresentativoEDITAR
             // 
             this.txtNombreRepresentativoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
@@ -1399,29 +1444,23 @@
             this.label32.TabIndex = 0;
             this.label32.Text = "Nombre consulta";
             // 
-            // dgvCamposSeleccionados
+            // Column1
             // 
-            this.dgvCamposSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCamposSeleccionados.Location = new System.Drawing.Point(399, 47);
-            this.dgvCamposSeleccionados.Name = "dgvCamposSeleccionados";
-            this.dgvCamposSeleccionados.Size = new System.Drawing.Size(262, 88);
-            this.dgvCamposSeleccionados.TabIndex = 18;
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // dgvNombreConsultaCONSULTASIMPLE
+            // Column2
             // 
-            this.dgvNombreConsultaCONSULTASIMPLE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNombreConsultaCONSULTASIMPLE.Location = new System.Drawing.Point(385, 41);
-            this.dgvNombreConsultaCONSULTASIMPLE.Name = "dgvNombreConsultaCONSULTASIMPLE";
-            this.dgvNombreConsultaCONSULTASIMPLE.Size = new System.Drawing.Size(265, 76);
-            this.dgvNombreConsultaCONSULTASIMPLE.TabIndex = 19;
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
-            // txtNombreConsulta
+            // Column3
             // 
-            this.txtNombreConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtNombreConsulta.Location = new System.Drawing.Point(132, 21);
-            this.txtNombreConsulta.Name = "txtNombreConsulta";
-            this.txtNombreConsulta.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreConsulta.TabIndex = 19;
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Form1
             // 
@@ -1446,6 +1485,7 @@
             this.groupBox3.PerformLayout();
             this.gpbConsultaSimple.ResumeLayout(false);
             this.gpbConsultaSimple.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCamposSeleccionados)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCONSULTAS)).EndInit();
             this.groupBox7.ResumeLayout(false);
@@ -1463,11 +1503,10 @@
             this.groupBox10.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNombreConsultaCONSULTASIMPLE)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBUSCARyELIMINAR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCamposSeleccionados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNombreConsultaCONSULTASIMPLE)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1591,5 +1630,9 @@
         private System.Windows.Forms.TextBox txtNombreConsulta;
         private System.Windows.Forms.DataGridView dgvCamposSeleccionados;
         private System.Windows.Forms.DataGridView dgvNombreConsultaCONSULTASIMPLE;
+        private Combo combo1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
