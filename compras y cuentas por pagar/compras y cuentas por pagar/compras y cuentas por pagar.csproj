@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9BE6349-6BBE-4EDE-BF92-3A5B140F953D}</ProjectGuid>
+    <ProjectGuid>{FEBD9B6C-9F6C-4D2F-B744-7CD7943CC3AC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>consultas_inteligentes</RootNamespace>
-    <AssemblyName>consultas inteligentes</AssemblyName>
+    <RootNamespace>compras_y_cuentas_por_pagar</RootNamespace>
+    <AssemblyName>compras y cuentas por pagar</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
