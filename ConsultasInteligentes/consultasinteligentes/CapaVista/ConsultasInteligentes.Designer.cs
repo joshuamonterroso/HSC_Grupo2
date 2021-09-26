@@ -37,6 +37,7 @@ namespace CapaVista
             this.btnAgregarComparacion = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
+            this.cboTabla = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.gpbAgruparUOrdenar = new System.Windows.Forms.GroupBox();
             this.btnCancelarAgruparOrdenar = new System.Windows.Forms.Button();
@@ -69,12 +70,12 @@ namespace CapaVista
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.gpbConsultaSimple = new System.Windows.Forms.GroupBox();
+            this.cbotablas = new System.Windows.Forms.ComboBox();
             this.valortabla = new System.Windows.Forms.TextBox();
             this.txtcamposelectos = new System.Windows.Forms.TextBox();
             this.txtNombreConsulta = new System.Windows.Forms.TextBox();
             this.txtAlias = new System.Windows.Forms.TextBox();
             this.cboCampos = new System.Windows.Forms.ComboBox();
-            this.cboTabla = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelarCamposSeleccionados = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -154,7 +155,6 @@ namespace CapaVista
             this.dgvBUSCARyELIMINAR = new System.Windows.Forms.DataGridView();
             this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.cbotablas = new System.Windows.Forms.ComboBox();
             this.tb1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpbAgruparUOrdenar.SuspendLayout();
@@ -278,6 +278,18 @@ namespace CapaVista
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // cboTabla
+            // 
+            this.cboTabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboTabla.Enabled = false;
+            this.cboTabla.FormattingEnabled = true;
+            this.cboTabla.Location = new System.Drawing.Point(370, 446);
+            this.cboTabla.Name = "cboTabla";
+            this.cboTabla.Size = new System.Drawing.Size(33, 21);
+            this.cboTabla.TabIndex = 15;
+            this.cboTabla.Visible = false;
+            this.cboTabla.SelectedIndexChanged += new System.EventHandler(this.cboTabla_SelectedIndexChanged);
             // 
             // button10
             // 
@@ -654,6 +666,15 @@ namespace CapaVista
             this.gpbConsultaSimple.TabStop = false;
             this.gpbConsultaSimple.Text = "Consulta Simple";
             // 
+            // cbotablas
+            // 
+            this.cbotablas.FormattingEnabled = true;
+            this.cbotablas.Location = new System.Drawing.Point(132, 47);
+            this.cbotablas.Name = "cbotablas";
+            this.cbotablas.Size = new System.Drawing.Size(100, 21);
+            this.cbotablas.TabIndex = 38;
+            this.cbotablas.SelectedIndexChanged += new System.EventHandler(this.cbotablas_SelectedIndexChanged);
+            // 
             // valortabla
             // 
             this.valortabla.Enabled = false;
@@ -662,6 +683,7 @@ namespace CapaVista
             this.valortabla.ReadOnly = true;
             this.valortabla.Size = new System.Drawing.Size(100, 20);
             this.valortabla.TabIndex = 21;
+            this.valortabla.Visible = false;
             // 
             // txtcamposelectos
             // 
@@ -696,18 +718,6 @@ namespace CapaVista
             this.cboCampos.Size = new System.Drawing.Size(100, 21);
             this.cboCampos.TabIndex = 16;
             this.cboCampos.SelectedIndexChanged += new System.EventHandler(this.cboCampos_SelectedIndexChanged);
-            // 
-            // cboTabla
-            // 
-            this.cboTabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.cboTabla.Enabled = false;
-            this.cboTabla.FormattingEnabled = true;
-            this.cboTabla.Location = new System.Drawing.Point(370, 446);
-            this.cboTabla.Name = "cboTabla";
-            this.cboTabla.Size = new System.Drawing.Size(33, 21);
-            this.cboTabla.TabIndex = 15;
-            this.cboTabla.Visible = false;
-            this.cboTabla.SelectedIndexChanged += new System.EventHandler(this.cboTabla_SelectedIndexChanged);
             // 
             // btnAgregar
             // 
@@ -1599,15 +1609,6 @@ namespace CapaVista
             this.label32.Size = new System.Drawing.Size(87, 13);
             this.label32.TabIndex = 32;
             this.label32.Text = "Nombre consulta";
-            // 
-            // cbotablas
-            // 
-            this.cbotablas.FormattingEnabled = true;
-            this.cbotablas.Location = new System.Drawing.Point(132, 47);
-            this.cbotablas.Name = "cbotablas";
-            this.cbotablas.Size = new System.Drawing.Size(100, 21);
-            this.cbotablas.TabIndex = 38;
-            this.cbotablas.SelectedIndexChanged += new System.EventHandler(this.cbotablas_SelectedIndexChanged);
             // 
             // ConsultasInteligentes
             // 
