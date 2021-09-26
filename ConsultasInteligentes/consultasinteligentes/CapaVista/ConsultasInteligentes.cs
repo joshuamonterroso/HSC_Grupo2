@@ -394,5 +394,10 @@ namespace CapaVista
             tabPage4.Hide();
             tabPage3.Show();
         }
+
+        private void btnEliminarBUSCARyELIMINAR_Click(object sender, EventArgs e)
+        {
+            cn.ejecutarconsulta(txtNombreConsultaBUSCARyELIMINAR.Text);
+        }
     }
 }

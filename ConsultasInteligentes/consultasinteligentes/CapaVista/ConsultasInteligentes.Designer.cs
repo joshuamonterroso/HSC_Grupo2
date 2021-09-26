@@ -1089,7 +1089,7 @@ namespace CapaVista
             // txtValorComparacionEDITAR
             // 
             this.txtValorComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtValorComparacionEDITAR.Location = new System.Drawing.Point(104, 66);
+            this.txtValorComparacionEDITAR.Location = new System.Drawing.Point(122, 67);
             this.txtValorComparacionEDITAR.Name = "txtValorComparacionEDITAR";
             this.txtValorComparacionEDITAR.Size = new System.Drawing.Size(100, 20);
             this.txtValorComparacionEDITAR.TabIndex = 18;
@@ -1195,7 +1195,7 @@ namespace CapaVista
             // txtvalorConsultaComplejaEDITAR
             // 
             this.txtvalorConsultaComplejaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtvalorConsultaComplejaEDITAR.Location = new System.Drawing.Point(126, 73);
+            this.txtvalorConsultaComplejaEDITAR.Location = new System.Drawing.Point(101, 76);
             this.txtvalorConsultaComplejaEDITAR.Name = "txtvalorConsultaComplejaEDITAR";
             this.txtvalorConsultaComplejaEDITAR.Size = new System.Drawing.Size(100, 20);
             this.txtvalorConsultaComplejaEDITAR.TabIndex = 19;
@@ -1286,7 +1286,7 @@ namespace CapaVista
             // txtNombreRepresentativoEDITAR
             // 
             this.txtNombreRepresentativoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtNombreRepresentativoEDITAR.Location = new System.Drawing.Point(144, 101);
+            this.txtNombreRepresentativoEDITAR.Location = new System.Drawing.Point(132, 101);
             this.txtNombreRepresentativoEDITAR.Name = "txtNombreRepresentativoEDITAR";
             this.txtNombreRepresentativoEDITAR.Size = new System.Drawing.Size(100, 20);
             this.txtNombreRepresentativoEDITAR.TabIndex = 18;
@@ -1458,6 +1458,7 @@ namespace CapaVista
             this.btnEliminarBUSCARyELIMINAR.Text = "Eliminar";
             this.btnEliminarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEliminarBUSCARyELIMINAR.UseVisualStyleBackColor = false;
+            this.btnEliminarBUSCARyELIMINAR.Click += new System.EventHandler(this.btnEliminarBUSCARyELIMINAR_Click);
             // 
             // btnActualizarBUSCARyELIMINAR
             // 

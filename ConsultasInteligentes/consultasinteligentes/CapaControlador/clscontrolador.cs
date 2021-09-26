@@ -67,6 +67,14 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
+
+        public void ejecutarconsulta(string condicion)
+        {
+            string sql = "DELETE FROM registro_consultas where nombre = "+ '"' + condicion + '"'+ ";";
+            Console.WriteLine(sql);
+            sn.insertarconsulta(sql);
+        }
+
     }
 
 }
