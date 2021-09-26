@@ -1445,6 +1445,7 @@ namespace CapaVista
             this.btnConsultaBUSCARyELIMINAR.Text = "Consultar";
             this.btnConsultaBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnConsultaBUSCARyELIMINAR.UseVisualStyleBackColor = false;
+            this.btnConsultaBUSCARyELIMINAR.Click += new System.EventHandler(this.btnConsultaBUSCARyELIMINAR_Click);
             // 
             // btnEliminarBUSCARyELIMINAR
             // 
@@ -1469,6 +1470,7 @@ namespace CapaVista
             this.btnActualizarBUSCARyELIMINAR.Text = "Actualizar";
             this.btnActualizarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnActualizarBUSCARyELIMINAR.UseVisualStyleBackColor = false;
+            this.btnActualizarBUSCARyELIMINAR.Click += new System.EventHandler(this.btnActualizarBUSCARyELIMINAR_Click);
             // 
             // btnBuscarBUSCARyELIMINAR
             // 
@@ -1481,9 +1483,11 @@ namespace CapaVista
             this.btnBuscarBUSCARyELIMINAR.Text = "Buscar";
             this.btnBuscarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBuscarBUSCARyELIMINAR.UseVisualStyleBackColor = false;
+            this.btnBuscarBUSCARyELIMINAR.Click += new System.EventHandler(this.btnBuscarBUSCARyELIMINAR_Click);
             // 
             // dgvBUSCARyELIMINAR
             // 
+            this.dgvBUSCARyELIMINAR.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBUSCARyELIMINAR.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(128)))));
             this.dgvBUSCARyELIMINAR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBUSCARyELIMINAR.Location = new System.Drawing.Point(38, 79);

@@ -63,5 +63,12 @@ namespace CapaModelo
             }
 
         }
+
+        public OdbcDataAdapter llenartb2(string sql) //Metodo que obtiene el contenido de una tabla
+        {
+            OdbcDataAdapter datatable = new OdbcDataAdapter(sql, con.conexion());
+            return datatable;
+        }
+
     }
 }

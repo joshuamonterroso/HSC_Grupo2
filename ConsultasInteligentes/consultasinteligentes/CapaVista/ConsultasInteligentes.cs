@@ -366,5 +366,33 @@ namespace CapaVista
         {
 
         }
+
+        public void actualizaconsultas()
+        {
+            DataTable dt = cn.llenartb2();
+            dgvBUSCARyELIMINAR.DataSource = dt;
+        }
+
+        private void btnConsultaBUSCARyELIMINAR_Click(object sender, EventArgs e)
+        {
+            actualizaconsultas();
+        }
+
+        public void actualizaconsultas2(string condicion)
+        {
+            DataTable dt = cn.llenartb3(condicion);
+            dgvBUSCARyELIMINAR.DataSource = dt;
+        }
+
+        private void btnBuscarBUSCARyELIMINAR_Click(object sender, EventArgs e)
+        {
+            actualizaconsultas2(txtNombreConsultaBUSCARyELIMINAR.Text);
+        }
+
+        private void btnActualizarBUSCARyELIMINAR_Click(object sender, EventArgs e)
+        {
+            tabPage4.Hide();
+            tabPage3.Show();
+        }
     }
 }

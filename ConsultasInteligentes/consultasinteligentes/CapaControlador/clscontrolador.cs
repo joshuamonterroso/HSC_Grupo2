@@ -50,6 +50,23 @@ namespace CapaControlador
             return sn.validarconsulta(sql);
         }
 
+        public DataTable llenartb2()
+        {
+            string consulta = "select * from registro_consultas";
+            OdbcDataAdapter dt = sn.llenartb2(consulta);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public DataTable llenartb3(string condicion)
+        {
+            string consulta = "select * from registro_consultas where nombre= "+ '"' +condicion + '"';
+            OdbcDataAdapter dt = sn.llenartb2(consulta);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
     }
 
 }
