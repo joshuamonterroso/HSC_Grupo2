@@ -29,8 +29,7 @@ namespace CapaVista
 
         private void btnCancelarCamposSeleccionados_Click(object sender, EventArgs e)
         {
-            limpiar();
-            habilitaciones();
+           
         }
         clscontrolador cn = new clscontrolador();
 
@@ -50,11 +49,11 @@ namespace CapaVista
         }
         public void llenarcombo()
         {
-            cboTabla.Items.Clear();
+            cbotablas.Items.Clear();
             OdbcDataReader datareader = cn.llenarcbo();
             while (datareader.Read())
             {
-                cboTabla.Items.Add(datareader[0].ToString());
+                cbotablas.Items.Add(datareader[0].ToString());
             }
         }
 
@@ -97,15 +96,8 @@ namespace CapaVista
         }
         private void cboTabla_SelectedIndexChanged(object sender, EventArgs e)
         {
-           valortabla.Text = cboTabla.SelectedItem.ToString();
-            llenarcombo2();
-            if (cboTabla.Text == "")
-            {
-                chkSelectTodos.Enabled = false;
-            } else
-            {
-                chkSelectTodos.Enabled = true;
-            }
+           
+            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -230,7 +222,8 @@ namespace CapaVista
             llenarcboquery();
             limpiar();
             habilitaciones();
-            txtNombreConsulta.Focus();            
+            txtNombreConsulta.Focus();
+            cbotablas.Text = "";
             }
         }
 
@@ -273,6 +266,7 @@ namespace CapaVista
         {
             limpiar();
             habilitaciones();
+            cbotablas.Text = "";
         }
 
         private void btnBuscarCONSULTAS_Click(object sender, EventArgs e)
@@ -794,6 +788,21 @@ namespace CapaVista
             txtTablaConsultaSimple.Text = "";
             cbonombreconsulta.Enabled = true;
             cbonombreconsulta.Text = "";
+        }
+
+        private void cbotablas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            valortabla.Text = cbotablas.SelectedItem.ToString();
+            if (cbotablas.Text == "")
+            {
+                chkSelectTodos.Enabled = false;
+            }
+            else
+            {
+                chkSelectTodos.Enabled = true;
+            }
+            llenarcombo2();
+
         }
     }
 }
