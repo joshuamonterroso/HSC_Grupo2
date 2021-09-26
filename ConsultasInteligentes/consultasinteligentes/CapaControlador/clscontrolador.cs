@@ -81,6 +81,12 @@ namespace CapaControlador
             return sn.llenarcbotabla(sql);
         }
 
-    }
+        public void editarconsulta(string nombre, string consulta)
+        {       
+            string sql= "update registro_consultas set consulta ='" +consulta+ "'" + "where nombre = '" + nombre + "' ;";
+            Console.WriteLine(sql);
+            sn.insertarconsulta(sql);
+        }
+    }   
 
 }

@@ -106,13 +106,13 @@ namespace CapaVista
             this.cboCampoAgruparEDITAR = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.btnborrareditar = new System.Windows.Forms.Button();
+            this.btneditar = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.txtcancelarComparacionEDITAR = new System.Windows.Forms.Button();
             this.txtValorComparacionEDITAR = new System.Windows.Forms.TextBox();
-            this.txtAgregarComparacionEDITAR = new System.Windows.Forms.Button();
+            this.btnAgregarComparacionEDITAR = new System.Windows.Forms.Button();
             this.cboTipoComparadorEDITAR = new System.Windows.Forms.ComboBox();
             this.cboCampoEDITAR = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -343,6 +343,7 @@ namespace CapaVista
             this.gpbOrdenamiento.TabIndex = 19;
             this.gpbOrdenamiento.TabStop = false;
             this.gpbOrdenamiento.Text = "Ordenamiento";
+            this.gpbOrdenamiento.Enter += new System.EventHandler(this.gpbOrdenamiento_Enter);
             // 
             // rdbAsc
             // 
@@ -910,8 +911,8 @@ namespace CapaVista
             this.tabPage3.Controls.Add(this.txtCadenaGeneradaEDITAR);
             this.tabPage3.Controls.Add(this.label31);
             this.tabPage3.Controls.Add(this.groupBox12);
-            this.tabPage3.Controls.Add(this.button23);
-            this.tabPage3.Controls.Add(this.button22);
+            this.tabPage3.Controls.Add(this.btnborrareditar);
+            this.tabPage3.Controls.Add(this.btneditar);
             this.tabPage3.Controls.Add(this.groupBox9);
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.label17);
@@ -926,15 +927,16 @@ namespace CapaVista
             // txtCadenaGeneradaEDITAR
             // 
             this.txtCadenaGeneradaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtCadenaGeneradaEDITAR.Location = new System.Drawing.Point(532, 405);
+            this.txtCadenaGeneradaEDITAR.Location = new System.Drawing.Point(500, 381);
+            this.txtCadenaGeneradaEDITAR.Multiline = true;
             this.txtCadenaGeneradaEDITAR.Name = "txtCadenaGeneradaEDITAR";
-            this.txtCadenaGeneradaEDITAR.Size = new System.Drawing.Size(257, 20);
+            this.txtCadenaGeneradaEDITAR.Size = new System.Drawing.Size(257, 40);
             this.txtCadenaGeneradaEDITAR.TabIndex = 37;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(529, 377);
+            this.label31.Location = new System.Drawing.Point(597, 358);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(92, 13);
             this.label31.TabIndex = 36;
@@ -968,6 +970,7 @@ namespace CapaVista
             this.btnAgregarAgruparOrdenarEDITAR.Text = "Agregar";
             this.btnAgregarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarAgruparOrdenarEDITAR.UseVisualStyleBackColor = false;
+            this.btnAgregarAgruparOrdenarEDITAR.Click += new System.EventHandler(this.btnAgregarAgruparOrdenarEDITAR_Click);
             // 
             // btnCancelarAgruparOrdenarEDITAR
             // 
@@ -980,17 +983,20 @@ namespace CapaVista
             this.btnCancelarAgruparOrdenarEDITAR.Text = "Cancelar";
             this.btnCancelarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelarAgruparOrdenarEDITAR.UseVisualStyleBackColor = false;
+            this.btnCancelarAgruparOrdenarEDITAR.Click += new System.EventHandler(this.btnCancelarAgruparOrdenarEDITAR_Click);
             // 
             // groupBox13
             // 
             this.groupBox13.Controls.Add(this.rdbdescEDITAR);
             this.groupBox13.Controls.Add(this.rdbAscEDITAR);
+            this.groupBox13.Enabled = false;
             this.groupBox13.Location = new System.Drawing.Point(251, 19);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(113, 53);
             this.groupBox13.TabIndex = 19;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Ordenamiento";
+            this.groupBox13.Enter += new System.EventHandler(this.groupBox13_Enter);
             // 
             // rdbdescEDITAR
             // 
@@ -1018,10 +1024,14 @@ namespace CapaVista
             // 
             this.cboAgruparEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.cboAgruparEDITAR.FormattingEnabled = true;
+            this.cboAgruparEDITAR.Items.AddRange(new object[] {
+            "AGRUPAR",
+            "ORDENAR"});
             this.cboAgruparEDITAR.Location = new System.Drawing.Point(107, 23);
             this.cboAgruparEDITAR.Name = "cboAgruparEDITAR";
             this.cboAgruparEDITAR.Size = new System.Drawing.Size(100, 21);
             this.cboAgruparEDITAR.TabIndex = 18;
+            this.cboAgruparEDITAR.SelectedIndexChanged += new System.EventHandler(this.cboAgruparEDITAR_SelectedIndexChanged);
             // 
             // cboCampoAgruparEDITAR
             // 
@@ -1050,29 +1060,31 @@ namespace CapaVista
             this.label30.TabIndex = 5;
             this.label30.Text = "Campo";
             // 
-            // button23
+            // btnborrareditar
             // 
-            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button23.Location = new System.Drawing.Point(675, 433);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(82, 27);
-            this.button23.TabIndex = 34;
-            this.button23.Text = "Borrar";
-            this.button23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button23.UseVisualStyleBackColor = false;
+            this.btnborrareditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnborrareditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnborrareditar.Location = new System.Drawing.Point(675, 433);
+            this.btnborrareditar.Name = "btnborrareditar";
+            this.btnborrareditar.Size = new System.Drawing.Size(82, 27);
+            this.btnborrareditar.TabIndex = 34;
+            this.btnborrareditar.Text = "Borrar";
+            this.btnborrareditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnborrareditar.UseVisualStyleBackColor = false;
+            this.btnborrareditar.Click += new System.EventHandler(this.btnborrareditar_Click);
             // 
-            // button22
+            // btneditar
             // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button22.Location = new System.Drawing.Point(560, 431);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(82, 29);
-            this.button22.TabIndex = 33;
-            this.button22.Text = "Editar";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button22.UseVisualStyleBackColor = false;
+            this.btneditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btneditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btneditar.Location = new System.Drawing.Point(560, 431);
+            this.btneditar.Name = "btneditar";
+            this.btneditar.Size = new System.Drawing.Size(82, 29);
+            this.btneditar.TabIndex = 33;
+            this.btneditar.Text = "Editar";
+            this.btneditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btneditar.UseVisualStyleBackColor = false;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // groupBox9
             // 
@@ -1090,7 +1102,7 @@ namespace CapaVista
             // 
             this.groupBox11.Controls.Add(this.txtcancelarComparacionEDITAR);
             this.groupBox11.Controls.Add(this.txtValorComparacionEDITAR);
-            this.groupBox11.Controls.Add(this.txtAgregarComparacionEDITAR);
+            this.groupBox11.Controls.Add(this.btnAgregarComparacionEDITAR);
             this.groupBox11.Controls.Add(this.cboTipoComparadorEDITAR);
             this.groupBox11.Controls.Add(this.cboCampoEDITAR);
             this.groupBox11.Controls.Add(this.label28);
@@ -1114,6 +1126,7 @@ namespace CapaVista
             this.txtcancelarComparacionEDITAR.Text = "Cancelar";
             this.txtcancelarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.txtcancelarComparacionEDITAR.UseVisualStyleBackColor = false;
+            this.txtcancelarComparacionEDITAR.Click += new System.EventHandler(this.txtcancelarComparacionEDITAR_Click);
             // 
             // txtValorComparacionEDITAR
             // 
@@ -1123,17 +1136,18 @@ namespace CapaVista
             this.txtValorComparacionEDITAR.Size = new System.Drawing.Size(100, 20);
             this.txtValorComparacionEDITAR.TabIndex = 18;
             // 
-            // txtAgregarComparacionEDITAR
+            // btnAgregarComparacionEDITAR
             // 
-            this.txtAgregarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.txtAgregarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtAgregarComparacionEDITAR.Location = new System.Drawing.Point(229, 17);
-            this.txtAgregarComparacionEDITAR.Name = "txtAgregarComparacionEDITAR";
-            this.txtAgregarComparacionEDITAR.Size = new System.Drawing.Size(82, 23);
-            this.txtAgregarComparacionEDITAR.TabIndex = 20;
-            this.txtAgregarComparacionEDITAR.Text = "Agregar";
-            this.txtAgregarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtAgregarComparacionEDITAR.UseVisualStyleBackColor = false;
+            this.btnAgregarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarComparacionEDITAR.Location = new System.Drawing.Point(229, 17);
+            this.btnAgregarComparacionEDITAR.Name = "btnAgregarComparacionEDITAR";
+            this.btnAgregarComparacionEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarComparacionEDITAR.TabIndex = 20;
+            this.btnAgregarComparacionEDITAR.Text = "Agregar";
+            this.btnAgregarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarComparacionEDITAR.UseVisualStyleBackColor = false;
+            this.btnAgregarComparacionEDITAR.Click += new System.EventHandler(this.btnAgregarComparacionEDITAR_Click);
             // 
             // cboTipoComparadorEDITAR
             // 
@@ -1210,6 +1224,7 @@ namespace CapaVista
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Text = "Cancelar";
             this.btnCancelarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelarCONSULTACOMPLEJAEDITAR.UseVisualStyleBackColor = false;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Click += new System.EventHandler(this.btnCancelarCONSULTACOMPLEJAEDITAR_Click);
             // 
             // btnagregarCONSULTACOMPLEJAEDITAR
             // 
@@ -1222,6 +1237,7 @@ namespace CapaVista
             this.btnagregarCONSULTACOMPLEJAEDITAR.Text = "Agregar";
             this.btnagregarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnagregarCONSULTACOMPLEJAEDITAR.UseVisualStyleBackColor = false;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Click += new System.EventHandler(this.btnagregarCONSULTACOMPLEJAEDITAR_Click);
             // 
             // txtvalorConsultaComplejaEDITAR
             // 
@@ -1365,6 +1381,7 @@ namespace CapaVista
             this.btnCancelarCONSULTASIMPLE.Text = "Cancelar";
             this.btnCancelarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelarCONSULTASIMPLE.UseVisualStyleBackColor = false;
+            this.btnCancelarCONSULTASIMPLE.Click += new System.EventHandler(this.btnCancelarCONSULTASIMPLE_Click);
             // 
             // txtTablaConsultaSimple
             // 
@@ -1551,8 +1568,10 @@ namespace CapaVista
             this.txttablaeditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.txttablaeditar.Location = new System.Drawing.Point(249, 50);
             this.txttablaeditar.Name = "txttablaeditar";
+            this.txttablaeditar.ReadOnly = true;
             this.txttablaeditar.Size = new System.Drawing.Size(100, 20);
             this.txttablaeditar.TabIndex = 22;
+            this.txttablaeditar.Visible = false;
             // 
             // btnagregarcamposeditar
             // 
@@ -1700,13 +1719,13 @@ namespace CapaVista
         private System.Windows.Forms.ComboBox cboCampoAgruparEDITAR;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button btnborrareditar;
+        private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Button txtcancelarComparacionEDITAR;
         private System.Windows.Forms.TextBox txtValorComparacionEDITAR;
-        private System.Windows.Forms.Button txtAgregarComparacionEDITAR;
+        private System.Windows.Forms.Button btnAgregarComparacionEDITAR;
         private System.Windows.Forms.ComboBox cboTipoComparadorEDITAR;
         private System.Windows.Forms.ComboBox cboCampoEDITAR;
         private System.Windows.Forms.Label label28;

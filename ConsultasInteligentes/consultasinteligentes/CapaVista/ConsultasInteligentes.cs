@@ -435,6 +435,11 @@ namespace CapaVista
         string transfiere = "";
         string campoeditar = "";
         string csimpleeditar = "";
+        string whereeditar = "";
+        string andeditar = "";
+        string ordeneditar = "";
+        string groupeditar = "";
+        string finaleditar = "";
         private void btnActualizarBUSCARyELIMINAR_Click(object sender, EventArgs e)
         {
             transfiere = txtNombreConsultaBUSCARyELIMINAR.Text;
@@ -577,6 +582,7 @@ namespace CapaVista
                 txtcamposelectoseditar.Text = "";
                 cboTablaConsultaSimple.Text = "";
                 chkSelectTodosConsultaSimple.Checked = false;
+                cbonombreconsulta.Enabled = false;
             }
         }
 
@@ -593,6 +599,201 @@ namespace CapaVista
                 groupBox12.Enabled = false;
                 chkcondicioneseditar.Checked = false;
             }
+        }
+
+        private void btnAgregarComparacionEDITAR_Click(object sender, EventArgs e)
+        {
+            if ((cboTipoComparadorEDITAR.Text == "") || (cboCampoEDITAR.Text == "") || (txtValorComparacionEDITAR.Text == ""))
+            {
+                MessageBox.Show("Clausula where estructurada erroneamente");
+            }
+            else
+            {
+
+                whereeditar = cboTipoComparadorEDITAR.SelectedItem.ToString() + " " + cboCampoEDITAR.SelectedItem.ToString() + "=" +
+                '"' + txtValorComparacionEDITAR.Text + '"' + " ";
+                MessageBox.Show(csimpleeditar + whereeditar);
+                txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar;
+            }
+
+        }
+
+        private void btnagregarCONSULTACOMPLEJAEDITAR_Click(object sender, EventArgs e)
+        {
+            if ((cboOperadorLogicoEDITAR.Text == "") || (cboCampoConsultaComplejaEDITAR.Text == "") || (txtvalorConsultaComplejaEDITAR.Text == ""))
+            {
+                MessageBox.Show("Utilice todos los campos logicos");
+            }
+            else
+            {
+
+                if (whereeditar != "")
+                {
+
+
+                    andeditar = andeditar + cboOperadorLogicoEDITAR.SelectedItem.ToString() + " "
+                    + cboCampoConsultaComplejaEDITAR.SelectedItem.ToString() + "=" +
+                    '"' + txtvalorConsultaComplejaEDITAR.Text + '"' + " ";
+                    MessageBox.Show(csimpleeditar + whereeditar + andeditar);
+                    txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar;
+                }
+                else
+                {
+                    andeditar = "";
+                    MessageBox.Show("Para agregar un comparador debe seleccionar un where");
+
+
+                }
+            }
+        }
+
+        private void groupBox13_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gpbOrdenamiento_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarAgruparOrdenarEDITAR_Click(object sender, EventArgs e)
+        {
+            if (rdbdescEDITAR.Checked == true)
+            {
+                ordeneditar = "desc";
+            }
+            else
+            {
+                ordeneditar = "asc";
+            }
+
+
+            if ((cboAgruparEDITAR.Text == "") || (cboCampoAgruparEDITAR.Text == ""))
+            {
+                MessageBox.Show("Debe utilizar todos los campos de agrupacion");
+            }
+            else
+            {
+                if (cboAgruparEDITAR.SelectedIndex == 0)
+                {
+                    groupeditar = "group by " + cboCampoAgruparEDITAR.SelectedItem.ToString();
+                }
+                else if (cboAgruparEDITAR.SelectedIndex == 1)
+                {
+                    groupeditar = "order by " + cboCampoAgruparEDITAR.SelectedItem.ToString() + " " + ordeneditar;
+
+                }
+                MessageBox.Show(csimpleeditar + whereeditar + andeditar + groupeditar);
+                txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar + groupeditar;
+            }
+        }
+
+        private void cboAgruparEDITAR_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboAgruparEDITAR.SelectedIndex == 1)
+            {
+                groupBox13.Enabled = true;
+            }
+            else
+            {
+                groupBox13.Enabled = false;
+                rdbAscEDITAR.Checked = false;
+                rdbdescEDITAR.Checked = false;
+            }
+        }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+            finaleditar = csimpleeditar + " " + whereeditar + " " + andeditar + " " + groupeditar + ";";
+            if (csimpleeditar == "")
+            {
+                MessageBox.Show("Consulta incorrecta");
+            }
+            else
+            {
+                MessageBox.Show("Consulta Almacenada");
+                cn.editarconsulta(txtTablaConsultaSimple.Text, finaleditar);
+                llenarcboquery();
+            }
+        }
+
+        private void btnCancelarCONSULTASIMPLE_Click(object sender, EventArgs e)
+        {
+            csimpleeditar ="";
+            txtCadenaGeneradaEDITAR.Text ="";
+            campoeditar = "";
+            txtNombreRepresentativoEDITAR.Text = "";
+            cboCamposEDITAR.Text = "";
+            txtcamposelectoseditar.Text = "";
+            cboTablaConsultaSimple.Text = "";
+            chkSelectTodosConsultaSimple.Checked = false;
+            cbonombreconsulta.Enabled = true;
+            campoeditar = "";
+            whereeditar = "";
+            andeditar = "";
+            groupeditar = "";
+        }
+
+        private void txtcancelarComparacionEDITAR_Click(object sender, EventArgs e)
+        {
+            cboTipoComparadorEDITAR.Text = "";
+            cboCampoEDITAR.Text = "";
+            txtValorComparacionEDITAR.Text = "";
+            whereeditar = "";
+            txtCadenaGeneradaEDITAR.Text = csimpleeditar;
+            andeditar = "";
+        }
+
+        private void btnCancelarCONSULTACOMPLEJAEDITAR_Click(object sender, EventArgs e)
+        {
+            cboOperadorLogicoEDITAR.Text = "";
+            cboCampoConsultaComplejaEDITAR.Text = "";
+            txtvalorConsultaComplejaEDITAR.Text = "";
+            andeditar = "";
+            txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + groupeditar;
+        }
+
+        private void btnCancelarAgruparOrdenarEDITAR_Click(object sender, EventArgs e)
+        {
+            groupBox13.Enabled = false;
+            rdbdescEDITAR.Checked = false;
+            rdbAscEDITAR.Checked = false;
+            cboAgruparEDITAR.Text = "";
+            cboCampoAgruparEDITAR.Text = "";
+            groupeditar = "";
+            txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar;
+        }
+
+        private void btnborrareditar_Click(object sender, EventArgs e)
+        {
+            campoeditar = "";
+            csimpleeditar = "";
+            whereeditar = "";
+            andeditar = "";
+            groupeditar = "";
+            finaleditar = "";
+            txtCadenaGeneradaEDITAR.Text = "";
+            groupBox13.Enabled = false;
+            rdbdescEDITAR.Checked = false;
+            rdbAscEDITAR.Checked = false;
+            cboAgruparEDITAR.Text = "";
+            cboCampoAgruparEDITAR.Text = "";
+            cboOperadorLogicoEDITAR.Text = "";
+            cboCampoConsultaComplejaEDITAR.Text = "";
+            txtvalorConsultaComplejaEDITAR.Text = "";
+            cboTipoComparador.Text = "";
+            cboCampoEDITAR.Text = "";
+            txtValorComparacionEDITAR.Text = "";
+            txtNombreRepresentativoEDITAR.Text = "";
+            cboCamposEDITAR.Text = "";
+            txtcamposelectoseditar.Text = "";
+            cboTablaConsultaSimple.Text = "";
+            chkSelectTodosConsultaSimple.Checked = false;
+            cboTipoComparadorEDITAR.Text = "";
+            txtTablaConsultaSimple.Text = "";
+            cbonombreconsulta.Enabled = true;
+            cbonombreconsulta.Text = "";
         }
     }
 }
