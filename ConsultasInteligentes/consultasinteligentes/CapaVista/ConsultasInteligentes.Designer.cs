@@ -47,7 +47,6 @@ namespace CapaVista
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btprueba = new System.Windows.Forms.Button();
-            this.btnCancelarCamposSeleccionados = new System.Windows.Forms.Button();
             this.gpbConsultaCompleja = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnCancelarComparacion = new System.Windows.Forms.Button();
@@ -67,7 +66,6 @@ namespace CapaVista
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnAgregarCamposSeleccionados = new System.Windows.Forms.Button();
             this.gpbConsultaSimple = new System.Windows.Forms.GroupBox();
             this.valortabla = new System.Windows.Forms.TextBox();
             this.txtcamposelectos = new System.Windows.Forms.TextBox();
@@ -76,8 +74,10 @@ namespace CapaVista
             this.cboCampos = new System.Windows.Forms.ComboBox();
             this.cboTabla = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCancelarCamposSeleccionados = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.chkSelectTodos = new System.Windows.Forms.CheckBox();
+            this.btnAgregarCamposSeleccionados = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -150,6 +150,7 @@ namespace CapaVista
             this.dgvBUSCARyELIMINAR = new System.Windows.Forms.DataGridView();
             this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tb1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpbAgruparUOrdenar.SuspendLayout();
@@ -386,19 +387,6 @@ namespace CapaVista
             this.btprueba.Visible = false;
             this.btprueba.Click += new System.EventHandler(this.btprueba_Click);
             // 
-            // btnCancelarCamposSeleccionados
-            // 
-            this.btnCancelarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarCamposSeleccionados.Location = new System.Drawing.Point(697, 82);
-            this.btnCancelarCamposSeleccionados.Name = "btnCancelarCamposSeleccionados";
-            this.btnCancelarCamposSeleccionados.Size = new System.Drawing.Size(61, 23);
-            this.btnCancelarCamposSeleccionados.TabIndex = 29;
-            this.btnCancelarCamposSeleccionados.Text = "Cancelar";
-            this.btnCancelarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelarCamposSeleccionados.UseVisualStyleBackColor = false;
-            this.btnCancelarCamposSeleccionados.Click += new System.EventHandler(this.btnCancelarCamposSeleccionados_Click);
-            // 
             // gpbConsultaCompleja
             // 
             this.gpbConsultaCompleja.Controls.Add(this.groupBox4);
@@ -605,21 +593,9 @@ namespace CapaVista
             this.label6.TabIndex = 2;
             this.label6.Text = "Operador logico";
             // 
-            // btnAgregarCamposSeleccionados
-            // 
-            this.btnAgregarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCamposSeleccionados.Location = new System.Drawing.Point(697, 45);
-            this.btnAgregarCamposSeleccionados.Name = "btnAgregarCamposSeleccionados";
-            this.btnAgregarCamposSeleccionados.Size = new System.Drawing.Size(54, 23);
-            this.btnAgregarCamposSeleccionados.TabIndex = 28;
-            this.btnAgregarCamposSeleccionados.Text = "Agregar";
-            this.btnAgregarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarCamposSeleccionados.UseVisualStyleBackColor = false;
-            this.btnAgregarCamposSeleccionados.Click += new System.EventHandler(this.btnAgregarCamposSeleccionados_Click);
-            // 
             // gpbConsultaSimple
             // 
+            this.gpbConsultaSimple.Controls.Add(this.button1);
             this.gpbConsultaSimple.Controls.Add(this.valortabla);
             this.gpbConsultaSimple.Controls.Add(this.txtcamposelectos);
             this.gpbConsultaSimple.Controls.Add(this.txtNombreConsulta);
@@ -706,6 +682,19 @@ namespace CapaVista
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // btnCancelarCamposSeleccionados
+            // 
+            this.btnCancelarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnCancelarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarCamposSeleccionados.Location = new System.Drawing.Point(697, 82);
+            this.btnCancelarCamposSeleccionados.Name = "btnCancelarCamposSeleccionados";
+            this.btnCancelarCamposSeleccionados.Size = new System.Drawing.Size(61, 23);
+            this.btnCancelarCamposSeleccionados.TabIndex = 29;
+            this.btnCancelarCamposSeleccionados.Text = "Cancelar";
+            this.btnCancelarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCamposSeleccionados.UseVisualStyleBackColor = false;
+            this.btnCancelarCamposSeleccionados.Click += new System.EventHandler(this.btnCancelarCamposSeleccionados_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -725,6 +714,19 @@ namespace CapaVista
             this.chkSelectTodos.Text = "Todos los campos";
             this.chkSelectTodos.UseVisualStyleBackColor = true;
             this.chkSelectTodos.CheckedChanged += new System.EventHandler(this.chkSelectTodos_CheckedChanged);
+            // 
+            // btnAgregarCamposSeleccionados
+            // 
+            this.btnAgregarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnAgregarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCamposSeleccionados.Location = new System.Drawing.Point(697, 45);
+            this.btnAgregarCamposSeleccionados.Name = "btnAgregarCamposSeleccionados";
+            this.btnAgregarCamposSeleccionados.Size = new System.Drawing.Size(54, 23);
+            this.btnAgregarCamposSeleccionados.TabIndex = 28;
+            this.btnAgregarCamposSeleccionados.Text = "Agregar";
+            this.btnAgregarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarCamposSeleccionados.UseVisualStyleBackColor = false;
+            this.btnAgregarCamposSeleccionados.Click += new System.EventHandler(this.btnAgregarCamposSeleccionados_Click);
             // 
             // label4
             // 
@@ -1493,6 +1495,15 @@ namespace CapaVista
             this.label32.TabIndex = 32;
             this.label32.Text = "Nombre consulta";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(453, 153);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ConsultasInteligentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1664,5 +1675,6 @@ namespace CapaVista
         private System.Windows.Forms.TextBox valortabla;
         private System.Windows.Forms.CheckBox chkcondiciones;
         private System.Windows.Forms.ComboBox cbocopiaquery;
+        private System.Windows.Forms.Button button1;
     }
 }
