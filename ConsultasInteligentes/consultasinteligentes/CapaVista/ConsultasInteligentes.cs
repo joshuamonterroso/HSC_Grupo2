@@ -422,11 +422,6 @@ namespace CapaVista
             actualizaconsultas2(txtNombreConsultaBUSCARyELIMINAR.Text);
         }
 
-        private void btnActualizarBUSCARyELIMINAR_Click(object sender, EventArgs e)
-        {
-            tabPage4.Hide();
-            tabPage3.Show();
-        }
 
         private void btnEliminarBUSCARyELIMINAR_Click(object sender, EventArgs e)
         {
@@ -437,6 +432,19 @@ namespace CapaVista
         }
 
         //Pestaña TAB3 EDITAR a partir de aca
+        string transfiere = "";
+        string campoeditar = "";
+        string csimpleeditar = "";
+        private void btnActualizarBUSCARyELIMINAR_Click(object sender, EventArgs e)
+        {
+            transfiere = txtNombreConsultaBUSCARyELIMINAR.Text;
+            cbonombreconsulta.Text = transfiere;
+            txtTablaConsultaSimple.Text = transfiere;
+            groupBox8.Enabled = true;
+            tabPage4.Hide();
+            tabPage3.Show();        
+        }
+
         public void llenarcomboeditar()
         {
             cbonombreconsulta.Items.Clear();
@@ -456,7 +464,9 @@ namespace CapaVista
 
         private void cboTablaConsultaSimple_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            txttablaeditar.Text = cboTablaConsultaSimple.SelectedItem.ToString();
+            llenarcombosactualizar();
+            chkSelectTodosConsultaSimple.Enabled = true;
         }
 
         public void tablaseditar()
@@ -468,7 +478,121 @@ namespace CapaVista
                 cboTablaConsultaSimple.Items.Add(datareader[0].ToString());
             }
         }
+        public void llenarcombosactualizar()
+        {
+            cboCamposEDITAR.Items.Clear();
+            cboCampoConsultaComplejaEDITAR.Items.Clear();
+            cboCampoEDITAR.Items.Clear();
+            cboCampoAgruparEDITAR.Items.Clear();
+            OdbcDataReader datareader = cn.llenarcbo2(txttablaeditar.Text);
+            while (datareader.Read())
+            {
+                cboCamposEDITAR.Items.Add(datareader[0].ToString());
+                cboCampoConsultaComplejaEDITAR.Items.Add(datareader[0].ToString());
+                cboCampoEDITAR.Items.Add(datareader[0].ToString());
+                cboCampoAgruparEDITAR.Items.Add(datareader[0].ToString());
+            }
+        }
 
+        private void chkSelectTodosConsultaSimple_CheckedChanged(object sender, EventArgs e)
+        {
 
+            if (chkSelectTodosConsultaSimple.Checked == true)
+            {
+                txtNombreRepresentativoEDITAR.Text = "";
+                txtNombreRepresentativoEDITAR.Enabled = false;
+                cboCamposEDITAR.Text = "";
+                cboCamposEDITAR.Enabled = false;
+                txtcamposelectoseditar.Text = "";
+            }
+            else
+            {
+                txtNombreRepresentativoEDITAR.Text = "";
+                txtNombreRepresentativoEDITAR.Enabled = true;
+                cboCamposEDITAR.Text = "";
+                cboCamposEDITAR.Enabled = true;              
+            }
+        }
+
+        private void btnAgregarCONSULTASIMPLE_Click(object sender, EventArgs e)
+        {
+            if (chkSelectTodosConsultaSimple.Checked == false)
+            {
+                if (txtcamposelectoseditar.Text.Equals(""))
+                {
+                    if (txtNombreRepresentativoEDITAR.Text.Equals(""))
+                    {
+                        txtcamposelectoseditar.Text = "";
+                        campoeditar = campoeditar + cboCamposEDITAR.SelectedItem.ToString() + " ";
+                        txtcamposelectoseditar.Text = campoeditar;
+                    }
+                    else
+                    {
+                        txtcamposelectoseditar.Text = "";
+                        campoeditar = campoeditar + cboCamposEDITAR.SelectedItem.ToString() + " as " + txtNombreRepresentativoEDITAR.Text + " ";
+                        txtcamposelectoseditar.Text = campoeditar;
+                    }
+                }
+                else
+                {
+                    if (txtNombreRepresentativoEDITAR.Text.Equals(""))
+                    {
+                        txtcamposelectoseditar.Text = "";
+                        campoeditar = campoeditar + ", " + cboCamposEDITAR.SelectedItem.ToString() + " ";
+                        txtcamposelectoseditar.Text = campoeditar;
+                    }
+                    else
+                    {
+                        txtcamposelectoseditar.Text = "";
+                        campoeditar = campoeditar + ", " + cboCamposEDITAR.SelectedItem.ToString() + " as " + txtNombreRepresentativoEDITAR.Text + " ";
+                        txtcamposelectoseditar.Text = campoeditar;
+                    }
+                }
+            }
+            else
+            {
+                txtcamposelectoseditar.Text = "";
+                campoeditar = "";
+                campoeditar = " * ";
+                txtcamposelectoseditar.Text = "Todos los campos seleccionados";
+                Console.WriteLine(campoeditar);
+            }
+        }
+
+        private void btnagregarcamposeditar_Click(object sender, EventArgs e)
+        {
+            if (campoeditar == "")
+            {
+                MessageBox.Show("Debe seleccionar al menos un campo");
+            }
+            else
+            {
+                csimpleeditar = "SELECT " + campoeditar + "FROM " + txttablaeditar.Text + " ";
+                MessageBox.Show("La cadena generada es: " + csimpleeditar);
+                Console.WriteLine(csimpleeditar);
+                txtCadenaGeneradaEDITAR.Text = csimpleeditar;
+                campoeditar = "";
+                txtNombreRepresentativoEDITAR.Text = "";
+                cboCamposEDITAR.Text = "";
+                txtcamposelectoseditar.Text = "";
+                cboTablaConsultaSimple.Text = "";
+                chkSelectTodosConsultaSimple.Checked = false;
+            }
+        }
+
+        private void chkcondicioneseditar_CheckedChanged(object sender, EventArgs e)
+        {
+            if ((chkcondicioneseditar.Checked == true) && (csimpleeditar != ""))
+            {
+                groupBox9.Enabled = true;
+                groupBox12.Enabled = true;
+            }
+            else
+            {
+                groupBox9.Enabled = false;
+                groupBox12.Enabled = false;
+                chkcondicioneseditar.Checked = false;
+            }
+        }
     }
 }

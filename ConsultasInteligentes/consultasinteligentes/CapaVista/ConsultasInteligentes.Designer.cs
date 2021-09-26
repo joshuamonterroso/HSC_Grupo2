@@ -150,8 +150,10 @@ namespace CapaVista
             this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.cbonombreconsulta = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtcamposelectoseditar = new System.Windows.Forms.TextBox();
             this.txttablaeditar = new System.Windows.Forms.TextBox();
+            this.btnagregarcamposeditar = new System.Windows.Forms.Button();
+            this.chkcondicioneseditar = new System.Windows.Forms.CheckBox();
             this.tb1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpbAgruparUOrdenar.SuspendLayout();
@@ -903,6 +905,7 @@ namespace CapaVista
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.chkcondicioneseditar);
             this.tabPage3.Controls.Add(this.cbonombreconsulta);
             this.tabPage3.Controls.Add(this.txtCadenaGeneradaEDITAR);
             this.tabPage3.Controls.Add(this.label31);
@@ -1136,6 +1139,8 @@ namespace CapaVista
             // 
             this.cboTipoComparadorEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.cboTipoComparadorEDITAR.FormattingEnabled = true;
+            this.cboTipoComparadorEDITAR.Items.AddRange(new object[] {
+            "WHERE"});
             this.cboTipoComparadorEDITAR.Location = new System.Drawing.Point(123, 14);
             this.cboTipoComparadorEDITAR.Name = "cboTipoComparadorEDITAR";
             this.cboTipoComparadorEDITAR.Size = new System.Drawing.Size(100, 21);
@@ -1239,6 +1244,10 @@ namespace CapaVista
             // 
             this.cboOperadorLogicoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.cboOperadorLogicoEDITAR.FormattingEnabled = true;
+            this.cboOperadorLogicoEDITAR.Items.AddRange(new object[] {
+            "AND",
+            "OR",
+            "NOT"});
             this.cboOperadorLogicoEDITAR.Location = new System.Drawing.Point(101, 22);
             this.cboOperadorLogicoEDITAR.Name = "cboOperadorLogicoEDITAR";
             this.cboOperadorLogicoEDITAR.Size = new System.Drawing.Size(100, 21);
@@ -1273,8 +1282,9 @@ namespace CapaVista
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.btnagregarcamposeditar);
             this.groupBox8.Controls.Add(this.txttablaeditar);
-            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.txtcamposelectoseditar);
             this.groupBox8.Controls.Add(this.txtNombreRepresentativoEDITAR);
             this.groupBox8.Controls.Add(this.label18);
             this.groupBox8.Controls.Add(this.cboTablaConsultaSimple);
@@ -1290,7 +1300,7 @@ namespace CapaVista
             this.groupBox8.Enabled = false;
             this.groupBox8.Location = new System.Drawing.Point(8, 43);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(681, 175);
+            this.groupBox8.Size = new System.Drawing.Size(681, 146);
             this.groupBox8.TabIndex = 28;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Consulta Simple";
@@ -1298,7 +1308,7 @@ namespace CapaVista
             // txtNombreRepresentativoEDITAR
             // 
             this.txtNombreRepresentativoEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtNombreRepresentativoEDITAR.Location = new System.Drawing.Point(132, 139);
+            this.txtNombreRepresentativoEDITAR.Location = new System.Drawing.Point(132, 118);
             this.txtNombreRepresentativoEDITAR.Name = "txtNombreRepresentativoEDITAR";
             this.txtNombreRepresentativoEDITAR.Size = new System.Drawing.Size(100, 20);
             this.txtNombreRepresentativoEDITAR.TabIndex = 18;
@@ -1335,21 +1345,22 @@ namespace CapaVista
             // 
             this.btnAgregarCONSULTASIMPLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnAgregarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCONSULTASIMPLE.Location = new System.Drawing.Point(287, 139);
+            this.btnAgregarCONSULTASIMPLE.Location = new System.Drawing.Point(260, 79);
             this.btnAgregarCONSULTASIMPLE.Name = "btnAgregarCONSULTASIMPLE";
             this.btnAgregarCONSULTASIMPLE.Size = new System.Drawing.Size(75, 23);
             this.btnAgregarCONSULTASIMPLE.TabIndex = 13;
             this.btnAgregarCONSULTASIMPLE.Text = "Agregar";
             this.btnAgregarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarCONSULTASIMPLE.UseVisualStyleBackColor = false;
+            this.btnAgregarCONSULTASIMPLE.Click += new System.EventHandler(this.btnAgregarCONSULTASIMPLE_Click);
             // 
             // btnCancelarCONSULTASIMPLE
             // 
             this.btnCancelarCONSULTASIMPLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnCancelarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarCONSULTASIMPLE.Location = new System.Drawing.Point(385, 139);
+            this.btnCancelarCONSULTASIMPLE.Location = new System.Drawing.Point(601, 79);
             this.btnCancelarCONSULTASIMPLE.Name = "btnCancelarCONSULTASIMPLE";
-            this.btnCancelarCONSULTASIMPLE.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarCONSULTASIMPLE.Size = new System.Drawing.Size(74, 23);
             this.btnCancelarCONSULTASIMPLE.TabIndex = 9;
             this.btnCancelarCONSULTASIMPLE.Text = "Cancelar";
             this.btnCancelarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1369,12 +1380,13 @@ namespace CapaVista
             // 
             this.chkSelectTodosConsultaSimple.AutoSize = true;
             this.chkSelectTodosConsultaSimple.Enabled = false;
-            this.chkSelectTodosConsultaSimple.Location = new System.Drawing.Point(85, 111);
+            this.chkSelectTodosConsultaSimple.Location = new System.Drawing.Point(27, 101);
             this.chkSelectTodosConsultaSimple.Name = "chkSelectTodosConsultaSimple";
             this.chkSelectTodosConsultaSimple.Size = new System.Drawing.Size(111, 17);
             this.chkSelectTodosConsultaSimple.TabIndex = 4;
             this.chkSelectTodosConsultaSimple.Text = "Seleccionar todos";
             this.chkSelectTodosConsultaSimple.UseVisualStyleBackColor = true;
+            this.chkSelectTodosConsultaSimple.CheckedChanged += new System.EventHandler(this.chkSelectTodosConsultaSimple_CheckedChanged);
             // 
             // label19
             // 
@@ -1397,7 +1409,7 @@ namespace CapaVista
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(14, 144);
+            this.label21.Location = new System.Drawing.Point(14, 121);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(114, 13);
             this.label21.TabIndex = 1;
@@ -1526,13 +1538,13 @@ namespace CapaVista
             this.cbonombreconsulta.TabIndex = 38;
             this.cbonombreconsulta.SelectedIndexChanged += new System.EventHandler(this.cbonombreconsulta_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtcamposelectoseditar
             // 
-            this.textBox1.Location = new System.Drawing.Point(370, 47);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 82);
-            this.textBox1.TabIndex = 21;
+            this.txtcamposelectoseditar.Location = new System.Drawing.Point(370, 47);
+            this.txtcamposelectoseditar.Multiline = true;
+            this.txtcamposelectoseditar.Name = "txtcamposelectoseditar";
+            this.txtcamposelectoseditar.Size = new System.Drawing.Size(225, 82);
+            this.txtcamposelectoseditar.TabIndex = 21;
             // 
             // txttablaeditar
             // 
@@ -1541,6 +1553,30 @@ namespace CapaVista
             this.txttablaeditar.Name = "txttablaeditar";
             this.txttablaeditar.Size = new System.Drawing.Size(100, 20);
             this.txttablaeditar.TabIndex = 22;
+            // 
+            // btnagregarcamposeditar
+            // 
+            this.btnagregarcamposeditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnagregarcamposeditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnagregarcamposeditar.Location = new System.Drawing.Point(600, 50);
+            this.btnagregarcamposeditar.Name = "btnagregarcamposeditar";
+            this.btnagregarcamposeditar.Size = new System.Drawing.Size(75, 23);
+            this.btnagregarcamposeditar.TabIndex = 23;
+            this.btnagregarcamposeditar.Text = "Agregar";
+            this.btnagregarcamposeditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnagregarcamposeditar.UseVisualStyleBackColor = false;
+            this.btnagregarcamposeditar.Click += new System.EventHandler(this.btnagregarcamposeditar_Click);
+            // 
+            // chkcondicioneseditar
+            // 
+            this.chkcondicioneseditar.AutoSize = true;
+            this.chkcondicioneseditar.Location = new System.Drawing.Point(14, 201);
+            this.chkcondicioneseditar.Name = "chkcondicioneseditar";
+            this.chkcondicioneseditar.Size = new System.Drawing.Size(124, 17);
+            this.chkcondicioneseditar.TabIndex = 24;
+            this.chkcondicioneseditar.Text = "Agregar Condiciones";
+            this.chkcondicioneseditar.UseVisualStyleBackColor = true;
+            this.chkcondicioneseditar.CheckedChanged += new System.EventHandler(this.chkcondicioneseditar_CheckedChanged);
             // 
             // ConsultasInteligentes
             // 
@@ -1713,6 +1749,8 @@ namespace CapaVista
         private System.Windows.Forms.ComboBox cbovalidar;
         private System.Windows.Forms.ComboBox cbonombreconsulta;
         private System.Windows.Forms.TextBox txttablaeditar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcamposelectoseditar;
+        private System.Windows.Forms.CheckBox chkcondicioneseditar;
+        private System.Windows.Forms.Button btnagregarcamposeditar;
     }
 }
