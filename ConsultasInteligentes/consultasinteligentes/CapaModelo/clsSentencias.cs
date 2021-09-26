@@ -47,5 +47,21 @@ namespace CapaModelo
                 Console.WriteLine("Error en modelo" + Error);
             }
         }
+
+        public OdbcDataReader validarconsulta(string sql)
+        {
+            try
+            {
+                OdbcCommand datos = new OdbcCommand(sql, con.conexion());
+                OdbcDataReader leer = datos.ExecuteReader();
+                return leer;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+
+        }
     }
 }

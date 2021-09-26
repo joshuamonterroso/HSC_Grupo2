@@ -22,6 +22,7 @@ namespace CapaVista
         string group = "";
         string final = "";
         string orden = "";
+        string validar = "";
         public ConsultasInteligentes()
         {
             InitializeComponent();
@@ -54,6 +55,16 @@ namespace CapaVista
             {
                 cboTabla.Items.Add(datareader[0].ToString());
             }
+        }
+
+        public void llenarcboinsert(string prueba)
+        {
+                cbovalidar.Items.Clear();
+                OdbcDataReader dataReader = cn.llenarinsert(prueba);
+                    while (dataReader.Read())
+                    {
+                        cbovalidar.Items.Add(dataReader[0].ToString());
+                    }
         }
         public void llenarcombo2()
         {
@@ -160,7 +171,7 @@ namespace CapaVista
 
         private void chkcondiciones_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkcondiciones.Checked == true)
+            if ((chkcondiciones.Checked == true) && (csimple !=""))
             {
                 gpbConsultaCompleja.Enabled = true;
                 gpbAgruparUOrdenar.Enabled  = true;
@@ -168,6 +179,8 @@ namespace CapaVista
             {
                 gpbConsultaCompleja.Enabled =  false;
                 gpbAgruparUOrdenar.Enabled  =  false;
+                MessageBox.Show("Debe seleccionar campos");
+                chkcondiciones.Checked = false;
             }
         }
 
@@ -188,17 +201,29 @@ namespace CapaVista
 
         private void button10_Click(object sender, EventArgs e)
         {
-            final = csimple + " " + where +" "+ and +" "+ group + " ;";
+            //Boton de crear
+            final = csimple + " " + where + " " + and + " " + group + " ;";
             MessageBox.Show("La consulta Generado fue: " + final);
-            Console.WriteLine(txtNombreConsulta + final);
-            cn.ingresarconsulta(txtNombreConsulta.Text, final);
-            llenarcboquery();
-            limpiar();
-            habilitaciones();
+            llenarcboinsert(final);
+            validar = cbovalidar.Items[0].ToString();
+
+            if (validar == "")
+            {
+                MessageBox.Show("Consulta invalida, el valor de validar es: "+ validar);
+            } else
+            {
+                MessageBox.Show("Validar es " + validar);
+                cn.ingresarconsulta(txtNombreConsulta.Text, final);
+                llenarcboquery();
+                limpiar();
+                habilitaciones();
+
+            }
         }
 
         public void limpiar()
         {
+            chkcondiciones.Checked = false;
             txtCadenaGenerada.Text = "";
             txtcamposelectos.Text = "";
             txtAlias.Text = "";
@@ -220,6 +245,7 @@ namespace CapaVista
             and = "";
             group = "";
             final = "";
+            validar = "";
         }
 
         public void habilitaciones()
@@ -333,6 +359,11 @@ namespace CapaVista
             '"' + txtValorComparacion.Text + '"' + " ";
             MessageBox.Show(csimple + where);
             txtCadenaGenerada.Text = csimple + where;
+
+        }
+
+        private void cbovalidar_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

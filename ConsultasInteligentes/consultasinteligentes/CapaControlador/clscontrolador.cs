@@ -44,7 +44,12 @@ namespace CapaControlador
             Console.WriteLine(sql);
             sn.insertarconsulta(sql);
         }
-        
+
+        public OdbcDataReader llenarinsert(string sql)
+        {
+            return sn.validarconsulta(sql);
+        }
+
     }
 
 }

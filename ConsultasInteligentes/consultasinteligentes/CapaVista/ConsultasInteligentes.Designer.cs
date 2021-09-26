@@ -151,6 +151,7 @@ namespace CapaVista
             this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.cbovalidar = new System.Windows.Forms.ComboBox();
             this.tb1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpbAgruparUOrdenar.SuspendLayout();
@@ -189,6 +190,7 @@ namespace CapaVista
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cbovalidar);
             this.tabPage1.Controls.Add(this.chkcondiciones);
             this.tabPage1.Controls.Add(this.txtCadenaGenerada);
             this.tabPage1.Controls.Add(this.btnAgregarComparacion);
@@ -626,10 +628,13 @@ namespace CapaVista
             // 
             // valortabla
             // 
+            this.valortabla.Enabled = false;
             this.valortabla.Location = new System.Drawing.Point(256, 82);
             this.valortabla.Name = "valortabla";
+            this.valortabla.ReadOnly = true;
             this.valortabla.Size = new System.Drawing.Size(100, 20);
             this.valortabla.TabIndex = 21;
+            this.valortabla.Visible = false;
             // 
             // txtcamposelectos
             // 
@@ -813,11 +818,13 @@ namespace CapaVista
             // cbocopiaquery
             // 
             this.cbocopiaquery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cbocopiaquery.Enabled = false;
             this.cbocopiaquery.FormattingEnabled = true;
             this.cbocopiaquery.Location = new System.Drawing.Point(47, 58);
             this.cbocopiaquery.Name = "cbocopiaquery";
             this.cbocopiaquery.Size = new System.Drawing.Size(121, 21);
             this.cbocopiaquery.TabIndex = 23;
+            this.cbocopiaquery.Visible = false;
             this.cbocopiaquery.SelectedIndexChanged += new System.EventHandler(this.cbocopiaquery_SelectedIndexChanged);
             // 
             // btnBuscarCONSULTAS
@@ -1514,6 +1521,16 @@ namespace CapaVista
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cbovalidar
+            // 
+            this.cbovalidar.FormattingEnabled = true;
+            this.cbovalidar.Location = new System.Drawing.Point(537, 437);
+            this.cbovalidar.Name = "cbovalidar";
+            this.cbovalidar.Size = new System.Drawing.Size(121, 21);
+            this.cbovalidar.TabIndex = 37;
+            this.cbovalidar.Visible = false;
+            this.cbovalidar.SelectedIndexChanged += new System.EventHandler(this.cbovalidar_SelectedIndexChanged);
+            // 
             // ConsultasInteligentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1686,5 +1703,6 @@ namespace CapaVista
         private System.Windows.Forms.CheckBox chkcondiciones;
         private System.Windows.Forms.ComboBox cbocopiaquery;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbovalidar;
     }
 }
