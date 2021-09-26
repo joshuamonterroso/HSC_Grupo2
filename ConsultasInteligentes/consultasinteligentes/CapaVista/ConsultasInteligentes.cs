@@ -20,6 +20,8 @@ namespace CapaVista
         string where = "";
         string and = "";
         string group = "";
+        string final = "";
+        string orden = "";
         public ConsultasInteligentes()
         {
             InitializeComponent();
@@ -186,9 +188,10 @@ namespace CapaVista
 
         private void button10_Click(object sender, EventArgs e)
         {
-            csimple = csimple + " ;";
-            MessageBox.Show("La consulta Generado fue: " + csimple);
-            cn.ingresarconsulta(txtNombreConsulta.Text, txtCadenaGenerada.Text);
+            final = csimple + " " + where +" "+ and +" "+ group + " ;";
+            MessageBox.Show("La consulta Generado fue: " + final);
+            Console.WriteLine(txtNombreConsulta + final);
+            cn.ingresarconsulta(txtNombreConsulta.Text, final);
             llenarcboquery();
             limpiar();
             habilitaciones();
@@ -197,6 +200,7 @@ namespace CapaVista
         public void limpiar()
         {
             txtCadenaGenerada.Text = "";
+            txtcamposelectos.Text = "";
             txtAlias.Text = "";
             txtNombreConsulta.Text = "";
             valortabla.Text = "";
@@ -212,6 +216,10 @@ namespace CapaVista
             cboCampoAgruparOrdenar.Text = "";
             campo = "";
             csimple = "";
+            where = "";
+            and = "";
+            group = "";
+            final = "";
         }
 
         public void habilitaciones()
@@ -253,6 +261,78 @@ namespace CapaVista
 
         private void cboCampos_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAgregarComparacion_Click(object sender, EventArgs e)
+        {
+                where = cboTipoComparador.SelectedItem.ToString() + " " + cboCampoComparacion.SelectedItem.ToString() + "=" +
+                '"' + txtValorComparacion.Text + '"' + " ";
+                MessageBox.Show(csimple + where);
+                txtCadenaGenerada.Text = csimple + where;
+        }
+
+        private void btnAgregarConsultaCompleja_Click(object sender, EventArgs e)
+        {
+            if (where != "")
+            {
+
+            
+                and = and + cboOperadorLogico.SelectedItem.ToString() + " "
+                + cboCampoLogica.SelectedItem.ToString() + "=" +
+                '"' + txtValor.Text + '"' + " ";
+            MessageBox.Show(csimple + where + and);
+            } else
+            {
+                and = "";
+                MessageBox.Show("Para agregar un comparador debe seleccionar un where");
+
+            }
+        }
+
+        private void btnAgregarAgruparordenar_Click(object sender, EventArgs e)
+        {
+            if (rdbDesc.Checked == true)
+            {
+                orden = "desc";
+            } else
+            {
+                orden = "asc";
+            }
+            if (cboAgruparOrdenar.SelectedIndex == 0)
+            {
+                group = "group by " + cboCampoAgruparOrdenar.SelectedItem.ToString();
+                       
+                MessageBox.Show(cboAgruparOrdenar.SelectedItem.ToString());
+            } else if (cboAgruparOrdenar.SelectedIndex == 1)
+            {
+                group = "order by " + cboCampoAgruparOrdenar.SelectedItem.ToString() + " " + orden;
+
+            }
+            MessageBox.Show(csimple + where + and + group);
+            txtCadenaGenerada.Text = csimple + where + and + group;
+        }
+
+        private void cboAgruparOrdenar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cboAgruparOrdenar.SelectedIndex == 1)
+            {
+                gpbOrdenamiento.Enabled = true;
+            } else
+            {
+                gpbOrdenamiento.Enabled = false;
+                rdbAsc.Checked = false;
+                rdbDesc.Checked = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            where = cboTipoComparador.SelectedItem.ToString() + " " + cboCampoComparacion.SelectedItem.ToString() + "=" +
+            '"' + txtValorComparacion.Text + '"' + " ";
+            MessageBox.Show(csimple + where);
+            txtCadenaGenerada.Text = csimple + where;
 
         }
     }

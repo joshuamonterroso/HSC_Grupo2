@@ -191,6 +191,7 @@ namespace CapaVista
             // 
             this.tabPage1.Controls.Add(this.chkcondiciones);
             this.tabPage1.Controls.Add(this.txtCadenaGenerada);
+            this.tabPage1.Controls.Add(this.btnAgregarComparacion);
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.button10);
@@ -301,11 +302,13 @@ namespace CapaVista
             this.btnAgregarAgruparordenar.Text = "Agregar";
             this.btnAgregarAgruparordenar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarAgruparordenar.UseVisualStyleBackColor = false;
+            this.btnAgregarAgruparordenar.Click += new System.EventHandler(this.btnAgregarAgruparordenar_Click);
             // 
             // gpbOrdenamiento
             // 
             this.gpbOrdenamiento.Controls.Add(this.rdbAsc);
             this.gpbOrdenamiento.Controls.Add(this.rdbDesc);
+            this.gpbOrdenamiento.Enabled = false;
             this.gpbOrdenamiento.Location = new System.Drawing.Point(251, 19);
             this.gpbOrdenamiento.Name = "gpbOrdenamiento";
             this.gpbOrdenamiento.Size = new System.Drawing.Size(113, 53);
@@ -355,6 +358,7 @@ namespace CapaVista
             this.cboAgruparOrdenar.Name = "cboAgruparOrdenar";
             this.cboAgruparOrdenar.Size = new System.Drawing.Size(100, 21);
             this.cboAgruparOrdenar.TabIndex = 17;
+            this.cboAgruparOrdenar.SelectedIndexChanged += new System.EventHandler(this.cboAgruparOrdenar_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -378,7 +382,7 @@ namespace CapaVista
             // 
             this.btprueba.Enabled = false;
             this.btprueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btprueba.Location = new System.Drawing.Point(705, 239);
+            this.btprueba.Location = new System.Drawing.Point(705, 436);
             this.btprueba.Name = "btprueba";
             this.btprueba.Size = new System.Drawing.Size(75, 23);
             this.btprueba.TabIndex = 30;
@@ -401,8 +405,8 @@ namespace CapaVista
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.btnCancelarComparacion);
-            this.groupBox4.Controls.Add(this.btnAgregarComparacion);
             this.groupBox4.Controls.Add(this.txtValorComparacion);
             this.groupBox4.Controls.Add(this.cboCampoComparacion);
             this.groupBox4.Controls.Add(this.cboTipoComparador);
@@ -432,13 +436,15 @@ namespace CapaVista
             // 
             this.btnAgregarComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnAgregarComparacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarComparacion.Location = new System.Drawing.Point(229, 22);
+            this.btnAgregarComparacion.Location = new System.Drawing.Point(705, 435);
             this.btnAgregarComparacion.Name = "btnAgregarComparacion";
             this.btnAgregarComparacion.Size = new System.Drawing.Size(82, 23);
             this.btnAgregarComparacion.TabIndex = 20;
             this.btnAgregarComparacion.Text = "Agregar";
             this.btnAgregarComparacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarComparacion.UseVisualStyleBackColor = false;
+            this.btnAgregarComparacion.Visible = false;
+            this.btnAgregarComparacion.Click += new System.EventHandler(this.btnAgregarComparacion_Click);
             // 
             // txtValorComparacion
             // 
@@ -535,6 +541,7 @@ namespace CapaVista
             this.btnAgregarConsultaCompleja.Text = "Agregar";
             this.btnAgregarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarConsultaCompleja.UseVisualStyleBackColor = false;
+            this.btnAgregarConsultaCompleja.Click += new System.EventHandler(this.btnAgregarConsultaCompleja_Click);
             // 
             // txtValor
             // 
@@ -595,7 +602,6 @@ namespace CapaVista
             // 
             // gpbConsultaSimple
             // 
-            this.gpbConsultaSimple.Controls.Add(this.button1);
             this.gpbConsultaSimple.Controls.Add(this.valortabla);
             this.gpbConsultaSimple.Controls.Add(this.txtcamposelectos);
             this.gpbConsultaSimple.Controls.Add(this.txtNombreConsulta);
@@ -1497,12 +1503,16 @@ namespace CapaVista
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(453, 153);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(229, 20);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Size = new System.Drawing.Size(82, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Agregar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ConsultasInteligentes
             // 
