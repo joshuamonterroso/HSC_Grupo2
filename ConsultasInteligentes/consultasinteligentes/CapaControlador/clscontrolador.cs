@@ -75,6 +75,12 @@ namespace CapaControlador
             sn.insertarconsulta(sql);
         }
 
+        public OdbcDataReader llenarcbonombreconsulta()
+        {
+            string sql = "select nombre from registro_consultas;";
+            return sn.llenarcbotabla(sql);
+        }
+
     }
 
 }

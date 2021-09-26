@@ -70,5 +70,20 @@ namespace CapaModelo
             return datatable;
         }
 
+        public OdbcDataReader llenarcbonombreconsulta(string sql)
+        {
+            try
+            {
+                OdbcCommand datos = new OdbcCommand(sql, con.conexion());
+                OdbcDataReader leer = datos.ExecuteReader();
+                return leer;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+
+        }
     }
 }

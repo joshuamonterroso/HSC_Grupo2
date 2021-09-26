@@ -22,7 +22,6 @@ namespace CapaVista
         string group = "";
         string final = "";
         string orden = "";
-        string validar = "";
         public ConsultasInteligentes()
         {
             InitializeComponent();
@@ -38,7 +37,9 @@ namespace CapaVista
         private void ConsultasInteligentes_Load(object sender, EventArgs e)
         {
             llenarcombo();
-            llenarcboquery();           
+            llenarcboquery();
+            llenarcomboeditar();
+            tablaseditar();
         }
 
         string consulta = "";
@@ -98,6 +99,13 @@ namespace CapaVista
         {
            valortabla.Text = cboTabla.SelectedItem.ToString();
             llenarcombo2();
+            if (cboTabla.Text == "")
+            {
+                chkSelectTodos.Enabled = false;
+            } else
+            {
+                chkSelectTodos.Enabled = true;
+            }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -144,6 +152,7 @@ namespace CapaVista
 
         private void chkSelectTodos_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (chkSelectTodos.Checked == true)
             {
                 txtAlias.Text = "";
@@ -157,7 +166,7 @@ namespace CapaVista
                 txtAlias.Enabled = true;
                 cboCampos.Text = "";
                 cboCampos.Enabled = true;
-            }
+            }            
         }
         private void btprueba_Click(object sender, EventArgs e)
         {
@@ -178,14 +187,18 @@ namespace CapaVista
             } else
             {
                 gpbConsultaCompleja.Enabled =  false;
-                gpbAgruparUOrdenar.Enabled  =  false;
-                MessageBox.Show("Debe seleccionar campos");
+                gpbAgruparUOrdenar.Enabled  =  false;                
                 chkcondiciones.Checked = false;
             }
         }
 
         private void btnAgregarCamposSeleccionados_Click(object sender, EventArgs e)
         {
+            if (campo == "")
+            {
+                MessageBox.Show("Debe seleccionar al menos un campo");
+            } else
+            {            
             csimple = "SELECT " + campo + "FROM " + valortabla.Text + " " ;
             MessageBox.Show("La cadena generada es: " + csimple);
             Console.WriteLine(csimple);
@@ -196,28 +209,28 @@ namespace CapaVista
             txtcamposelectos.Text = "";
             cboTabla.Text = "";
             chkSelectTodos.Checked = false;
-
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             //Boton de crear
-            final = csimple + " " + where + " " + and + " " + group + " ;";
-            MessageBox.Show("La consulta Generado fue: " + final);
-            llenarcboinsert(final);
-            validar = cbovalidar.Items[0].ToString();
-
-            if (validar == "")
+            final = csimple + " " + where + " " + and + " " + group + ";";
+            if (csimple =="")
             {
-                MessageBox.Show("Consulta invalida, el valor de validar es: "+ validar);
-            } else
-            {
-                MessageBox.Show("Validar es " + validar);
-                cn.ingresarconsulta(txtNombreConsulta.Text, final);
-                llenarcboquery();
+                MessageBox.Show("Consulta incorrecta");
                 limpiar();
                 habilitaciones();
-
+                txtNombreConsulta.Focus();
+            }
+            else
+            {
+            MessageBox.Show("Consulta Almacenada");
+            cn.ingresarconsulta(txtNombreConsulta.Text, final);
+            llenarcboquery();
+            limpiar();
+            habilitaciones();
+            txtNombreConsulta.Focus();            
             }
         }
 
@@ -245,7 +258,6 @@ namespace CapaVista
             and = "";
             group = "";
             final = "";
-            validar = "";
         }
 
         public void habilitaciones()
@@ -300,6 +312,13 @@ namespace CapaVista
 
         private void btnAgregarConsultaCompleja_Click(object sender, EventArgs e)
         {
+            if ((cboOperadorLogico.Text == "") || (cboCampoLogica.Text == "") || (txtValor.Text == ""))
+            {
+                MessageBox.Show("Utilice todos los campos logicos");
+            }
+            else
+            {
+
             if (where != "")
             {
 
@@ -307,12 +326,15 @@ namespace CapaVista
                 and = and + cboOperadorLogico.SelectedItem.ToString() + " "
                 + cboCampoLogica.SelectedItem.ToString() + "=" +
                 '"' + txtValor.Text + '"' + " ";
-            MessageBox.Show(csimple + where + and);
+                MessageBox.Show(csimple + where + and);
+                txtCadenaGenerada.Text = csimple + where + and;
             } else
             {
                 and = "";
                 MessageBox.Show("Para agregar un comparador debe seleccionar un where");
 
+
+            }
             }
         }
 
@@ -325,11 +347,15 @@ namespace CapaVista
             {
                 orden = "asc";
             }
+
+            if ((cboAgruparOrdenar.Text == "") || (cboCampoAgruparOrdenar.Text==""))
+            {
+                MessageBox.Show("Debe utilizar todos los campos de agrupacion");
+            } else
+            {
             if (cboAgruparOrdenar.SelectedIndex == 0)
             {
                 group = "group by " + cboCampoAgruparOrdenar.SelectedItem.ToString();
-                       
-                MessageBox.Show(cboAgruparOrdenar.SelectedItem.ToString());
             } else if (cboAgruparOrdenar.SelectedIndex == 1)
             {
                 group = "order by " + cboCampoAgruparOrdenar.SelectedItem.ToString() + " " + orden;
@@ -337,6 +363,7 @@ namespace CapaVista
             }
             MessageBox.Show(csimple + where + and + group);
             txtCadenaGenerada.Text = csimple + where + and + group;
+        }
         }
 
         private void cboAgruparOrdenar_SelectedIndexChanged(object sender, EventArgs e)
@@ -354,11 +381,17 @@ namespace CapaVista
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if ((cboTipoComparador.Text == "")|| (cboCampoComparacion.Text == "")|| (txtValorComparacion.Text == ""))
+            {
+                MessageBox.Show("Clausula where estructurada erroneamente");
+            } else
+            {
 
             where = cboTipoComparador.SelectedItem.ToString() + " " + cboCampoComparacion.SelectedItem.ToString() + "=" +
             '"' + txtValorComparacion.Text + '"' + " ";
             MessageBox.Show(csimple + where);
             txtCadenaGenerada.Text = csimple + where;
+            }
 
         }
 
@@ -398,6 +431,44 @@ namespace CapaVista
         private void btnEliminarBUSCARyELIMINAR_Click(object sender, EventArgs e)
         {
             cn.ejecutarconsulta(txtNombreConsultaBUSCARyELIMINAR.Text);
+            MessageBox.Show("Las consultas con nombre " + txtNombreConsultaBUSCARyELIMINAR.Text + " Han sido eliminadas");
+            actualizaconsultas();
+            txtNombreConsultaBUSCARyELIMINAR.Text = "";
         }
+
+        //Pestaña TAB3 EDITAR a partir de aca
+        public void llenarcomboeditar()
+        {
+            cbonombreconsulta.Items.Clear();
+            OdbcDataReader datareader = cn.llenarcbonombreconsulta();
+            while (datareader.Read())
+            {
+                cbonombreconsulta.Items.Add(datareader[0].ToString());
+            }
+        }
+
+        private void cbonombreconsulta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtTablaConsultaSimple.Text = cbonombreconsulta.SelectedItem.ToString();
+            groupBox8.Enabled = true;
+
+        }
+
+        private void cboTablaConsultaSimple_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void tablaseditar()
+        {
+            cboTabla.Items.Clear();
+            OdbcDataReader datareader = cn.llenarcbo();
+            while (datareader.Read())
+            {
+                cboTablaConsultaSimple.Items.Add(datareader[0].ToString());
+            }
+        }
+
+
     }
 }
