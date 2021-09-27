@@ -29,6 +29,7 @@ namespace CapaVista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultasInteligentes));
             this.tb1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cbovalidar = new System.Windows.Forms.ComboBox();
@@ -186,12 +187,13 @@ namespace CapaVista
             this.tb1.Location = new System.Drawing.Point(0, 0);
             this.tb1.Name = "tb1";
             this.tb1.SelectedIndex = 0;
-            this.tb1.Size = new System.Drawing.Size(803, 510);
+            this.tb1.Size = new System.Drawing.Size(803, 531);
             this.tb1.TabIndex = 0;
             this.tb1.Tag = "";
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.Controls.Add(this.cbovalidar);
             this.tabPage1.Controls.Add(this.chkcondiciones);
             this.tabPage1.Controls.Add(this.txtCadenaGenerada);
@@ -207,7 +209,7 @@ namespace CapaVista
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(795, 484);
+            this.tabPage1.Size = new System.Drawing.Size(795, 505);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Creacion";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -237,7 +239,7 @@ namespace CapaVista
             // txtCadenaGenerada
             // 
             this.txtCadenaGenerada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtCadenaGenerada.Location = new System.Drawing.Point(494, 365);
+            this.txtCadenaGenerada.Location = new System.Drawing.Point(494, 362);
             this.txtCadenaGenerada.Multiline = true;
             this.txtCadenaGenerada.Name = "txtCadenaGenerada";
             this.txtCadenaGenerada.Size = new System.Drawing.Size(293, 57);
@@ -269,10 +271,11 @@ namespace CapaVista
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(652, 428);
+            this.button11.Location = new System.Drawing.Point(652, 425);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(78, 20);
+            this.button11.Size = new System.Drawing.Size(65, 74);
             this.button11.TabIndex = 33;
             this.button11.Text = "Borrar";
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -294,10 +297,11 @@ namespace CapaVista
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(537, 428);
+            this.button10.Location = new System.Drawing.Point(562, 425);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(74, 20);
+            this.button10.Size = new System.Drawing.Size(61, 74);
             this.button10.TabIndex = 32;
             this.button10.Text = "Crear";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -324,25 +328,27 @@ namespace CapaVista
             // btnCancelarAgruparOrdenar
             // 
             this.btnCancelarAgruparOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarAgruparOrdenar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarAgruparOrdenar.Location = new System.Drawing.Point(386, 52);
+            this.btnCancelarAgruparOrdenar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarAgruparOrdenar.Image")));
+            this.btnCancelarAgruparOrdenar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarAgruparOrdenar.Location = new System.Drawing.Point(408, 20);
             this.btnCancelarAgruparOrdenar.Name = "btnCancelarAgruparOrdenar";
-            this.btnCancelarAgruparOrdenar.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarAgruparOrdenar.Size = new System.Drawing.Size(67, 72);
             this.btnCancelarAgruparOrdenar.TabIndex = 22;
             this.btnCancelarAgruparOrdenar.Text = "Cancelar";
-            this.btnCancelarAgruparOrdenar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarAgruparOrdenar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarAgruparOrdenar.UseVisualStyleBackColor = false;
             // 
             // btnAgregarAgruparordenar
             // 
             this.btnAgregarAgruparordenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarAgruparordenar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarAgruparordenar.Location = new System.Drawing.Point(386, 23);
+            this.btnAgregarAgruparordenar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarAgruparordenar.Image")));
+            this.btnAgregarAgruparordenar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarAgruparordenar.Location = new System.Drawing.Point(340, 20);
             this.btnAgregarAgruparordenar.Name = "btnAgregarAgruparordenar";
-            this.btnAgregarAgruparordenar.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarAgruparordenar.Size = new System.Drawing.Size(62, 72);
             this.btnAgregarAgruparordenar.TabIndex = 20;
             this.btnAgregarAgruparordenar.Text = "Agregar";
-            this.btnAgregarAgruparordenar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarAgruparordenar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregarAgruparordenar.UseVisualStyleBackColor = false;
             this.btnAgregarAgruparordenar.Click += new System.EventHandler(this.btnAgregarAgruparordenar_Click);
             // 
@@ -351,7 +357,7 @@ namespace CapaVista
             this.gpbOrdenamiento.Controls.Add(this.rdbAsc);
             this.gpbOrdenamiento.Controls.Add(this.rdbDesc);
             this.gpbOrdenamiento.Enabled = false;
-            this.gpbOrdenamiento.Location = new System.Drawing.Point(251, 19);
+            this.gpbOrdenamiento.Location = new System.Drawing.Point(221, 19);
             this.gpbOrdenamiento.Name = "gpbOrdenamiento";
             this.gpbOrdenamiento.Size = new System.Drawing.Size(113, 53);
             this.gpbOrdenamiento.TabIndex = 19;
@@ -441,7 +447,7 @@ namespace CapaVista
             this.gpbConsultaCompleja.Enabled = false;
             this.gpbConsultaCompleja.Location = new System.Drawing.Point(6, 212);
             this.gpbConsultaCompleja.Name = "gpbConsultaCompleja";
-            this.gpbConsultaCompleja.Size = new System.Drawing.Size(681, 128);
+            this.gpbConsultaCompleja.Size = new System.Drawing.Size(771, 128);
             this.gpbConsultaCompleja.TabIndex = 27;
             this.gpbConsultaCompleja.TabStop = false;
             this.gpbConsultaCompleja.Text = "Consulta Compleja";
@@ -456,9 +462,9 @@ namespace CapaVista
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Location = new System.Drawing.Point(351, 19);
+            this.groupBox4.Location = new System.Drawing.Point(374, 22);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(317, 100);
+            this.groupBox4.Size = new System.Drawing.Size(368, 100);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Comparación";
@@ -466,26 +472,28 @@ namespace CapaVista
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(229, 20);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 23);
+            this.button1.Size = new System.Drawing.Size(60, 70);
             this.button1.TabIndex = 22;
             this.button1.Text = "Agregar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCancelarComparacion
             // 
             this.btnCancelarComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarComparacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarComparacion.Location = new System.Drawing.Point(229, 62);
+            this.btnCancelarComparacion.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarComparacion.Image")));
+            this.btnCancelarComparacion.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarComparacion.Location = new System.Drawing.Point(295, 21);
             this.btnCancelarComparacion.Name = "btnCancelarComparacion";
-            this.btnCancelarComparacion.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarComparacion.Size = new System.Drawing.Size(57, 68);
             this.btnCancelarComparacion.TabIndex = 21;
             this.btnCancelarComparacion.Text = "Cancelar";
-            this.btnCancelarComparacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarComparacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarComparacion.UseVisualStyleBackColor = false;
             // 
             // txtValorComparacion
@@ -555,7 +563,7 @@ namespace CapaVista
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Location = new System.Drawing.Point(6, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(329, 100);
+            this.groupBox3.Size = new System.Drawing.Size(352, 100);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Logica";
@@ -563,25 +571,27 @@ namespace CapaVista
             // btnCancelarConsultaCompleja
             // 
             this.btnCancelarConsultaCompleja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarConsultaCompleja.Location = new System.Drawing.Point(218, 62);
+            this.btnCancelarConsultaCompleja.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarConsultaCompleja.Image")));
+            this.btnCancelarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarConsultaCompleja.Location = new System.Drawing.Point(281, 25);
             this.btnCancelarConsultaCompleja.Name = "btnCancelarConsultaCompleja";
-            this.btnCancelarConsultaCompleja.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarConsultaCompleja.Size = new System.Drawing.Size(60, 68);
             this.btnCancelarConsultaCompleja.TabIndex = 20;
             this.btnCancelarConsultaCompleja.Text = "Cancelar";
-            this.btnCancelarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarConsultaCompleja.UseVisualStyleBackColor = false;
             // 
             // btnAgregarConsultaCompleja
             // 
             this.btnAgregarConsultaCompleja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarConsultaCompleja.Location = new System.Drawing.Point(218, 25);
+            this.btnAgregarConsultaCompleja.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarConsultaCompleja.Image")));
+            this.btnAgregarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarConsultaCompleja.Location = new System.Drawing.Point(217, 24);
             this.btnAgregarConsultaCompleja.Name = "btnAgregarConsultaCompleja";
-            this.btnAgregarConsultaCompleja.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarConsultaCompleja.Size = new System.Drawing.Size(58, 69);
             this.btnAgregarConsultaCompleja.TabIndex = 19;
             this.btnAgregarConsultaCompleja.Text = "Agregar";
-            this.btnAgregarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarConsultaCompleja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregarConsultaCompleja.UseVisualStyleBackColor = false;
             this.btnAgregarConsultaCompleja.Click += new System.EventHandler(this.btnAgregarConsultaCompleja_Click);
             // 
@@ -659,6 +669,7 @@ namespace CapaVista
             this.gpbConsultaSimple.Controls.Add(this.label3);
             this.gpbConsultaSimple.Controls.Add(this.label2);
             this.gpbConsultaSimple.Controls.Add(this.label1);
+            this.gpbConsultaSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbConsultaSimple.Location = new System.Drawing.Point(8, 6);
             this.gpbConsultaSimple.Name = "gpbConsultaSimple";
             this.gpbConsultaSimple.Size = new System.Drawing.Size(769, 182);
@@ -668,6 +679,7 @@ namespace CapaVista
             // 
             // cbotablas
             // 
+            this.cbotablas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.cbotablas.FormattingEnabled = true;
             this.cbotablas.Location = new System.Drawing.Point(132, 47);
             this.cbotablas.Name = "cbotablas";
@@ -678,7 +690,7 @@ namespace CapaVista
             // valortabla
             // 
             this.valortabla.Enabled = false;
-            this.valortabla.Location = new System.Drawing.Point(256, 82);
+            this.valortabla.Location = new System.Drawing.Point(256, 99);
             this.valortabla.Name = "valortabla";
             this.valortabla.ReadOnly = true;
             this.valortabla.Size = new System.Drawing.Size(100, 20);
@@ -687,6 +699,7 @@ namespace CapaVista
             // 
             // txtcamposelectos
             // 
+            this.txtcamposelectos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.txtcamposelectos.Location = new System.Drawing.Point(407, 53);
             this.txtcamposelectos.Multiline = true;
             this.txtcamposelectos.Name = "txtcamposelectos";
@@ -722,26 +735,28 @@ namespace CapaVista
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(257, 53);
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregar.Location = new System.Drawing.Point(257, 23);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(62, 70);
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelarCamposSeleccionados
             // 
             this.btnCancelarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarCamposSeleccionados.Location = new System.Drawing.Point(697, 82);
+            this.btnCancelarCamposSeleccionados.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarCamposSeleccionados.Image")));
+            this.btnCancelarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarCamposSeleccionados.Location = new System.Drawing.Point(672, 96);
             this.btnCancelarCamposSeleccionados.Name = "btnCancelarCamposSeleccionados";
-            this.btnCancelarCamposSeleccionados.Size = new System.Drawing.Size(61, 23);
+            this.btnCancelarCamposSeleccionados.Size = new System.Drawing.Size(68, 69);
             this.btnCancelarCamposSeleccionados.TabIndex = 29;
             this.btnCancelarCamposSeleccionados.Text = "Cancelar";
-            this.btnCancelarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarCamposSeleccionados.UseVisualStyleBackColor = false;
             this.btnCancelarCamposSeleccionados.Click += new System.EventHandler(this.btnCancelarCamposSeleccionados_Click);
             // 
@@ -769,20 +784,21 @@ namespace CapaVista
             // btnAgregarCamposSeleccionados
             // 
             this.btnAgregarCamposSeleccionados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCamposSeleccionados.Location = new System.Drawing.Point(697, 45);
+            this.btnAgregarCamposSeleccionados.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCamposSeleccionados.Image")));
+            this.btnAgregarCamposSeleccionados.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarCamposSeleccionados.Location = new System.Drawing.Point(672, 23);
             this.btnAgregarCamposSeleccionados.Name = "btnAgregarCamposSeleccionados";
-            this.btnAgregarCamposSeleccionados.Size = new System.Drawing.Size(54, 23);
+            this.btnAgregarCamposSeleccionados.Size = new System.Drawing.Size(68, 67);
             this.btnAgregarCamposSeleccionados.TabIndex = 28;
             this.btnAgregarCamposSeleccionados.Text = "Agregar";
-            this.btnAgregarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarCamposSeleccionados.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregarCamposSeleccionados.UseVisualStyleBackColor = false;
             this.btnAgregarCamposSeleccionados.Click += new System.EventHandler(this.btnAgregarCamposSeleccionados_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 122);
+            this.label4.Location = new System.Drawing.Point(24, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 3;
@@ -809,6 +825,7 @@ namespace CapaVista
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
@@ -817,12 +834,13 @@ namespace CapaVista
             // 
             // tabPage2
             // 
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.Controls.Add(this.dgvCONSULTAS);
             this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(795, 484);
+            this.tabPage2.Size = new System.Drawing.Size(795, 505);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -870,10 +888,11 @@ namespace CapaVista
             // btnBuscarCONSULTAS
             // 
             this.btnBuscarCONSULTAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnBuscarCONSULTAS.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCONSULTAS.Image")));
             this.btnBuscarCONSULTAS.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscarCONSULTAS.Location = new System.Drawing.Point(177, 47);
+            this.btnBuscarCONSULTAS.Location = new System.Drawing.Point(174, 15);
             this.btnBuscarCONSULTAS.Name = "btnBuscarCONSULTAS";
-            this.btnBuscarCONSULTAS.Size = new System.Drawing.Size(82, 26);
+            this.btnBuscarCONSULTAS.Size = new System.Drawing.Size(70, 64);
             this.btnBuscarCONSULTAS.TabIndex = 22;
             this.btnBuscarCONSULTAS.Text = "Buscar";
             this.btnBuscarCONSULTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -883,7 +902,7 @@ namespace CapaVista
             // txtCadenaGeneradaCONSULTAS
             // 
             this.txtCadenaGeneradaCONSULTAS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtCadenaGeneradaCONSULTAS.Location = new System.Drawing.Point(272, 24);
+            this.txtCadenaGeneradaCONSULTAS.Location = new System.Drawing.Point(272, 31);
             this.txtCadenaGeneradaCONSULTAS.Multiline = true;
             this.txtCadenaGeneradaCONSULTAS.Name = "txtCadenaGeneradaCONSULTAS";
             this.txtCadenaGeneradaCONSULTAS.Size = new System.Drawing.Size(386, 41);
@@ -902,7 +921,7 @@ namespace CapaVista
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(174, 31);
+            this.label16.Location = new System.Drawing.Point(269, 15);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(92, 13);
             this.label16.TabIndex = 1;
@@ -919,6 +938,7 @@ namespace CapaVista
             // 
             // tabPage3
             // 
+            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
             this.tabPage3.Controls.Add(this.chkcondicioneseditar);
             this.tabPage3.Controls.Add(this.cbonombreconsulta);
             this.tabPage3.Controls.Add(this.txtCadenaGeneradaEDITAR);
@@ -932,7 +952,7 @@ namespace CapaVista
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(795, 484);
+            this.tabPage3.Size = new System.Drawing.Size(795, 505);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Editar";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -950,6 +970,7 @@ namespace CapaVista
             // 
             // cbonombreconsulta
             // 
+            this.cbonombreconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.cbonombreconsulta.FormattingEnabled = true;
             this.cbonombreconsulta.Location = new System.Drawing.Point(303, 10);
             this.cbonombreconsulta.Name = "cbonombreconsulta";
@@ -995,26 +1016,28 @@ namespace CapaVista
             // btnAgregarAgruparOrdenarEDITAR
             // 
             this.btnAgregarAgruparOrdenarEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarAgruparOrdenarEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarAgruparOrdenarEDITAR.Location = new System.Drawing.Point(392, 23);
+            this.btnAgregarAgruparOrdenarEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarAgruparOrdenarEDITAR.Image")));
+            this.btnAgregarAgruparOrdenarEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarAgruparOrdenarEDITAR.Location = new System.Drawing.Point(337, 19);
             this.btnAgregarAgruparOrdenarEDITAR.Name = "btnAgregarAgruparOrdenarEDITAR";
-            this.btnAgregarAgruparOrdenarEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarAgruparOrdenarEDITAR.Size = new System.Drawing.Size(58, 69);
             this.btnAgregarAgruparOrdenarEDITAR.TabIndex = 22;
             this.btnAgregarAgruparOrdenarEDITAR.Text = "Agregar";
-            this.btnAgregarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregarAgruparOrdenarEDITAR.UseVisualStyleBackColor = false;
             this.btnAgregarAgruparOrdenarEDITAR.Click += new System.EventHandler(this.btnAgregarAgruparOrdenarEDITAR_Click);
             // 
             // btnCancelarAgruparOrdenarEDITAR
             // 
             this.btnCancelarAgruparOrdenarEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarAgruparOrdenarEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarAgruparOrdenarEDITAR.Location = new System.Drawing.Point(392, 61);
+            this.btnCancelarAgruparOrdenarEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarAgruparOrdenarEDITAR.Image")));
+            this.btnCancelarAgruparOrdenarEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarAgruparOrdenarEDITAR.Location = new System.Drawing.Point(401, 19);
             this.btnCancelarAgruparOrdenarEDITAR.Name = "btnCancelarAgruparOrdenarEDITAR";
-            this.btnCancelarAgruparOrdenarEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarAgruparOrdenarEDITAR.Size = new System.Drawing.Size(60, 69);
             this.btnCancelarAgruparOrdenarEDITAR.TabIndex = 20;
             this.btnCancelarAgruparOrdenarEDITAR.Text = "Cancelar";
-            this.btnCancelarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarAgruparOrdenarEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarAgruparOrdenarEDITAR.UseVisualStyleBackColor = false;
             this.btnCancelarAgruparOrdenarEDITAR.Click += new System.EventHandler(this.btnCancelarAgruparOrdenarEDITAR_Click);
             // 
@@ -1023,7 +1046,7 @@ namespace CapaVista
             this.groupBox13.Controls.Add(this.rdbdescEDITAR);
             this.groupBox13.Controls.Add(this.rdbAscEDITAR);
             this.groupBox13.Enabled = false;
-            this.groupBox13.Location = new System.Drawing.Point(251, 19);
+            this.groupBox13.Location = new System.Drawing.Point(218, 19);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(113, 53);
             this.groupBox13.TabIndex = 19;
@@ -1096,10 +1119,11 @@ namespace CapaVista
             // btnborrareditar
             // 
             this.btnborrareditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnborrareditar.Image = ((System.Drawing.Image)(resources.GetObject("btnborrareditar.Image")));
             this.btnborrareditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnborrareditar.Location = new System.Drawing.Point(675, 433);
+            this.btnborrareditar.Location = new System.Drawing.Point(647, 427);
             this.btnborrareditar.Name = "btnborrareditar";
-            this.btnborrareditar.Size = new System.Drawing.Size(82, 27);
+            this.btnborrareditar.Size = new System.Drawing.Size(82, 72);
             this.btnborrareditar.TabIndex = 34;
             this.btnborrareditar.Text = "Borrar";
             this.btnborrareditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1109,10 +1133,11 @@ namespace CapaVista
             // btneditar
             // 
             this.btneditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btneditar.Image = ((System.Drawing.Image)(resources.GetObject("btneditar.Image")));
             this.btneditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btneditar.Location = new System.Drawing.Point(560, 431);
+            this.btneditar.Location = new System.Drawing.Point(536, 427);
             this.btneditar.Name = "btneditar";
-            this.btneditar.Size = new System.Drawing.Size(82, 29);
+            this.btneditar.Size = new System.Drawing.Size(82, 72);
             this.btneditar.TabIndex = 33;
             this.btneditar.Text = "Editar";
             this.btneditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1126,7 +1151,7 @@ namespace CapaVista
             this.groupBox9.Enabled = false;
             this.groupBox9.Location = new System.Drawing.Point(8, 224);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(681, 128);
+            this.groupBox9.Size = new System.Drawing.Size(749, 128);
             this.groupBox9.TabIndex = 32;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Consulta Compleja";
@@ -1141,9 +1166,9 @@ namespace CapaVista
             this.groupBox11.Controls.Add(this.label28);
             this.groupBox11.Controls.Add(this.label26);
             this.groupBox11.Controls.Add(this.label27);
-            this.groupBox11.Location = new System.Drawing.Point(351, 19);
+            this.groupBox11.Location = new System.Drawing.Point(364, 19);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(317, 100);
+            this.groupBox11.Size = new System.Drawing.Size(371, 100);
             this.groupBox11.TabIndex = 2;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Comparación";
@@ -1151,13 +1176,14 @@ namespace CapaVista
             // txtcancelarComparacionEDITAR
             // 
             this.txtcancelarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.txtcancelarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtcancelarComparacionEDITAR.Location = new System.Drawing.Point(229, 49);
+            this.txtcancelarComparacionEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("txtcancelarComparacionEDITAR.Image")));
+            this.txtcancelarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txtcancelarComparacionEDITAR.Location = new System.Drawing.Point(296, 14);
             this.txtcancelarComparacionEDITAR.Name = "txtcancelarComparacionEDITAR";
-            this.txtcancelarComparacionEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.txtcancelarComparacionEDITAR.Size = new System.Drawing.Size(61, 70);
             this.txtcancelarComparacionEDITAR.TabIndex = 19;
             this.txtcancelarComparacionEDITAR.Text = "Cancelar";
-            this.txtcancelarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtcancelarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.txtcancelarComparacionEDITAR.UseVisualStyleBackColor = false;
             this.txtcancelarComparacionEDITAR.Click += new System.EventHandler(this.txtcancelarComparacionEDITAR_Click);
             // 
@@ -1172,13 +1198,14 @@ namespace CapaVista
             // btnAgregarComparacionEDITAR
             // 
             this.btnAgregarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarComparacionEDITAR.Location = new System.Drawing.Point(229, 17);
+            this.btnAgregarComparacionEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarComparacionEDITAR.Image")));
+            this.btnAgregarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarComparacionEDITAR.Location = new System.Drawing.Point(229, 14);
             this.btnAgregarComparacionEDITAR.Name = "btnAgregarComparacionEDITAR";
-            this.btnAgregarComparacionEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnAgregarComparacionEDITAR.Size = new System.Drawing.Size(61, 72);
             this.btnAgregarComparacionEDITAR.TabIndex = 20;
             this.btnAgregarComparacionEDITAR.Text = "Agregar";
-            this.btnAgregarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarComparacionEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregarComparacionEDITAR.UseVisualStyleBackColor = false;
             this.btnAgregarComparacionEDITAR.Click += new System.EventHandler(this.btnAgregarComparacionEDITAR_Click);
             // 
@@ -1241,7 +1268,7 @@ namespace CapaVista
             this.groupBox10.Controls.Add(this.label23);
             this.groupBox10.Location = new System.Drawing.Point(6, 19);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(329, 100);
+            this.groupBox10.Size = new System.Drawing.Size(341, 100);
             this.groupBox10.TabIndex = 2;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Logica";
@@ -1249,26 +1276,29 @@ namespace CapaVista
             // btnCancelarCONSULTACOMPLEJAEDITAR
             // 
             this.btnCancelarCONSULTACOMPLEJAEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(241, 64);
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarCONSULTACOMPLEJAEDITAR.Image")));
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(273, 16);
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Name = "btnCancelarCONSULTACOMPLEJAEDITAR";
-            this.btnCancelarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(60, 70);
             this.btnCancelarCONSULTACOMPLEJAEDITAR.TabIndex = 20;
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Text = "Cancelar";
-            this.btnCancelarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarCONSULTACOMPLEJAEDITAR.UseVisualStyleBackColor = false;
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Click += new System.EventHandler(this.btnCancelarCONSULTACOMPLEJAEDITAR_Click);
             // 
             // btnagregarCONSULTACOMPLEJAEDITAR
             // 
             this.btnagregarCONSULTACOMPLEJAEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnagregarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnagregarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(241, 22);
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnagregarCONSULTACOMPLEJAEDITAR.Image")));
+            this.btnagregarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(207, 16);
             this.btnagregarCONSULTACOMPLEJAEDITAR.Name = "btnagregarCONSULTACOMPLEJAEDITAR";
-            this.btnagregarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(82, 23);
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(60, 70);
             this.btnagregarCONSULTACOMPLEJAEDITAR.TabIndex = 21;
             this.btnagregarCONSULTACOMPLEJAEDITAR.Text = "Agregar";
-            this.btnagregarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnagregarCONSULTACOMPLEJAEDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnagregarCONSULTACOMPLEJAEDITAR.UseVisualStyleBackColor = false;
             this.btnagregarCONSULTACOMPLEJAEDITAR.Click += new System.EventHandler(this.btnagregarCONSULTACOMPLEJAEDITAR_Click);
             // 
@@ -1349,7 +1379,7 @@ namespace CapaVista
             this.groupBox8.Enabled = false;
             this.groupBox8.Location = new System.Drawing.Point(8, 43);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(681, 146);
+            this.groupBox8.Size = new System.Drawing.Size(749, 146);
             this.groupBox8.TabIndex = 28;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Consulta Simple";
@@ -1357,20 +1387,21 @@ namespace CapaVista
             // btnagregarcamposeditar
             // 
             this.btnagregarcamposeditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnagregarcamposeditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnagregarcamposeditar.Location = new System.Drawing.Point(600, 50);
+            this.btnagregarcamposeditar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregarcamposeditar.Image")));
+            this.btnagregarcamposeditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnagregarcamposeditar.Location = new System.Drawing.Point(607, 50);
             this.btnagregarcamposeditar.Name = "btnagregarcamposeditar";
-            this.btnagregarcamposeditar.Size = new System.Drawing.Size(75, 23);
+            this.btnagregarcamposeditar.Size = new System.Drawing.Size(61, 70);
             this.btnagregarcamposeditar.TabIndex = 23;
             this.btnagregarcamposeditar.Text = "Agregar";
-            this.btnagregarcamposeditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnagregarcamposeditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnagregarcamposeditar.UseVisualStyleBackColor = false;
             this.btnagregarcamposeditar.Click += new System.EventHandler(this.btnagregarcamposeditar_Click);
             // 
             // txttablaeditar
             // 
             this.txttablaeditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txttablaeditar.Location = new System.Drawing.Point(249, 50);
+            this.txttablaeditar.Location = new System.Drawing.Point(247, 109);
             this.txttablaeditar.Name = "txttablaeditar";
             this.txttablaeditar.ReadOnly = true;
             this.txttablaeditar.Size = new System.Drawing.Size(100, 20);
@@ -1379,6 +1410,7 @@ namespace CapaVista
             // 
             // txtcamposelectoseditar
             // 
+            this.txtcamposelectoseditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.txtcamposelectoseditar.Location = new System.Drawing.Point(370, 47);
             this.txtcamposelectoseditar.Multiline = true;
             this.txtcamposelectoseditar.Name = "txtcamposelectoseditar";
@@ -1424,26 +1456,28 @@ namespace CapaVista
             // btnAgregarCONSULTASIMPLE
             // 
             this.btnAgregarCONSULTASIMPLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAgregarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCONSULTASIMPLE.Location = new System.Drawing.Point(260, 79);
+            this.btnAgregarCONSULTASIMPLE.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCONSULTASIMPLE.Image")));
+            this.btnAgregarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarCONSULTASIMPLE.Location = new System.Drawing.Point(269, 25);
             this.btnAgregarCONSULTASIMPLE.Name = "btnAgregarCONSULTASIMPLE";
-            this.btnAgregarCONSULTASIMPLE.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarCONSULTASIMPLE.Size = new System.Drawing.Size(60, 67);
             this.btnAgregarCONSULTASIMPLE.TabIndex = 13;
             this.btnAgregarCONSULTASIMPLE.Text = "Agregar";
-            this.btnAgregarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregarCONSULTASIMPLE.UseVisualStyleBackColor = false;
             this.btnAgregarCONSULTASIMPLE.Click += new System.EventHandler(this.btnAgregarCONSULTASIMPLE_Click);
             // 
             // btnCancelarCONSULTASIMPLE
             // 
             this.btnCancelarCONSULTASIMPLE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarCONSULTASIMPLE.Location = new System.Drawing.Point(601, 79);
+            this.btnCancelarCONSULTASIMPLE.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarCONSULTASIMPLE.Image")));
+            this.btnCancelarCONSULTASIMPLE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarCONSULTASIMPLE.Location = new System.Drawing.Point(674, 50);
             this.btnCancelarCONSULTASIMPLE.Name = "btnCancelarCONSULTASIMPLE";
-            this.btnCancelarCONSULTASIMPLE.Size = new System.Drawing.Size(74, 23);
+            this.btnCancelarCONSULTASIMPLE.Size = new System.Drawing.Size(61, 70);
             this.btnCancelarCONSULTASIMPLE.TabIndex = 9;
             this.btnCancelarCONSULTASIMPLE.Text = "Cancelar";
-            this.btnCancelarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarCONSULTASIMPLE.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarCONSULTASIMPLE.UseVisualStyleBackColor = false;
             this.btnCancelarCONSULTASIMPLE.Click += new System.EventHandler(this.btnCancelarCONSULTASIMPLE_Click);
             // 
@@ -1516,6 +1550,7 @@ namespace CapaVista
             // 
             // tabPage4
             // 
+            this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.Controls.Add(this.btnConsultaBUSCARyELIMINAR);
             this.tabPage4.Controls.Add(this.btnEliminarBUSCARyELIMINAR);
             this.tabPage4.Controls.Add(this.btnActualizarBUSCARyELIMINAR);
@@ -1526,7 +1561,7 @@ namespace CapaVista
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(795, 484);
+            this.tabPage4.Size = new System.Drawing.Size(795, 505);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Buscar/Eliminar";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1534,10 +1569,11 @@ namespace CapaVista
             // btnConsultaBUSCARyELIMINAR
             // 
             this.btnConsultaBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnConsultaBUSCARyELIMINAR.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultaBUSCARyELIMINAR.Image")));
             this.btnConsultaBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnConsultaBUSCARyELIMINAR.Location = new System.Drawing.Point(674, 39);
+            this.btnConsultaBUSCARyELIMINAR.Location = new System.Drawing.Point(674, 6);
             this.btnConsultaBUSCARyELIMINAR.Name = "btnConsultaBUSCARyELIMINAR";
-            this.btnConsultaBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 34);
+            this.btnConsultaBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 76);
             this.btnConsultaBUSCARyELIMINAR.TabIndex = 38;
             this.btnConsultaBUSCARyELIMINAR.Text = "Consultar";
             this.btnConsultaBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1547,10 +1583,11 @@ namespace CapaVista
             // btnEliminarBUSCARyELIMINAR
             // 
             this.btnEliminarBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnEliminarBUSCARyELIMINAR.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarBUSCARyELIMINAR.Image")));
             this.btnEliminarBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminarBUSCARyELIMINAR.Location = new System.Drawing.Point(586, 39);
+            this.btnEliminarBUSCARyELIMINAR.Location = new System.Drawing.Point(586, 6);
             this.btnEliminarBUSCARyELIMINAR.Name = "btnEliminarBUSCARyELIMINAR";
-            this.btnEliminarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 34);
+            this.btnEliminarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 76);
             this.btnEliminarBUSCARyELIMINAR.TabIndex = 37;
             this.btnEliminarBUSCARyELIMINAR.Text = "Eliminar";
             this.btnEliminarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1560,10 +1597,11 @@ namespace CapaVista
             // btnActualizarBUSCARyELIMINAR
             // 
             this.btnActualizarBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnActualizarBUSCARyELIMINAR.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizarBUSCARyELIMINAR.Image")));
             this.btnActualizarBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnActualizarBUSCARyELIMINAR.Location = new System.Drawing.Point(498, 39);
+            this.btnActualizarBUSCARyELIMINAR.Location = new System.Drawing.Point(498, 6);
             this.btnActualizarBUSCARyELIMINAR.Name = "btnActualizarBUSCARyELIMINAR";
-            this.btnActualizarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 34);
+            this.btnActualizarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 76);
             this.btnActualizarBUSCARyELIMINAR.TabIndex = 36;
             this.btnActualizarBUSCARyELIMINAR.Text = "Actualizar";
             this.btnActualizarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1573,10 +1611,11 @@ namespace CapaVista
             // btnBuscarBUSCARyELIMINAR
             // 
             this.btnBuscarBUSCARyELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.btnBuscarBUSCARyELIMINAR.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarBUSCARyELIMINAR.Image")));
             this.btnBuscarBUSCARyELIMINAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscarBUSCARyELIMINAR.Location = new System.Drawing.Point(410, 39);
+            this.btnBuscarBUSCARyELIMINAR.Location = new System.Drawing.Point(410, 6);
             this.btnBuscarBUSCARyELIMINAR.Name = "btnBuscarBUSCARyELIMINAR";
-            this.btnBuscarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 34);
+            this.btnBuscarBUSCARyELIMINAR.Size = new System.Drawing.Size(82, 76);
             this.btnBuscarBUSCARyELIMINAR.TabIndex = 35;
             this.btnBuscarBUSCARyELIMINAR.Text = "Buscar";
             this.btnBuscarBUSCARyELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1588,7 +1627,7 @@ namespace CapaVista
             this.dgvBUSCARyELIMINAR.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBUSCARyELIMINAR.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(128)))));
             this.dgvBUSCARyELIMINAR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBUSCARyELIMINAR.Location = new System.Drawing.Point(38, 79);
+            this.dgvBUSCARyELIMINAR.Location = new System.Drawing.Point(38, 88);
             this.dgvBUSCARyELIMINAR.Name = "dgvBUSCARyELIMINAR";
             this.dgvBUSCARyELIMINAR.Size = new System.Drawing.Size(718, 277);
             this.dgvBUSCARyELIMINAR.TabIndex = 34;
@@ -1614,7 +1653,8 @@ namespace CapaVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 493);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(811, 535);
             this.Controls.Add(this.tb1);
             this.Name = "ConsultasInteligentes";
             this.Text = "ConsultasInteligentes";
