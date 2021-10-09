@@ -29,7 +29,12 @@ namespace CapaVista
 
         private void btnCancelarCamposSeleccionados_Click(object sender, EventArgs e)
         {
-           
+        campo ="";
+        csimple = "";
+            txtcamposelectos.Text = "";
+            txtCadenaGenerada.Text = "";
+
+
         }
         clscontrolador cn = new clscontrolador();
 
@@ -192,7 +197,6 @@ namespace CapaVista
             } else
             {            
             csimple = "SELECT " + campo + "FROM " + valortabla.Text + " " ;
-            MessageBox.Show("La cadena generada es: " + csimple);
             Console.WriteLine(csimple);
             txtCadenaGenerada.Text = csimple;
             campo = "";
@@ -306,7 +310,7 @@ namespace CapaVista
 
         private void btnAgregarConsultaCompleja_Click(object sender, EventArgs e)
         {
-            if ((cboOperadorLogico.Text == "") || (cboCampoLogica.Text == "") || (txtValor.Text == ""))
+            if ((cboOperadorLogico.Text == "") || (cboCampoLogica.Text == "") || (txtValor.Text == "")||(cboandcre.Text==""))
             {
                 MessageBox.Show("Utilice todos los campos logicos");
             }
@@ -316,18 +320,21 @@ namespace CapaVista
             if (where != "")
             {
 
-            
+                if (cboandcre.SelectedItem.ToString() == "like") { 
                 and = and + cboOperadorLogico.SelectedItem.ToString() + " "
-                + cboCampoLogica.SelectedItem.ToString() + "=" +
-                '"' + txtValor.Text + '"' + " ";
-                MessageBox.Show(csimple + where + and);
+                + cboCampoLogica.SelectedItem.ToString() + " " +
+                cboandcre.SelectedItem.ToString()+" "+'"' +"%"+ txtValor.Text +" %"+ '"' + " ";
                 txtCadenaGenerada.Text = csimple + where + and;
-            } else
+                } else {
+                and = and + cboOperadorLogico.SelectedItem.ToString() + " "
+                + cboCampoLogica.SelectedItem.ToString() + " " +
+                cboandcre.SelectedItem.ToString() + " " + '"' + txtValor.Text + '"' + " ";
+                txtCadenaGenerada.Text = csimple + where + and;
+                    }
+                } else
             {
                 and = "";
                 MessageBox.Show("Para agregar un comparador debe seleccionar un where");
-
-
             }
             }
         }
@@ -355,7 +362,6 @@ namespace CapaVista
                 group = "order by " + cboCampoAgruparOrdenar.SelectedItem.ToString() + " " + orden;
 
             }
-            MessageBox.Show(csimple + where + and + group);
             txtCadenaGenerada.Text = csimple + where + and + group;
         }
         }
@@ -375,16 +381,22 @@ namespace CapaVista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((cboTipoComparador.Text == "")|| (cboCampoComparacion.Text == "")|| (txtValorComparacion.Text == ""))
+            if ((cboTipoComparador.Text == "")|| (cboCampoComparacion.Text == "")|| (txtValorComparacion.Text == "")||(cbocompcre.Text==""))
             {
                 MessageBox.Show("Clausula where estructurada erroneamente");
             } else
             {
-
-            where = cboTipoComparador.SelectedItem.ToString() + " " + cboCampoComparacion.SelectedItem.ToString() + "=" +
-            '"' + txtValorComparacion.Text + '"' + " ";
-            MessageBox.Show(csimple + where);
-            txtCadenaGenerada.Text = csimple + where;
+                if (cbocompcre.SelectedItem.ToString()=="like")
+                {
+                    where = cboTipoComparador.SelectedItem.ToString() + " " + cboCampoComparacion.SelectedItem.ToString() + " " +
+                    cbocompcre.SelectedItem.ToString()+" "+'"' +"%"+ txtValorComparacion.Text +"%"+ '"' + " ";
+                    txtCadenaGenerada.Text = csimple + where;
+                } else
+                {
+                    where = cboTipoComparador.SelectedItem.ToString() + " " + cboCampoComparacion.SelectedItem.ToString() + " " +
+                    cbocompcre.SelectedItem.ToString() + " " + '"' + txtValorComparacion.Text + '"' + " ";
+                    txtCadenaGenerada.Text = csimple + where;
+                }
             }
 
         }
@@ -567,7 +579,6 @@ namespace CapaVista
             else
             {
                 csimpleeditar = "SELECT " + campoeditar + "FROM " + txttablaeditar.Text + " ";
-                MessageBox.Show("La cadena generada es: " + csimpleeditar);
                 Console.WriteLine(csimpleeditar);
                 txtCadenaGeneradaEDITAR.Text = csimpleeditar;
                 campoeditar = "";
@@ -597,17 +608,22 @@ namespace CapaVista
 
         private void btnAgregarComparacionEDITAR_Click(object sender, EventArgs e)
         {
-            if ((cboTipoComparadorEDITAR.Text == "") || (cboCampoEDITAR.Text == "") || (txtValorComparacionEDITAR.Text == ""))
+            if ((cboTipoComparadorEDITAR.Text == "") || (cboCampoEDITAR.Text == "") || (txtValorComparacionEDITAR.Text == "")||(cbocompwhere.Text==""))
             {
                 MessageBox.Show("Clausula where estructurada erroneamente");
             }
             else
             {
-
-                whereeditar = cboTipoComparadorEDITAR.SelectedItem.ToString() + " " + cboCampoEDITAR.SelectedItem.ToString() + "=" +
-                '"' + txtValorComparacionEDITAR.Text + '"' + " ";
-                MessageBox.Show(csimpleeditar + whereeditar);
+                if (cbocompwhere.SelectedItem.ToString() == "like")
+                {
+                 whereeditar = cboTipoComparadorEDITAR.SelectedItem.ToString() + " " + cboCampoEDITAR.SelectedItem.ToString() + " " +
+                 cbocompwhere.SelectedItem.ToString()+" "+'"' + "%" + txtValorComparacionEDITAR.Text +"%"+ '"' + " ";
+                 txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar;
+                } else { 
+                whereeditar = cboTipoComparadorEDITAR.SelectedItem.ToString() + " " + cboCampoEDITAR.SelectedItem.ToString() + " " +
+                cbocompwhere.SelectedItem.ToString()+'"' + txtValorComparacionEDITAR.Text + '"' + " ";
                 txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar;
+                }
             }
 
         }
@@ -623,13 +639,20 @@ namespace CapaVista
 
                 if (whereeditar != "")
                 {
-
-
-                    andeditar = andeditar + cboOperadorLogicoEDITAR.SelectedItem.ToString() + " "
-                    + cboCampoConsultaComplejaEDITAR.SelectedItem.ToString() + "=" +
-                    '"' + txtvalorConsultaComplejaEDITAR.Text + '"' + " ";
-                    MessageBox.Show(csimpleeditar + whereeditar + andeditar);
-                    txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar;
+                    if (cbocompand.SelectedItem.ToString() == "like")
+                    {
+                        andeditar = andeditar + cboOperadorLogicoEDITAR.SelectedItem.ToString() + " "
+                         + cboCampoConsultaComplejaEDITAR.SelectedItem.ToString() + " " +
+                        cbocompand.SelectedItem.ToString()+" "+'"' +"%"+ txtvalorConsultaComplejaEDITAR.Text +" %"+ '"' + " ";
+                        txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar;
+                    }
+                    else
+                    {
+                        andeditar = andeditar + cboOperadorLogicoEDITAR.SelectedItem.ToString() + " "
+                         + cboCampoConsultaComplejaEDITAR.SelectedItem.ToString() + " " +
+                        cbocompand.SelectedItem.ToString() + " " + '"' + txtvalorConsultaComplejaEDITAR.Text + '"' + " ";
+                        txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar;
+                    }
                 }
                 else
                 {
@@ -678,7 +701,6 @@ namespace CapaVista
                     groupeditar = "order by " + cboCampoAgruparEDITAR.SelectedItem.ToString() + " " + ordeneditar;
 
                 }
-                MessageBox.Show(csimpleeditar + whereeditar + andeditar + groupeditar);
                 txtCadenaGeneradaEDITAR.Text = csimpleeditar + whereeditar + andeditar + groupeditar;
             }
         }
@@ -710,6 +732,18 @@ namespace CapaVista
                 cn.editarconsulta(txtTablaConsultaSimple.Text, finaleditar);
                 llenarcboquery();
             }
+            txtCadenaGeneradaEDITAR.Text = "";
+            chkcondicioneseditar.Checked = false;
+            txtcamposelectoseditar.Text = "";
+            txtNombreRepresentativoEDITAR.Text = "";
+            finaleditar = "";
+            csimpleeditar = "";
+            whereeditar = "";
+            andeditar = "";
+            groupeditar = "";
+            cbonombreconsulta.Text = "";
+            cbonombreconsulta.Enabled = true;
+        
         }
 
         private void btnCancelarCONSULTASIMPLE_Click(object sender, EventArgs e)
@@ -788,6 +822,7 @@ namespace CapaVista
             txtTablaConsultaSimple.Text = "";
             cbonombreconsulta.Enabled = true;
             cbonombreconsulta.Text = "";
+            chkcondicioneseditar.Checked = false;
         }
 
         private void cbotablas_SelectedIndexChanged(object sender, EventArgs e)
@@ -803,6 +838,10 @@ namespace CapaVista
             }
             llenarcombo2();
 
+        }
+
+        private void cbocompwhere_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }
