@@ -27,5 +27,19 @@ namespace CVcompras
         {
 
         }
+
+        private void ingresarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new Ingreso_Proveedores();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void ingresarCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new Ingreso_Compra();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }

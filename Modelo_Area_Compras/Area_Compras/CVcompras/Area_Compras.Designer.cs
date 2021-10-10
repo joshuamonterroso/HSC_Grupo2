@@ -74,6 +74,7 @@ namespace CVcompras
             this.ingresarProveedoresToolStripMenuItem.Name = "ingresarProveedoresToolStripMenuItem";
             this.ingresarProveedoresToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.ingresarProveedoresToolStripMenuItem.Text = "Ingresar Proveedores";
+            this.ingresarProveedoresToolStripMenuItem.Click += new System.EventHandler(this.ingresarProveedoresToolStripMenuItem_Click);
             // 
             // gestionarProveedoresToolStripMenuItem
             // 
@@ -93,13 +94,14 @@ namespace CVcompras
             // ingresarCompraToolStripMenuItem
             // 
             this.ingresarCompraToolStripMenuItem.Name = "ingresarCompraToolStripMenuItem";
-            this.ingresarCompraToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.ingresarCompraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ingresarCompraToolStripMenuItem.Text = "Ingresar Compra";
+            this.ingresarCompraToolStripMenuItem.Click += new System.EventHandler(this.ingresarCompraToolStripMenuItem_Click);
             // 
             // gestionarComprasToolStripMenuItem
             // 
             this.gestionarComprasToolStripMenuItem.Name = "gestionarComprasToolStripMenuItem";
-            this.gestionarComprasToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.gestionarComprasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gestionarComprasToolStripMenuItem.Text = "Gestionar Compras";
             // 
             // reportesToolStripMenuItem
