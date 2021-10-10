@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace compras_y_cuentas_por_pagar.Properties
+namespace Area_ComprasNET.Properties
 {
     /// <summary>
     ///   Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
@@ -43,7 +43,7 @@ namespace compras_y_cuentas_por_pagar.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("compras_y_cuentas_por_pagar.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Area_ComprasNET.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

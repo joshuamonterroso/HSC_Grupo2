@@ -16,7 +16,7 @@ namespace ConsultasInteligentesNET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CapaVista.ConsultasInteligentes()); 
+            Application.Run(new CapaVista.menuconsultas()); 
         }
     }
 }

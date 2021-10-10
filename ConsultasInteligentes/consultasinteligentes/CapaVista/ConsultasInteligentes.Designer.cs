@@ -156,6 +156,14 @@ namespace CapaVista
             this.dgvBUSCARyELIMINAR = new System.Windows.Forms.DataGridView();
             this.txtNombreConsultaBUSCARyELIMINAR = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.cbocompand = new System.Windows.Forms.ComboBox();
+            this.cbocompwhere = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.cbocompcre = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.cboandcre = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
             this.tb1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gpbAgruparUOrdenar.SuspendLayout();
@@ -454,6 +462,8 @@ namespace CapaVista
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.cbocompcre);
+            this.groupBox4.Controls.Add(this.label35);
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.btnCancelarComparacion);
             this.groupBox4.Controls.Add(this.txtValorComparacion);
@@ -464,7 +474,7 @@ namespace CapaVista
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Location = new System.Drawing.Point(374, 22);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(368, 100);
+            this.groupBox4.Size = new System.Drawing.Size(391, 100);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Comparación";
@@ -474,7 +484,7 @@ namespace CapaVista
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(229, 20);
+            this.button1.Location = new System.Drawing.Point(277, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 70);
             this.button1.TabIndex = 22;
@@ -488,7 +498,7 @@ namespace CapaVista
             this.btnCancelarComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnCancelarComparacion.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarComparacion.Image")));
             this.btnCancelarComparacion.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarComparacion.Location = new System.Drawing.Point(295, 21);
+            this.btnCancelarComparacion.Location = new System.Drawing.Point(334, 20);
             this.btnCancelarComparacion.Name = "btnCancelarComparacion";
             this.btnCancelarComparacion.Size = new System.Drawing.Size(57, 68);
             this.btnCancelarComparacion.TabIndex = 21;
@@ -499,7 +509,7 @@ namespace CapaVista
             // txtValorComparacion
             // 
             this.txtValorComparacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtValorComparacion.Location = new System.Drawing.Point(123, 69);
+            this.txtValorComparacion.Location = new System.Drawing.Point(171, 69);
             this.txtValorComparacion.Name = "txtValorComparacion";
             this.txtValorComparacion.Size = new System.Drawing.Size(100, 20);
             this.txtValorComparacion.TabIndex = 19;
@@ -527,7 +537,7 @@ namespace CapaVista
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 72);
+            this.label11.Location = new System.Drawing.Point(134, 72);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(31, 13);
             this.label11.TabIndex = 7;
@@ -553,6 +563,8 @@ namespace CapaVista
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cboandcre);
+            this.groupBox3.Controls.Add(this.label36);
             this.groupBox3.Controls.Add(this.btnCancelarConsultaCompleja);
             this.groupBox3.Controls.Add(this.btnAgregarConsultaCompleja);
             this.groupBox3.Controls.Add(this.txtValor);
@@ -563,7 +575,7 @@ namespace CapaVista
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Location = new System.Drawing.Point(6, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(352, 100);
+            this.groupBox3.Size = new System.Drawing.Size(362, 100);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Logica";
@@ -573,7 +585,7 @@ namespace CapaVista
             this.btnCancelarConsultaCompleja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnCancelarConsultaCompleja.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarConsultaCompleja.Image")));
             this.btnCancelarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarConsultaCompleja.Location = new System.Drawing.Point(281, 25);
+            this.btnCancelarConsultaCompleja.Location = new System.Drawing.Point(296, 22);
             this.btnCancelarConsultaCompleja.Name = "btnCancelarConsultaCompleja";
             this.btnCancelarConsultaCompleja.Size = new System.Drawing.Size(60, 68);
             this.btnCancelarConsultaCompleja.TabIndex = 20;
@@ -586,7 +598,7 @@ namespace CapaVista
             this.btnAgregarConsultaCompleja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnAgregarConsultaCompleja.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarConsultaCompleja.Image")));
             this.btnAgregarConsultaCompleja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAgregarConsultaCompleja.Location = new System.Drawing.Point(217, 24);
+            this.btnAgregarConsultaCompleja.Location = new System.Drawing.Point(232, 19);
             this.btnAgregarConsultaCompleja.Name = "btnAgregarConsultaCompleja";
             this.btnAgregarConsultaCompleja.Size = new System.Drawing.Size(58, 69);
             this.btnAgregarConsultaCompleja.TabIndex = 19;
@@ -598,9 +610,9 @@ namespace CapaVista
             // txtValor
             // 
             this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtValor.Location = new System.Drawing.Point(101, 73);
+            this.txtValor.Location = new System.Drawing.Point(152, 72);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.Size = new System.Drawing.Size(74, 20);
             this.txtValor.TabIndex = 18;
             // 
             // cboCampoLogica
@@ -628,7 +640,7 @@ namespace CapaVista
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 72);
+            this.label8.Location = new System.Drawing.Point(125, 75);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 4;
@@ -1006,7 +1018,7 @@ namespace CapaVista
             this.groupBox12.Controls.Add(this.label29);
             this.groupBox12.Controls.Add(this.label30);
             this.groupBox12.Enabled = false;
-            this.groupBox12.Location = new System.Drawing.Point(6, 358);
+            this.groupBox12.Location = new System.Drawing.Point(8, 397);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(480, 102);
             this.groupBox12.TabIndex = 35;
@@ -1151,13 +1163,15 @@ namespace CapaVista
             this.groupBox9.Enabled = false;
             this.groupBox9.Location = new System.Drawing.Point(8, 224);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(749, 128);
+            this.groupBox9.Size = new System.Drawing.Size(781, 131);
             this.groupBox9.TabIndex = 32;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Consulta Compleja";
             // 
             // groupBox11
             // 
+            this.groupBox11.Controls.Add(this.cbocompwhere);
+            this.groupBox11.Controls.Add(this.label34);
             this.groupBox11.Controls.Add(this.txtcancelarComparacionEDITAR);
             this.groupBox11.Controls.Add(this.txtValorComparacionEDITAR);
             this.groupBox11.Controls.Add(this.btnAgregarComparacionEDITAR);
@@ -1168,7 +1182,7 @@ namespace CapaVista
             this.groupBox11.Controls.Add(this.label27);
             this.groupBox11.Location = new System.Drawing.Point(364, 19);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(371, 100);
+            this.groupBox11.Size = new System.Drawing.Size(411, 100);
             this.groupBox11.TabIndex = 2;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Comparación";
@@ -1178,7 +1192,7 @@ namespace CapaVista
             this.txtcancelarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.txtcancelarComparacionEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("txtcancelarComparacionEDITAR.Image")));
             this.txtcancelarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txtcancelarComparacionEDITAR.Location = new System.Drawing.Point(296, 14);
+            this.txtcancelarComparacionEDITAR.Location = new System.Drawing.Point(344, 24);
             this.txtcancelarComparacionEDITAR.Name = "txtcancelarComparacionEDITAR";
             this.txtcancelarComparacionEDITAR.Size = new System.Drawing.Size(61, 70);
             this.txtcancelarComparacionEDITAR.TabIndex = 19;
@@ -1190,9 +1204,9 @@ namespace CapaVista
             // txtValorComparacionEDITAR
             // 
             this.txtValorComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtValorComparacionEDITAR.Location = new System.Drawing.Point(122, 67);
+            this.txtValorComparacionEDITAR.Location = new System.Drawing.Point(179, 69);
             this.txtValorComparacionEDITAR.Name = "txtValorComparacionEDITAR";
-            this.txtValorComparacionEDITAR.Size = new System.Drawing.Size(100, 20);
+            this.txtValorComparacionEDITAR.Size = new System.Drawing.Size(101, 20);
             this.txtValorComparacionEDITAR.TabIndex = 18;
             // 
             // btnAgregarComparacionEDITAR
@@ -1200,7 +1214,7 @@ namespace CapaVista
             this.btnAgregarComparacionEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnAgregarComparacionEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarComparacionEDITAR.Image")));
             this.btnAgregarComparacionEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAgregarComparacionEDITAR.Location = new System.Drawing.Point(229, 14);
+            this.btnAgregarComparacionEDITAR.Location = new System.Drawing.Point(277, 25);
             this.btnAgregarComparacionEDITAR.Name = "btnAgregarComparacionEDITAR";
             this.btnAgregarComparacionEDITAR.Size = new System.Drawing.Size(61, 72);
             this.btnAgregarComparacionEDITAR.TabIndex = 20;
@@ -1232,7 +1246,7 @@ namespace CapaVista
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(16, 69);
+            this.label28.Location = new System.Drawing.Point(142, 72);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(31, 13);
             this.label28.TabIndex = 2;
@@ -1258,6 +1272,8 @@ namespace CapaVista
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.cbocompand);
+            this.groupBox10.Controls.Add(this.label33);
             this.groupBox10.Controls.Add(this.btnCancelarCONSULTACOMPLEJAEDITAR);
             this.groupBox10.Controls.Add(this.btnagregarCONSULTACOMPLEJAEDITAR);
             this.groupBox10.Controls.Add(this.txtvalorConsultaComplejaEDITAR);
@@ -1266,9 +1282,9 @@ namespace CapaVista
             this.groupBox10.Controls.Add(this.label25);
             this.groupBox10.Controls.Add(this.label24);
             this.groupBox10.Controls.Add(this.label23);
-            this.groupBox10.Location = new System.Drawing.Point(6, 19);
+            this.groupBox10.Location = new System.Drawing.Point(0, 19);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(341, 100);
+            this.groupBox10.Size = new System.Drawing.Size(341, 106);
             this.groupBox10.TabIndex = 2;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Logica";
@@ -1279,7 +1295,7 @@ namespace CapaVista
             this.btnCancelarCONSULTACOMPLEJAEDITAR.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarCONSULTACOMPLEJAEDITAR.Image")));
             this.btnCancelarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(273, 16);
+            this.btnCancelarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(281, 10);
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Name = "btnCancelarCONSULTACOMPLEJAEDITAR";
             this.btnCancelarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(60, 70);
             this.btnCancelarCONSULTACOMPLEJAEDITAR.TabIndex = 20;
@@ -1293,7 +1309,7 @@ namespace CapaVista
             this.btnagregarCONSULTACOMPLEJAEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
             this.btnagregarCONSULTACOMPLEJAEDITAR.Image = ((System.Drawing.Image)(resources.GetObject("btnagregarCONSULTACOMPLEJAEDITAR.Image")));
             this.btnagregarCONSULTACOMPLEJAEDITAR.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnagregarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(207, 16);
+            this.btnagregarCONSULTACOMPLEJAEDITAR.Location = new System.Drawing.Point(214, 10);
             this.btnagregarCONSULTACOMPLEJAEDITAR.Name = "btnagregarCONSULTACOMPLEJAEDITAR";
             this.btnagregarCONSULTACOMPLEJAEDITAR.Size = new System.Drawing.Size(60, 70);
             this.btnagregarCONSULTACOMPLEJAEDITAR.TabIndex = 21;
@@ -1305,7 +1321,7 @@ namespace CapaVista
             // txtvalorConsultaComplejaEDITAR
             // 
             this.txtvalorConsultaComplejaEDITAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.txtvalorConsultaComplejaEDITAR.Location = new System.Drawing.Point(101, 76);
+            this.txtvalorConsultaComplejaEDITAR.Location = new System.Drawing.Point(231, 80);
             this.txtvalorConsultaComplejaEDITAR.Name = "txtvalorConsultaComplejaEDITAR";
             this.txtvalorConsultaComplejaEDITAR.Size = new System.Drawing.Size(100, 20);
             this.txtvalorConsultaComplejaEDITAR.TabIndex = 19;
@@ -1335,7 +1351,7 @@ namespace CapaVista
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(18, 76);
+            this.label25.Location = new System.Drawing.Point(194, 84);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(31, 13);
             this.label25.TabIndex = 5;
@@ -1649,6 +1665,107 @@ namespace CapaVista
             this.label32.TabIndex = 32;
             this.label32.Text = "Nombre consulta";
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(16, 87);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(64, 13);
+            this.label33.TabIndex = 22;
+            this.label33.Text = "Comparador";
+            // 
+            // cbocompand
+            // 
+            this.cbocompand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cbocompand.FormattingEnabled = true;
+            this.cbocompand.Items.AddRange(new object[] {
+            "=",
+            "like",
+            "<",
+            "<=",
+            ">",
+            ">="});
+            this.cbocompand.Location = new System.Drawing.Point(88, 79);
+            this.cbocompand.Name = "cbocompand";
+            this.cbocompand.Size = new System.Drawing.Size(100, 21);
+            this.cbocompand.TabIndex = 23;
+            // 
+            // cbocompwhere
+            // 
+            this.cbocompwhere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cbocompwhere.FormattingEnabled = true;
+            this.cbocompwhere.Items.AddRange(new object[] {
+            "=",
+            "like",
+            "<",
+            "<=",
+            ">",
+            ">="});
+            this.cbocompwhere.Location = new System.Drawing.Point(78, 64);
+            this.cbocompwhere.Name = "cbocompwhere";
+            this.cbocompwhere.Size = new System.Drawing.Size(66, 21);
+            this.cbocompwhere.TabIndex = 25;
+            this.cbocompwhere.SelectedIndexChanged += new System.EventHandler(this.cbocompwhere_SelectedIndexChanged);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(8, 67);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(64, 13);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "Comparador";
+            // 
+            // cbocompcre
+            // 
+            this.cbocompcre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cbocompcre.FormattingEnabled = true;
+            this.cbocompcre.Items.AddRange(new object[] {
+            "=",
+            "like",
+            "<",
+            "<=",
+            ">",
+            ">="});
+            this.cbocompcre.Location = new System.Drawing.Point(67, 68);
+            this.cbocompcre.Name = "cbocompcre";
+            this.cbocompcre.Size = new System.Drawing.Size(69, 21);
+            this.cbocompcre.TabIndex = 25;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 74);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(64, 13);
+            this.label35.TabIndex = 24;
+            this.label35.Text = "Comparador";
+            // 
+            // cboandcre
+            // 
+            this.cboandcre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.cboandcre.FormattingEnabled = true;
+            this.cboandcre.Items.AddRange(new object[] {
+            "=",
+            "like",
+            "<",
+            "<=",
+            ">",
+            ">="});
+            this.cboandcre.Location = new System.Drawing.Point(61, 67);
+            this.cboandcre.Name = "cboandcre";
+            this.cboandcre.Size = new System.Drawing.Size(63, 21);
+            this.cboandcre.TabIndex = 25;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(1, 75);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(64, 13);
+            this.label36.TabIndex = 24;
+            this.label36.Text = "Comparador";
+            // 
             // ConsultasInteligentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1656,6 +1773,7 @@ namespace CapaVista
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(811, 535);
             this.Controls.Add(this.tb1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultasInteligentes";
             this.Text = "ConsultasInteligentes";
             this.Load += new System.EventHandler(this.ConsultasInteligentes_Load);
@@ -1825,5 +1943,13 @@ namespace CapaVista
         private System.Windows.Forms.CheckBox chkcondicioneseditar;
         private System.Windows.Forms.Button btnagregarcamposeditar;
         private System.Windows.Forms.ComboBox cbotablas;
+        private System.Windows.Forms.ComboBox cbocompwhere;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.ComboBox cbocompand;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.ComboBox cbocompcre;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.ComboBox cboandcre;
+        private System.Windows.Forms.Label label36;
     }
 }

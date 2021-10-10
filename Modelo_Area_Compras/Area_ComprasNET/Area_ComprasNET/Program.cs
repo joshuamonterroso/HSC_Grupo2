@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace consultas_inteligentes
+namespace Area_ComprasNET
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace consultas_inteligentes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new CVcompras.Area_Compras());
         }
     }
 }
