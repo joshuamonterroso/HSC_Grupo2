@@ -41,5 +41,12 @@ namespace CVcompras
             formulario.Show();
             this.Hide();
         }
+
+        private void gestionarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new GestionProveedores();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }

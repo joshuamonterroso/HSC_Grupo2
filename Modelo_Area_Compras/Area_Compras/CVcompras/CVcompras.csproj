@@ -52,6 +52,12 @@
     <Compile Include="Area_Compras.Designer.cs">
       <DependentUpon>Area_Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionProveedores.Designer.cs">
+      <DependentUpon>GestionProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCompras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <EmbeddedResource Include="GestionCompras.resx">
       <DependentUpon>GestionCompras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionProveedores.resx">
+      <DependentUpon>GestionProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ingreso_Proveedores.resx">
       <DependentUpon>Ingreso_Proveedores.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +103,21 @@
     <EmbeddedResource Include="Ingreso_Compra.resx">
       <DependentUpon>Ingreso_Compra.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
