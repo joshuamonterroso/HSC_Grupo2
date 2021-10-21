@@ -30,21 +30,21 @@ namespace CVcompras
 
         private void ingresarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form formulario = new Ingreso_Proveedores();
+            Area_Compras formulario = new Area_Compras();
             formulario.Show();
             this.Hide();
         }
 
         private void ingresarCompraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form formulario = new Ingreso_Compra();
+            Area_Compras formulario = new Area_Compras();
             formulario.Show();
             this.Hide();
         }
 
         private void gestionarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form formulario = new GestionProveedores();
+            Area_Compras formulario = new Area_Compras();
             formulario.Show();
             this.Hide();
         }

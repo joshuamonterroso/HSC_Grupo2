@@ -43,6 +43,12 @@ namespace CVcompras
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.iNVENTARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarMarcaLineaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarNuevoProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bodegasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +59,8 @@ namespace CVcompras
             this.pROVEEDORESToolStripMenuItem,
             this.cOMPRASToolStripMenuItem,
             this.reportesToolStripMenuItem,
-            this.ayudaToolStripMenuItem});
+            this.ayudaToolStripMenuItem,
+            this.iNVENTARIOToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -95,14 +102,14 @@ namespace CVcompras
             // ingresarCompraToolStripMenuItem
             // 
             this.ingresarCompraToolStripMenuItem.Name = "ingresarCompraToolStripMenuItem";
-            this.ingresarCompraToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.ingresarCompraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ingresarCompraToolStripMenuItem.Text = "Ingresar Compra";
             this.ingresarCompraToolStripMenuItem.Click += new System.EventHandler(this.ingresarCompraToolStripMenuItem_Click);
             // 
             // gestionarComprasToolStripMenuItem
             // 
             this.gestionarComprasToolStripMenuItem.Name = "gestionarComprasToolStripMenuItem";
-            this.gestionarComprasToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.gestionarComprasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gestionarComprasToolStripMenuItem.Text = "Gestionar Compras";
             // 
             // reportesToolStripMenuItem
@@ -132,6 +139,48 @@ namespace CVcompras
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
+            // 
+            // iNVENTARIOToolStripMenuItem
+            // 
+            this.iNVENTARIOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarMarcaLineaToolStripMenuItem,
+            this.agregarProductoToolStripMenuItem,
+            this.registrarNuevoProductoToolStripMenuItem,
+            this.verProductosToolStripMenuItem,
+            this.bodegasToolStripMenuItem});
+            this.iNVENTARIOToolStripMenuItem.Name = "iNVENTARIOToolStripMenuItem";
+            this.iNVENTARIOToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.iNVENTARIOToolStripMenuItem.Text = "INVENTARIO";
+            // 
+            // agregarMarcaLineaToolStripMenuItem
+            // 
+            this.agregarMarcaLineaToolStripMenuItem.Name = "agregarMarcaLineaToolStripMenuItem";
+            this.agregarMarcaLineaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.agregarMarcaLineaToolStripMenuItem.Text = "Agregar Marca/Linea";
+            // 
+            // agregarProductoToolStripMenuItem
+            // 
+            this.agregarProductoToolStripMenuItem.Name = "agregarProductoToolStripMenuItem";
+            this.agregarProductoToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.agregarProductoToolStripMenuItem.Text = "Agregar Producto";
+            // 
+            // registrarNuevoProductoToolStripMenuItem
+            // 
+            this.registrarNuevoProductoToolStripMenuItem.Name = "registrarNuevoProductoToolStripMenuItem";
+            this.registrarNuevoProductoToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.registrarNuevoProductoToolStripMenuItem.Text = "Registrar nuevo producto";
+            // 
+            // verProductosToolStripMenuItem
+            // 
+            this.verProductosToolStripMenuItem.Name = "verProductosToolStripMenuItem";
+            this.verProductosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.verProductosToolStripMenuItem.Text = "Ver productos";
+            // 
+            // bodegasToolStripMenuItem
+            // 
+            this.bodegasToolStripMenuItem.Name = "bodegasToolStripMenuItem";
+            this.bodegasToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.bodegasToolStripMenuItem.Text = "Bodegas";
             // 
             // Area_Compras
             // 
@@ -169,6 +218,12 @@ namespace CVcompras
         private System.Windows.Forms.ToolStripMenuItem gestionarComprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iNVENTARIOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarMarcaLineaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarProductoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarNuevoProductoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bodegasToolStripMenuItem;
     }
 }
 
